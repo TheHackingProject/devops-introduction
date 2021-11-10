@@ -1,14 +1,10 @@
 # Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
-
-Dans ce project vous allez amusez avec certaines des commandes shell les plus courantes.  Celles-ci vont vous permettre de maîtriser un plus votre terminal ainsi que votre productivité.
+Dans ce project vous allez vous amusez avec certaines des commandes shell les plus courantes. Celles-ci vont vous permettre de maîtriser un plus votre terminal et par la même occasion améliorer votre productivité.
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
-
 Une série d'exercices en guise de tour de chauffe. Ils ont pour objectif de vous familiariser avec les principaux commandes qu'utilisent les SysOps et les DevOps au jour le jour!!! La grande classe !!!
 
-Vous allez rencontrer pas mal d'erreur, qui des fois ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. De ce fait, si vous sentez un peu perdu, votre équipe et cas échéant Google sont vos meilleurs amis.
+Vous allez rencontrer pas mal d'erreur, qui des fois, ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. De ce fait, si vous sentez un peu perdu, votre équipe et le cas échéant Google sont vos meilleurs amis.
 
 
 Nous allons travailler avec ce magnifique texte:
@@ -27,11 +23,9 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 
 1. Créé un dossier `~/day_01/exercices_01/` à l'aide de la commande `mkdir`, je vous invite à chercher le moyen le plus efficace de le faire par vous même. Petite indice `man mkdir` pout vous sauvez la mise :).
 
-
 2. Copier le texte dans le sous-dossier créé ci-dessus, pour avoir ce résultat `~/opsDev/day_01/exercices_01/maintain_file.txt`, encore une en utilisant le moyen les plus efficace.
 
 3. Copier le fichier dans `~/` déplacer ce même fichier dans `~/opsDev/day_01`et supprimer le, en une seule commande.
-
 
 4. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. 
    Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver le.
@@ -73,11 +67,17 @@ Serenity Mcconnell
 Lacey Palmer
 ```
 
-Ajouter cette list de nom et prénom dans ce fichier `~/opsDev/day_01/exercices_01/filter_and_process_file.txt`
+Ajouter cette liste de nom et prénom dans ce fichier `~/opsDev/day_01/exercices_01/filter_and_process_file.txt`
 
-
-1. 
+1. Afficher dans le terminal les 3 premiers lettres de chaque ligne.
+2. Afficher dans le terminal les lettres compris entre 4 et 8 de chaque ligne.
+3. Afficher dans le terminal uniquement le prénom. 
+4. Afficher dans le terminal uniquement le nom.
+5. Filtrer et afficher dans le terminal les lignes qui comprennent les lettres 'll' 
+   et ensuite compter le nombre de fois où elles apparaissent 
+6. Afficher le terminal ce fichier classé par ordre alphabétique et  ensuite dans le sens inverse.
+7. Séparer changer ligne dans un fichier dédié et ensuite assemblé ces fichiers en un seul fichier
 
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Le rendu attendu est un repo Github qui contient `basics-shell-cmd.md` avec toutes commandes utilisées aujourd'hui.
