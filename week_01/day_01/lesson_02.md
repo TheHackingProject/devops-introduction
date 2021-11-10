@@ -1,23 +1,29 @@
-# Titre de la deuxième ressource
+# Linux, les fondamentaux
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
-## 1. Introduction
+## 1. La synthaxe des commandes Linux et savoir se déplacer dans le terminal
 Une introduction sur la ressource.
 
-## 2.Historique et contexte
+## 2. Les permissions et l'appartenance des fichiers
 Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.
 
-## 3. La ressource
+## 3. Entré et sortie des commandes 
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
-### 3.1. Première sous partie
+### 4.
 blabla
 
-### 3.2. Deuxième sous partie
+### 5. Maintenir un fichier/dossier
 blabla
 
-## 4. Points importants à retenir
+## 6. Afficher le contenu d'un fichier
 La ressource en quelques points importants.
 
-## 5. Pour aller plus loin
+## 7. Filtrer et traiter un texte
+Quelques éléments en ligne pour aller plus loin
+
+## 8. Points importants à retenir
+La ressource en quelques points importants.
+
+## 9. Pour aller plus loin
 Quelques éléments en ligne pour aller plus loin
