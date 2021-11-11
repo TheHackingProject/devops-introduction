@@ -10,20 +10,17 @@ Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le con
 ## 3. Entré et sortie des commandes 
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
-### 4.
+### 4. Maintenir un fichier/dossier
 blabla
 
-### 5. Maintenir un fichier/dossier
-blabla
-
-## 6. Afficher le contenu d'un fichier
+## 5. Afficher le contenu d'un fichier
 La ressource en quelques points importants.
 
-## 7. Filtrer et traiter un texte
+## 6. Filtrer et traiter un texte
 Quelques éléments en ligne pour aller plus loin
 
-## 8. Points importants à retenir
+## 7. Points importants à retenir
 La ressource en quelques points importants.
 
-## 9. Pour aller plus loin
+## 8. Pour aller plus loin
 Quelques éléments en ligne pour aller plus loin
