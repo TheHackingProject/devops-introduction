@@ -19,7 +19,7 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 
 
 ## 2. Le projet
-### 2.1. Creér un répertoire dédié et copié/déplacé un texte
+### 2.1. Créer et maintenir un fichier/dossier
 
 1. Créé un dossier `~/day_01/exercices_01/` à l'aide de la commande `mkdir`, je vous invite à chercher le moyen le plus efficace de le faire par vous même. Petite indice `man mkdir` pout vous sauvez la mise :).
 
@@ -79,5 +79,15 @@ Ajouter cette liste de nom et prénom dans ce fichier `~/opsDev/day_01/exercices
 7. Séparer changer ligne dans un fichier dédié et ensuite assemblé ces fichiers en un seul fichier
 
 
-## 3. Rendu attendu
+
+### 3. Gérer les permissions
+
+1. Créer avec un dossier (`Marvel/`) appartenant au groupe “marvel”.
+2. Ajouter 3 utilisateurs (Hulk, Thor, Thanos) à ce groupe
+3. Créer un sous-dossier (`Good/`) partagé par "Thor” et “Hulk”.
+4. Dans le sous-dossier `Good/` ajouter deux fichiers le premier,`Thor_dark_world.txt` accessible par `Thor` uniquement, et le 2ème `Thor_ragnarok` accessible par `Thor` et `Hulk`
+5. Le fichier `Thor_dark_world.txt` doit être accessible en écriture et lecture pour `Thor` et accessible en lecture uniquement pour `Hulk` 
+
+
+## 4. Rendu attendu
 Le rendu attendu est un repo Github qui contient `basics-shell-cmd.md` avec toutes commandes utilisées aujourd'hui.

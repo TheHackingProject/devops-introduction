@@ -45,26 +45,12 @@ Pour savoir se déplacer dans le terminal, nous devons d'abord en apprendre plus
 Maintenant que vous avez ce que le `Filesystem`, cette [doc](https://www.redhat.com/sysadmin/navigating-linux-filesystem) vous explique comment naviguer dans le `Filesystem` et la différence entre deux termes très importants que nous utiliserons tout au long du parcours à savoir, **le chemin relatif et absolue dans le Filesystem**. 
 
 
-### 3. Maintenir un fichier/dossier
-
-```sh
-touch, cp, mkidr, vi/vim, nano, find, locate
-```
-
 ## 3. Les permissions et l'appartenance des fichiers
-Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.
 
-## 4. Entré et sortie des commandes 
-Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
+Cette [doc](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-groupes-permissions) est parfait pour avoir une idée claire sur le sujet. La dernière partie de la doc sur `Sauvegarder et restaurer les permissions`, nous ne intéresse pas pr l'instant
 
 
-## 6. Afficher le contenu d'un fichier
-La ressource en quelques points importants.
-
-## 7. Filtrer et traiter un texte
-Quelques éléments en ligne pour aller plus loin
-
-## 8. Points importants à retenir
+## 4. Points importants à retenir
 
 Voici ce que vous devez em permanence garder en tête:
 - Dans le shells seule la commande est obligatoire le reste est optionnel
@@ -87,5 +73,6 @@ info awk
 
 Pour certaines commandes, quand vous les taper sans option(s) ni argument(s). Des informations très utiles s'affichent, Essayez pour voir :).
 
-## 9. Pour aller plus loin
-Quelques éléments en ligne pour aller plus loin
+## 5. Pour aller plus loin
+
+Les commandes Shell se comptent par centaines, mais l'important est d'abord comprendre l'environnement Linux et ses composants pour qu'en un coup d'oeil sur ton terminal tu saches où tu en es. Demain nous allons encore allez plus loin et enfin écrire notre premier Shell script.
