@@ -1,10 +1,12 @@
-# Titre du projet
-Dans ce project vous allez vous amusez avec certaines des commandes shell les plus courantes. Celles-ci vont vous permettre de maîtriser un plus votre terminal et par la même occasion améliorer votre productivité.
+# Commandes Shell basiques.
+
+Dans ce project tu t'amuser avec les commandes shell les plus courantes. Celles-ci vont te permettre de maîtriser un plus ton terminal et par la même occasion améliorer ta productivité.
+
 
 ## 1. Introduction
-Une série d'exercices en guise de tour de chauffe. Ils ont pour objectif de vous familiariser avec les principaux commandes qu'utilisent les SysOps et les DevOps au jour le jour!!! La grande classe !!!
+Une série d'exercices pour te familiariser avec les principaux commandes qu'utilisent les Devs,SysOps et les DevOps au jour le jour !!! La grande classe !!!
 
-Vous allez rencontrer pas mal d'erreur, qui des fois, ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. De ce fait, si vous sentez un peu perdu, votre équipe et le cas échéant Google sont vos meilleurs amis.
+Tu vas rencontrer pas mal d'erreur, qui des fois, ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. Si tu te un peu perdu, ton équipe et le cas échéant Google sont là pour toi.
 
 
 Nous allons travailler avec ce magnifique texte:
@@ -21,21 +23,16 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 ## 2. Le projet
 ### 2.1. Créer et maintenir un fichier/dossier
 
-1. Créé un dossier `~/day_01/exercices_01/` à l'aide de la commande `mkdir`, je vous invite à chercher le moyen le plus efficace de le faire par vous même. Petite indice `man mkdir` pout vous sauvez la mise :).
+1. Créer un dossier et sous-dossier `~/day_01/exercices_01/` à l'aide de la commande `mkdir`, je t'invite à chercher le moyen le plus efficace de le faire. Petite indice `man mkdir` pout vous sauvez la mise :).
 
-2. Copier le texte dans le sous-dossier créé ci-dessus, pour avoir ce résultat `~/opsDev/day_01/exercices_01/maintain_file.txt`, encore une en utilisant le moyen les plus efficace.
+2. Copier le texte un fichier `maintain_file.txt` qui sera placé dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
 
-3. Copier le fichier dans `~/` déplacer ce même fichier dans `~/opsDev/day_01`et supprimer le, en une seule commande.
+3. Copier le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/` et ensuite dans ce dossier `~/opsDev/day_01` et enfin supprimer cette copie, en une seule commande.
 
-4. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. 
-   Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver le.
-   Supprimer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt`.
-   Copier de nouveau le texte dans le sous-dossier d'origine `~/opsDev/day_01/exercices_01/`
-   Et tous cela en une seule commande.
+4. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver le. Ensuite supprimer le. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans sous-dossier `~/opsDev/day_01/exercices_01/` **et tous cela en une seule commande**.
 
 5. Copier le dossier `~/opsDev/day_01/exercices_01` dans dans un nouveau dossier `~/opsDev/day_01_copy/` 
-   et supprimer le dossier `~/opsDev/day_01_copy`, en une seul commande bien sûr.
-
+   et supprimer le dossier `~/opsDev/day_01_copy`, **en une seul commande bien sûr**.
 
 
 ### 2.2. Afficher un texte
@@ -44,14 +41,14 @@ Ajouter le résultat de cette commande `man cp` dans le fichier `~/opsDev/day_01
 
 1. Afficher le contenue du fichier dans le terminal
 
-2. Essayez les commandes `man` et `less` sur ce fichier quel est la différence entre celles-ci.
+2. Essayez les commandes `man` et `less` sur ce fichier quel est la différence entre celles-ci ?
 
-3. Afficher les 5 premiers lignes du fichier
+3. Afficher les 5 premiers lignes du fichier.
 
-4. Afficher les 5 derniers
+4. Afficher les 5 derniers.
 
 
-### 2.3 Filtrer et traiter un texte
+### 2.3. Filtrer et traiter un texte
 ```txt
 Harley Klein
 Brogan Kim
@@ -67,27 +64,35 @@ Serenity Mcconnell
 Lacey Palmer
 ```
 
-Ajouter cette liste de nom et prénom dans ce fichier `~/opsDev/day_01/exercices_01/filter_and_process_file.txt`
+Ajouter cette liste de noms et prénoms dans ce fichier `~/opsDev/day_01/exercices_01/filter_and_process_file.txt`
 
-1. Afficher dans le terminal les 3 premiers lettres de chaque ligne.
-2. Afficher dans le terminal les lettres compris entre 4 et 8 de chaque ligne.
-3. Afficher dans le terminal uniquement le prénom. 
-4. Afficher dans le terminal uniquement le nom.
-5. Filtrer et afficher dans le terminal les lignes qui comprennent les lettres 'll' 
+1. Afficher dans le terminal :
+   - les 3 premiers lettres de chaque ligne.
+   - les lettres compris entre 4 et 8 de chaque ligne.
+   - uniquement les prénoms. 
+   - uniquement les noms.
+
+2. Filtrer et afficher dans le terminal les lignes qui comprennent les lettres 'll' 
    et ensuite compter le nombre de fois où elles apparaissent 
-6. Afficher le terminal ce fichier classé par ordre alphabétique et  ensuite dans le sens inverse.
-7. Séparer changer ligne dans un fichier dédié et ensuite assemblé ces fichiers en un seul fichier
+
+3. Afficher le terminal ce fichier classé par ordre alphabétique et ensuite dans le sens inverse.
+
+4. Séparer chaque ligne dans un fichier dédié (ex: `each_lines01`, `each_line02`, `each_line03`, ...) et ensuite assembler ces fichiers en un seul fichier `assembled-files.txt`.
 
 
 
-### 3. Gérer les permissions
+### 2.4. Gérer les permissions
 
 1. Créer avec un dossier (`Marvel/`) appartenant au groupe “marvel”.
+
 2. Ajouter 3 utilisateurs (Hulk, Thor, Thanos) à ce groupe
+
 3. Créer un sous-dossier (`Good/`) partagé par "Thor” et “Hulk”.
-4. Dans le sous-dossier `Good/` ajouter deux fichiers le premier,`Thor_dark_world.txt` accessible par `Thor` uniquement, et le 2ème `Thor_ragnarok` accessible par `Thor` et `Hulk`
-5. Le fichier `Thor_dark_world.txt` doit être accessible en écriture et lecture pour `Thor` et accessible en lecture uniquement pour `Hulk` 
+
+4. Dans le sous-dossier `Good/` ajouter deux fichiers le premier,`Thor_dark_world.txt` accessible par `Thor` uniquement, et le 2ème `Thor_ragnarok` accessible par `Thor` et `Hulk`.
+
+5. Le fichier `Thor_dark_world.txt` doit être accessible en écriture et lecture pour `Thor` et accessible en lecture uniquement pour `Hulk`.
 
 
-## 4. Rendu attendu
+## 3. Rendu attendu
 Le rendu attendu est un repo Github qui contient `basics-shell-cmd.md` avec toutes commandes utilisées aujourd'hui.
