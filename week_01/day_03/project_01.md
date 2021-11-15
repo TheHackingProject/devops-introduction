@@ -15,3 +15,19 @@ etc..
 
 ## 3. Rendu attendu
 Un récapitulatif de ce que nous attendons du projet.
+
+
+Projet étapes: 
+
+- Lancer une VM : Ubuntu 16.04 avec Vagrant
+- Démarrer un application dans la VM (ouverture des ports)
+- Lancer une deuxième VM avec un pré-script (installer les softwares nécessaire + lancer une app Rails + une app node.) + ouverture de ports.
+- Lancer un troisième VM:
+    - MAJ + installer les softwares
+    - Télécharger un repo.
+    - Créer une branche 
+    - Modifier un champs dans chaque sous-dossier du repo
+    - Commit le repo
+    - Lancer une PR du repo sur master
+
+

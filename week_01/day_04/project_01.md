@@ -15,3 +15,15 @@ etc..
 
 ## 3. Rendu attendu
 Un récapitulatif de ce que nous attendons du projet.
+
+
+Etapes projet: 
+
+- Exercices Cron
+
+- Lancer une VM avec Vagrant
+- Installer et lancer Nginx
+- Lancer un cron qui verifier que le service Nginx marche, si ok écrire dans un fichier `UTC Time - Nginx work well`, si non `UTC Time - Nginx work well - Message`.
+
+
+- Challenge script shell

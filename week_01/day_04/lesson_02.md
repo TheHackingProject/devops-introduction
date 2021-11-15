@@ -1,4 +1,4 @@
-# Titre de la deuxième ressource
+# Les Jobs programmer
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction
@@ -10,8 +10,7 @@ Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le con
 ## 3. La ressource
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
-### 3.1. Première sous partie
-blabla
+### 3.1. Automatiser une tâche
 
 ### 3.2. Deuxième sous partie
 blabla

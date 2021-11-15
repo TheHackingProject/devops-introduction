@@ -1,8 +1,9 @@
-# Titre de la deuxième ressource
-Description de la ressource au format texte et en 1 paragraphe max (pas plus)
+# La virtualization
+Après deux jours sur l'environnement Linux et les commandes Shell, 
+il est temps d'aborder la virtualization un des aspects importants pour comprendre "deep dive" les containers.
 
 ## 1. Introduction
-Une introduction sur la ressource.
+
 
 ## 2.Historique et contexte
 Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.
@@ -10,11 +11,12 @@ Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le con
 ## 3. La ressource
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
-### 3.1. Première sous partie
-blabla
+### 3.1. Ta première VM
 
-### 3.2. Deuxième sous partie
-blabla
+
+
+### 3.2. Automatiser la Virtualization avec Vagrant
+
 
 ## 4. Points importants à retenir
 La ressource en quelques points importants.
