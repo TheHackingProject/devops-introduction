@@ -1,4 +1,4 @@
-# Linux, les fondamentaux
+# Linux, les fondamentaux - Partie 1
 Dans ce cours, tu vas apprendre à te déplacer dans le terminal, comprendre et exécuter une partie des commandes les plus utilisées par les **Devs, SysOps et DevOps** et décrypter les informations qui s'affichent dans ton terminal.
 
 
@@ -17,7 +17,7 @@ Le `Shell`, est programme qui permet d'interagir avec l' `OS` via un terminal. I
 Aujourd'hui nous allons concentrer sur le mode `interactif`, le shell que tu as sur ta machine n'a pas d'importance (bash, zsh), car les commandes que tu vas voir sont interprétées par tous les Shells.
 
 
-## 2. La syntaxe des commandes Linux et savoir se déplacer dans le terminal
+## 2. Shell, les fondamentaux - Partie 1
 
 ### 2.1 La syntaxe des commandes
 Les commandes shell ont une syntaxe plutôt simple, `command option(s) et argument(s)`, exemple :
