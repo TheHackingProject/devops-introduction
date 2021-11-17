@@ -52,12 +52,7 @@ Voici quelques examples concrets.
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
 
-
-
 ### 2.2. Pipe (|) 
-
-
-
 
 
 ### 3.3. Les Regex dans le Shell
@@ -67,7 +62,6 @@ Cette partie est le nerf de la ressource, elle expliquera les notions de cette r
 
 #### 3.4.1. Principes de bases
 
-#### 3.4.1. Input/output
 
 #### 3.4.2. If/else/then
 

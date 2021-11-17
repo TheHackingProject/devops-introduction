@@ -48,7 +48,7 @@ Ajouter le résultat de cette commande `man cp` dans le fichier `~/opsDev/day_01
 4. Afficher les 5 derniers.
 
 
-### 2.3. Filtrer et traiter un texte
+### 2.3. Filtrer et traiter un texte - Niveau 1
 ```txt
 Harley Klein
 Brogan Kim
