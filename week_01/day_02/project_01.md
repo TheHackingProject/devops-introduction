@@ -7,11 +7,16 @@ Aujourd'hui, une série d'exercices un plus compliquées qu'hier, mais tout a fa
 
 ## 2. Le projet
 
-### 2.1.1.
+### 2.1
 
 1. Depuis le `$HOME` créer un dossier `opsDev/day02/project01/`
 
-### 2.1.2. Input/Output
+### 2.2 WildCards
+
+*ToDo*
+
+
+### 2.3. Input/Output
 
 1. A l'aide de la commande `echo` écrire dans le terminal `I remain the Captain on my destiny` 
    et rediriger la sortie de la commande dans un fichier `~/opsDev/day02/project01/destiny.txt`. En une commande bien sûr.
@@ -43,7 +48,7 @@ Aujourd'hui, une série d'exercices un plus compliquées qu'hier, mais tout a fa
 8. Afficher dans le terminal, les lignes comprises entre 3 et 7 du fichier `/etc/passwd`.
 
 
-### 2.2. Filtrer et traiter un texte - Niveau 2
+### 2.4. Filtrer et traiter un texte - Niveau 2
 
 1. Afficher dans le terminal, les lignes qui commencent par `root` dans le fichier `/etc/passwd`
 
