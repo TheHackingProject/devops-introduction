@@ -21,27 +21,34 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 
 
 ## 2. Le projet
-### 2.1. Créer et maintenir un fichier/dossier
+### 2.1.1. Créer un fichier/dossier
 
-1. Créer un dossier et sous-dossier `~/day_01/exercices_01/` à l'aide de la commande `mkdir`, je t'invite à chercher le moyen le plus efficace de le faire. Petite indice `man mkdir` pout vous sauvez la mise :).
+1. Créer un dossier `day_01` et un `exercices_01` sous-dossier dans le répertoire `~/`,  à l'aide de la commande `mkdir`. 
+   La commande `pwd` depuis le sous-dossier `exercices_01`, devra afficher un chemin semblable à c`~/day_01/exercices_01/`. 
+   Je t'invite à chercher le moyen le plus efficace de le faire. 
+   Petite indice la commande ` man mkdir` peut grandement t'aider à choisir la/les bonnes options :).
 
-2. Copier le texte un fichier `maintain_file.txt` qui sera placé dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
 
-3. Copier le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/` et ensuite dans ce dossier `~/opsDev/day_01` et enfin supprimer cette copie, en une seule commande.
+### 2.1.2 Créer et maintenir un fichier/dossier
 
-4. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver le. Ensuite supprimer le. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans sous-dossier `~/opsDev/day_01/exercices_01/` **et tous cela en une seule commande**.
 
-5. Copier le dossier `~/opsDev/day_01/exercices_01` dans dans un nouveau dossier `~/opsDev/day_01_copy/` 
+1. Copier le texte (qui se trouve dans la partie Introduction) dans un fichier `maintain_file.txt` et placé ce fichier dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
+
+2. Copier le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/` et ensuite dans le dossier `~/opsDev/day_01` et enfin supprimer cette copie, en une seule commande.
+
+3. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver le. Ensuite supprimer le. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans sous-dossier `~/opsDev/day_01/exercices_01/` **et tous cela en une seule commande**.
+
+4. Copier le dossier `~/opsDev/day_01/exercices_01` dans dans un nouveau dossier `~/opsDev/day_01_copy/` 
    et supprimer le dossier `~/opsDev/day_01_copy`, **en une seul commande bien sûr**.
 
 
 ### 2.2. Afficher un texte
 
-Ajouter le résultat de cette commande `man cp` dans le fichier `~/opsDev/day_01/exercices_01/display_file.txt`
+Ajouter le résultat de cette commande `man cp` dans le fichier `~/opsDev/day_01/exercices_01/display_file.txt`.
 
-1. Afficher le contenue du fichier dans le terminal
+1. Afficher le contenue du fichier dans le terminal.
 
-2. Essayez les commandes `man` et `less` sur ce fichier quel est la différence entre celles-ci ?
+2. Essayez les commandes `more` et `less` sur ce fichier quel est la différence entre celles-ci ?
 
 3. Afficher les 5 premiers lignes du fichier.
 

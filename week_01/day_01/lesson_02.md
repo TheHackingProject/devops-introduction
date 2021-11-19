@@ -1,13 +1,11 @@
 # Linux, les fondamentaux - Partie 1
 Dans ce cours, tu vas apprendre à te déplacer dans le terminal, comprendre et exécuter une partie des commandes les plus utilisées par les **Devs, SysOps et DevOps** et décrypter les informations qui s'affichent dans ton terminal.
 
-
 ## 1. Le Shell, c'est quoi ?
 
 Le `Shell`, est programme qui permet d'interagir avec l' `OS` via un terminal. Il a deux modes d'utilisation:
 
 - Interactif: l'utilisateur exécute des commandes directement dans le terminal
-
 
 - non-interactif: Le shell lit tes commandes depuis un fichier, a.k.a, le `shell script`.
 
@@ -18,7 +16,6 @@ Aujourd'hui nous allons concentrer sur le mode `interactif`, le shell que tu as 
 
 
 ## 2. Shell, les fondamentaux - Partie 1
-
 ### 2.1 La syntaxe des commandes
 Les commandes shell ont une syntaxe plutôt simple, `command option(s) et argument(s)`, exemple :
 
@@ -52,8 +49,7 @@ Cette [doc](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-group
 Voici ce que tu dois garder en tête en permanence:
 - Dans le shell seule la commande est obligatoire le reste est optionnel.
 
-
-- Certaines commandes acceptent une ou plusieurs options ainsi qu'un ou plusieurs arguments
+- Certaines commandes acceptent une ou plusieurs options ainsi qu'un ou plusieurs arguments.
 
 - Si tu as des doutes ou un oublie concernant une commande et ses options/arguments, voici le `tips` ultime :
 
@@ -75,3 +71,5 @@ Certaines commandes, quand tu les utilisent sans option(s) ni argument(s). Des i
 ## 5. Pour aller plus loin
 
 Les commandes Shell se comptent par centaines. Mais l'important est d'abord comprendre l'environnement Linux pour qu'en un coup d'oeil sur ton terminal, tu saches où tu en es.
+
+PS. Tu n'as pas d'examples concret dans ce cours, s'est fait exprès :). L'idée est, qu'une fois avoir parcouru le cours tu découvres par toi-même via le projet les commandes en lien avec cette lesson. Courage :).

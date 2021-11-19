@@ -1,4 +1,4 @@
-# Shell, les fondamentaux - Partie 2
+code# Shell, les fondamentaux - Partie 2
 Dans ce cours, tu vas découvrir des commandes Shell un peu plus complexe, mais crois-moi ils en valent la peine. 
 
 ## 1. Introduction
