@@ -1,6 +1,6 @@
 # Commandes Shell basiques.
 
-Dans ce project tu t'amuser avec les commandes shell les plus courantes. Celles-ci vont te permettre de maîtriser un plus ton terminal et par la même occasion améliorer ta productivité.
+Dans ce project tu vas t'amuser avec les commandes shell les plus courantes. Celles-ci vont te permettre de maîtriser un plus ton terminal et par la même occasion améliorer ta productivité.
 
 
 ## 1. Introduction
