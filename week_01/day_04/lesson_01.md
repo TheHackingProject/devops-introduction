@@ -10,6 +10,8 @@ Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le con
 ## 3. La ressource
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
+### 3.3. Automatiser la Virtualization avec Vagrant
+
 ### 3.1. Automatiser une tâche
 
 ### 3.2. Deuxième sous partie

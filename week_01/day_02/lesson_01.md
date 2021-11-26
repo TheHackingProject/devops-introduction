@@ -39,7 +39,6 @@ Voici quelques examples concrets :
 -rw-r--r-- 1 root root 104003 août  19 12:30 /var/log/bootstrap.log
 ```
 
-
 ```sh
 # Display files that have any of those characters "xdc"
 ➜ ls -al /var/log/*[xdc]*
