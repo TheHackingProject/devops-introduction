@@ -15,35 +15,59 @@ Et c'est là qu'entre en scène les débrouillards de l'époque qui ont essayé 
 en inventant plusieurs technologies de partage, parmi eux :
 - La virtualisation par IBM (nous allons y revenir)
 - Unix en 1970
-- le `chroot (chroot = change root) environment` en 1979, qui dans le `filesystem` permet de changer le chemin du `root directory` d'un process et des process enfant.
+- le `chroot (chroot = change root) environment` en 1979, qui dans le `filesystem` permet de changer le chemin du `root directory` d'un `process` et ses `child process`.
   En d'autres mots, avec `chroot` un process (et les process enfants) ont un accès limité au filesystem du `chroot environment`.
 
   C'étais le début des environnements partagé par plusieurs utilisateurs.
 
 - dans les années 1990, le fameux `Linux jail command` développé par Bill Cheswick et inspiré par le `chroot`.
-  
-  Il a développé ce système, pour espionner et apprendre les techniques des [crackers](https://www.techtarget.com/searchsecurity/definition/cracker#:~:text=A%20computer%20cracker%20is%20an,because%20the%20challenge%20is%20there.).
+
+  Bill Cheswick, a développé ce système, pour espionner et apprendre les techniques des [crackers](https://www.techtarget.com/searchsecurity/definition/cracker#:~:text=A%20computer%20cracker%20is%20an,because%20the%20challenge%20is%20there.).
   Un [célébré article](https://www.cheswick.com/ches/papers/berferd.pdf) parmi la communauté Linux écrit par Bill Cheswick lui-même comment il a procédé.
 
+PS. Le concept `process` et `child process`, n'est pas évident à appréhender, de ce fait voici une [documentation](https://www.geeksforgeeks.org/difference-between-process-parent-process-and-child-process/) qui te serviras d'anti-sèche :).
 
 L'idée d'avoir un environnement partagé à continué à son chemin au fil de technologie inventé par les devs et enterprises.
 C'est en 2006 que les devs de Google ont annoncé travailler sur une technologie appelée `process containers`. 
-Qui limite les resources (CPU, RAM, etc.) utilisés par un groupe de process. 
-C'est fut, une annonce incroyable pour cette époque, car avant le `process containers` on ne pouvait limiter l'accès que d'un seul process.
+Cette technologie, limite les resources (CPU, RAM, etc.) utilisés par un `groupe de process`. 
+C'est fut, une annonce incroyable pour cette époque, car avant le `process containers` on ne pouvait limiter l'accès que d'un seul `process` et ses `child process`.
 
 Par la suite Google renomma cette technologie en `Cgroups (control groups)` pour éviter la confusion avec le terme `container`.
-Et enfin cette technologie fut intégrée au Linux Kernel, ce qui permis en 2007 la naissance du LXC (Linux Container), l'ancêtre des `containers` tel que tu vas les découvrir la semaine prochaine :).
+Et enfin cette technologie fut intégrée au `Linux Kernel`, ce qui permis en 2007, la naissance du LXC (Linux Container), l'ancêtre des `containers` tel que tu vas les découvrir la semaine prochaine :).
 
 La suite de l'histoire la semaine prochaine avec la découverte de Docker :).
 
 
 ## 3. La ressource
-Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
+Maintenant que tu sais d'où vient toutes ces technologies, tu vas découvrir, la virtualisation. Depuis son invention par IBM dans les 1970 elle a beaucoup évolué. 
+Cependant, son principe reste le même partager les ressources du hardware entre plusieurs utilisateurs, tout en faisant en sorte que chaque utilisateur ait un environment isolé.
 
-### 3.1 LA virtualisation - Un peu de théorie
+Tous d'abord analysons comment la virtualisation marche concrètement,
+disons que tu possèdes un PC peu importe l'OS (Windows, Linux, MacOS).
+Et sur ce PC on installe un `hyperviseur de type 2`, c'est un logiciel basé sur le `hperviseurs`.
 
+Je vois que ton commencé à cogiter fortement. :). Mais ne te t'inquiète, on va expliquer chaque mot.
 
-### 3.2. Ta première VM
+L'hyperviseur est un logiciel qui permet de créer et d'exécuter des machines virtuelles.
+
+PS. Une machine virtuelle est un environment virtuel qui fonctionne comme un OS virtuel, avec ses propres ressources (RAM, CPU, network, ...).
+
+Il est deux types d'hyperviseur :
+- Hyperviseur de type 2, se lance sur un PC "normal", en tant qu'application, donc sur un PC où est déjà installé un OS.
+
+  Oracle VirtualBox, VMware workstation sont par example des hyperviseurs de type 2.
+
+- Hyperviseur de type 1, qui se lance directement sur le PC et remplace l'OS, donc sur un PC/serveur "nu". Ce type d'hyperviseur est très prisé dans les datacenters
+
+  Microsoft Hyper-V, VMware vSphere sont par exemple des hyperviseurs de type 1
+
+C'est deux types d'hyperviseurs peuvent être représenté comme ceci : 
+
+*TODO: schema hypervisor* ==> https://geek-university.com/oracle-virtualbox/what-is-hypervisor/
+
+Maintenant que tu en sais plus, nous allons découvrir la virtualisation de type 2 avec VirtualBox.
+
+### 3.1. Ta première VM
 
 
 ## 4. Points importants à retenir
