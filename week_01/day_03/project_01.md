@@ -17,17 +17,10 @@ etc..
 Un récapitulatif de ce que nous attendons du projet.
 
 
-Projet étapes: 
-
-- Lancer une VM : Ubuntu 16.04 avec Vagrant
-- Démarrer un application dans la VM (ouverture des ports)
-- Lancer une deuxième VM avec un pré-script (installer les softwares nécessaire + lancer une app Rails + une app node.) + ouverture de ports.
-- Lancer un troisième VM:
-    - MAJ + installer les softwares
-    - Télécharger un repo.
-    - Créer une branche 
-    - Modifier un champs dans chaque sous-dossier du repo
-    - Commit le repo
-    - Lancer une PR du repo sur master
-
-
+- Lancer une VM : Ubuntu 16.04
+- Créer un script pr 
+  - installer les softwares nécessaires à une application rails
+    - pull un projet rails et le lancer.
+    - l'éteindre et le supprimer
+    - créer un rapport de situation => logs chaque étape et son status, 
+      si erreurs tous supprimer ou relancer.

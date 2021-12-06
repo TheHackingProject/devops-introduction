@@ -17,6 +17,4 @@ etc..
 Un récapitulatif de ce que nous attendons du projet.
 
 
-Etape project:
-
-- ...
+Challenge shell script
