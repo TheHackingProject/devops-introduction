@@ -1,26 +1,60 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Interaction avec une VM
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+Dans ce projet, tu vas créer une VM à l'aide de Virtualbox, et lancer une application ROR dans cette VM.
+
+Pour ce qui est de l'application ROR, toi et ton groupe en avez déjà réalisé plusieurs, vous avez l'embarras du choix :).
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
+### 2.1. Scénario.
+Avec ta prise d'initiative d'hier sur la mise en place d'un script de création des nouveaux utilisateurs. 
+Le CTO à de nouveau regarder ton CV afin d'estimer ton vrai potentiel. 
+En parcourant ton CV ,cette fois-ci attentivement <emoji>, il remarque tu as des connaissances en virtualisation.
 
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
+Ça tombe bien s'exclame-t-il ! J'avais justement besoin de faire quelques testes sur une application avant sa mise en production.
+Tout joyeux, il se met à rédiger des instructions concernant le test qu'il veut que tu réalises. <emoji>
 
-etc..
+
+### 2.2. La feuille de route
+Voici les instructions que le CTO a écrites, en vue de tester une application ROR avant sa mise en production.
+
+#### 2.2.1. Script - Shell Niveau 1.
+1. Depuis ta machine (host), crée une VM (guest) de type Ubuntu 18.04.
+
+
+2. Sur ton host ou directement sur le guest (à l'aide de nano, vi ou vim) écrit un script shell composé de plusieurs étapes :
+   1. Installer tous les éléments nécessaires au lancement d'une application ROR.
+   2. Pull l'application depuis ton repo Github 
+   3. Lancer l'application ROR, informe l'utilisateur de son status.
+   4. Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur ce chemin relatif `~/ror_app/` dans le guest. 
+      
+      PS. Le fichier et le dossier n'existent pas encore <emoji>.
+   
+  
+3. Lance ton script dans le guest.
+
+
+4. Depuis le host, via ton navigateur préféré, verifies que ton application marche bien.
+   <emoji> Attention le port de ton application dans le guest doit être accessible depuis le host.
+
+
+#### 2.2.2. Script Shell - Niveau 2
+Une fois que tu as finis le script shell de niveau 1 :
+
+1. Fais en sorte qu'à chaque étape un message indique à l'utilisateur de ton l'état d'avancement du script.
+
+2. Choisis une application ROR qui possède `des testes unitaires ou fonctionnelles`. 
+
+   Ensuite adapte le script pour que celui-ci lance les testes avant démarrer l'application.
+
+   Si les testes échouent, envois les erreurs dans ce fichier `app.err`, qui sera placé sur le guest, dans ce chemin relatif `~/ror_app/`
+
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Un joli repo qui contient le script ainsi qu'un `README.md` qui explique comme celui-ci fonctionne et dans quelle situation il fonctionne. 
+
+Petit conseil : 
+- Pense à suivre les conventions Shell que tu as apprises hier.**
+- N'hésite pas à créer plusieurs petits scripts shell si tu en resents le besoin.
 
 
-- Lancer une VM : Ubuntu 16.04
-- Créer un script pr 
-  - installer les softwares nécessaires à une application rails
-    - pull un projet rails et le lancer.
-    - l'éteindre et le supprimer
-    - créer un rapport de situation => logs chaque étape et son status, 
-      si erreurs tous supprimer ou relancer.

@@ -1,31 +1,22 @@
 # Commandes Shell un peu plus complexe.
-Hier vous vous êtes amusez avec les commandes basiques  Aujourd'hui on va jouer avec ces mêmes commandes ainsi ceux que vous venez de découvrir dans la cours d'aujourd'hui.
-
+Hier tu t'es amusé avec les commandes basiques. Aujourd'hui on va jouer avec ces mêmes commandes ainsi ceux que vous venez de découvrir dans le cours d'aujourd'hui.
 
 ## 1. Introduction
-Aujourd'hui, une série d'exercices un plus compliquées qu'hier, mais tout a fait faisable par des débrouillards comme vous.
+Aujourd'hui, une série d'exercices un peu plus compliquée qu'hier, mais tout à fait faisable par des débrouillards comme vous.
 
 ## 2. Le projet
-
-### 2.1
-
+### 2.1. Un dossier 
 1. Depuis le `$HOME` créer un dossier `opsDev/day02/project01/`
 
-### 2.2 WildCards
-
-*ToDo*
-
-
-### 2.3. Input/Output
-
-1. A l'aide de la commande `echo` écrire dans le terminal `I remain the Captain on my destiny` 
+### 2.2. Input/Output
+1. À l'aide de la commande `echo` écrire dans le terminal `I remain the Captain on my destiny` 
    et rediriger la sortie de la commande dans un fichier `~/opsDev/day02/project01/destiny.txt`. En une commande bien sûr.
 
 2. Toujours avec la commande `echo` depuis le terminal, ajouté dans le même fichier, 
    la phrase `Ony if I stay focus on my goals.` sans écraser la premiere phrase. 
-   Ensuite afficher le contenu de votre fichier dans le terminal. Le tout en une commande bien sur.
+   Ensuite afficher le contenu de votre fichier dans le terminal. Le tout en une commande bien sûr.
 
-3. Exécuter la commande `find /etc -name hosts`,y a t-il des messages d'erreurs qui sont affichés ? 
+3. Exécuter la commande `find /etc -name hosts`,y a-t-il des messages d'erreurs qui sont affichés ? 
    Si oui, rediriger la sortie d'erreur vers le fichier `~/opsDev/day02/project01/err.txt`.
 
 
@@ -34,8 +25,8 @@ Aujourd'hui, une série d'exercices un plus compliquées qu'hier, mais tout a fa
 
 5. Rediriger la sortie standard et la sortie d'erreur de la commande `find /etc -name hosts` vers le même fichier (`~/opsDev/day02/project01/output.out`).
 
-5. A l'aide de la commande `tr 'a-z' 'A-Z'` convertir le contenu de `~/opsDev/day02/project01/output.out` 
-   et puis le placer dans un fichier « `~/opsDev/day02/project01/OUTPUT.out`, vérifier avec `cat`, le contenue :). 
+5. À l'aide de la commande `tr 'a-z' 'A-Z'` convertir le contenu de `~/opsDev/day02/project01/output.out` 
+   et puis le placer dans un fichier « `~/opsDev/day02/project01/OUTPUT.out`, vérifier avec `cat`, le contenu :). 
 
 6. Le fichier `/etc/passwd`, contient les informations sur tous les comptes utilisateurs du système.
    Afficher le contenu de `/etc/passwd` avec more.
@@ -48,8 +39,7 @@ Aujourd'hui, une série d'exercices un plus compliquées qu'hier, mais tout a fa
 8. Afficher dans le terminal, les lignes comprises entre 3 et 7 du fichier `/etc/passwd`.
 
 
-### 2.4. Filtrer et traiter un texte - Niveau 2
-
+### 2.3. Filtrer et traiter un texte - Niveau 2
 1. Afficher dans le terminal, les lignes qui commencent par `root` dans le fichier `/etc/passwd`
 
 2. Afficher dans le terminal, les lignes du fichier `/etc/passwd` qui se termine par `sync`.

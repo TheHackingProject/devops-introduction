@@ -20,20 +20,20 @@ Ton script shell - Niveau 1:
 - il devra être exécuté par le superuser (root) via la command `sudo`. 
   Si le script n'est pas exécuter par le superuser, il renverra un gentil message d'erreur de type `Only superuser can execute this script`
 
-- Dans le script, demande à l'utilisateur d'entrer le username et le mot de passe initial du compte.
+- Dans le script, demande à l'utilisateur d'entrer le `username` et le mot de passe initial du compte.
 
 - Dans le script, crée un nouveau compte avec les informations saisi par l'exécuteur du programme.
 
 - Informe l'exécuteur si le compte ne sait pas créer, peu importe la raison et affiche un message explicatif.
 
-- Affiche le username et le mot de passe du compte créer
+- Affiche le `username` et le mot de passe du compte créer
 
 
 Ton script shell - Niveau 2:
 - Pendant l'exécution du script shell niveau 1, force le futur possesseur du compte à changer de mot de passe à la première connexion
 
 - À la fin du script shell niveau 1, ajoute des informations sur la création du compte :
-  - Vérifie dans le fichier `/etc/passwd` si le compte s'est bien créer avec un regex qui compare le username et les informations du fichier.
+  - Vérifie dans le fichier `/etc/passwd` si le compte s'est bien créer avec un regex qui compare le `username` et les informations du fichier.
   - Selon le résultat du test affiche un message d'erreur ou la ligne du fichier `/etc/passwd` qui matche.
 
 - Si des erreurs apparaissent tout au long de l'exécution du script, envoient les, dans ce fichier `add-local-user.err`.
