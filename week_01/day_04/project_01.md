@@ -1,29 +1,64 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Automatiser la création des VM
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+Dans ce project tu vas automatiser la création de tes VM à l'aide de Vagrant
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
+### 2.1. Scénario
+Félicitation, grâce à tes prises d'initiatives, ton lead dev en accord avec le CTO a décidé de ne pas renouveler ta période d'essai et te confirmer la prise à effet immédiat de ton CDI.
 
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
+Te voilà fou de joie, tu vas enfin commencé à te préoccuper d'apprendre au lieu de passer ton temps à faire des tests techniques et des entretiens.
 
-etc..
+Quelques jours plus tard, on a de nouveau de besoin de toi, car l'équipe SysOps n'est toujours pas rentré de vacances.
+
+Le script de test que tu as écrit il y a quelque jours et génial, mais il ne marche que sur une VM de type Ubuntu 18.04.
+Alors que l'application ROR doit fonctionner sur Ubuntu 18.04, RHEL 7 Debian 10, Centos 8 et alpine64.
+
+Au vu de ces nouvelles contraintes, une réunion de conception à laquelle tu es convié, est organisé.
+Soudain en plein milieu de la réunion, tu as une illumination et dis tout haut, VAGRANT, les autres ne comprenant pas, te regardes à la recherche d'une quelconque réponse sur ton visage plein de certitude.
+Remarquant tous les regards poser sur toi, tu expliques les raisons qui te poussent à croire que la technologie Vagrant peu être la solution.
+
+Convaincu par ta plaidoirie, les membres de la reunion valident la techno et décident de te confier la mise en place de celui-ci.
+
+Te voilà, de nouveaux dans une salle affaire <emoji>.
+
+### 2.2. La feuille de route.
+Suite à la décision générale de te confier la mise en place de la solution avec Vagrant. 
+Le lead dev, a vu peu à peu ta tête se décomposer, et à la vue tant de désespoir, decides de t'aider avec ces instructions :
+
+1. À l'aide du `Vagrantfile`, lances d'abord les différents types de VM (Ubuntu 18.04, Debian 10, RHEL 7, Centos 8).
+   
+   Fais attention aux ressources que tu alloues à chaque VM, il va dépendre des resources du host. Penses à bien les répartir.
+
+
+2. Pour chaque type de guest, écris le shell script qui va permettre de lancer l'application ROR. 
+  
+  Comme hier, utilises l'application ROR de ton choix, parmi ceux que toi et ton équipe avaient déjà réalisées dans le parcours Fullstack.
+
+  Chaque shell script doit suivre les opérations ci-dessous.
+
+
+#### 2.2.1. Script - Shell Niveau 1.
+Opération à suivre pour chaque type de VM.
+
+1. Sur ton host ou directement sur le guest (à l'aide de nano, vi ou vim) écrit un script shell composé de plusieurs étapes :
+   1. Installation de tous les éléments nécessaires au lancement d'une application ROR.
+   2. Pull l'application depuis Github/Gitlab.
+   3. Lancer l'application ROR et informer l'utilisateur de son status (`stop, running`).
+   4. Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur le chemin relatif `~/ror_app/` dans le guest.
+
+      PS. Le fichier et le dossier n'existent pas encore <emoji>.
+   
+
+3. Depuis le host, via ton navigateur préféré, verifies que ton application marche bien.
+   <emoji> Attention le port de ton application dans le guest doit être accessible depuis le host.
+
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Un repo qui contient le Vagrantfile et les scripts shell de chaque type de VM ainsi qu'un `README.md` qui explique comment on utilise ce repo.
 
+Petit conseil :
+- Pense à suivre les conventions Shell que tu as apprises hier.**
+- N'hésite pas à créer plusieurs petits scripts shell par type de VM si tu en resents le besoin.
+- N'oublie pas que tu peux depuis le VagrantFile, gérer les ports de chaque VM et y référencer des scripts shell qui seront lancés à la création de celles-ci.
 
-Etapes projet: 
-
-- Exercices Cron
-
-- Lancer une VM avec Vagrant
-- Installer et lancer Nginx
-- Lancer un cron qui verifier que le service Nginx marche, si ok écrire dans un fichier `UTC Time - Nginx work well`, si non `UTC Time - Nginx work well - Message`.
-
-
-- Challenge script shell

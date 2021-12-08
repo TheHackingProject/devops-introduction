@@ -3,13 +3,13 @@
 ## 1. Introduction
 Dans ce projet, tu vas créer une VM à l'aide de Virtualbox, et lancer une application ROR dans cette VM.
 
-Pour ce qui est de l'application ROR, toi et ton groupe en avez déjà réalisé plusieurs, vous avez l'embarras du choix :).
+Pour ce qui est de l'application ROR, toi et ton groupe en avez déjà réalisé plusieurs, vous avez l'embarras du choix <emoji>.
 
 ## 2. Le projet
 ### 2.1. Scénario.
 Avec ta prise d'initiative d'hier sur la mise en place d'un script de création des nouveaux utilisateurs. 
 Le CTO à de nouveau regarder ton CV afin d'estimer ton vrai potentiel. 
-En parcourant ton CV ,cette fois-ci attentivement <emoji>, il remarque tu as des connaissances en virtualisation.
+En parcourant ton CV, cette fois-ci attentivement <emoji>, il remarque tu as des connaissances en virtualisation.
 
 Ça tombe bien s'exclame-t-il ! J'avais justement besoin de faire quelques testes sur une application avant sa mise en production.
 Tout joyeux, il se met à rédiger des instructions concernant le test qu'il veut que tu réalises. <emoji>
@@ -23,10 +23,10 @@ Voici les instructions que le CTO a écrites, en vue de tester une application R
 
 
 2. Sur ton host ou directement sur le guest (à l'aide de nano, vi ou vim) écrit un script shell composé de plusieurs étapes :
-   1. Installer tous les éléments nécessaires au lancement d'une application ROR.
-   2. Pull l'application depuis ton repo Github 
-   3. Lancer l'application ROR, informe l'utilisateur de son status.
-   4. Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur ce chemin relatif `~/ror_app/` dans le guest. 
+   1. Installation de tous les éléments nécessaires au lancement d'une application ROR.
+   2. Pull l'application depuis ton repo Github/Gitlab.
+   3. Lancer l'application ROR et informer l'utilisateur de son status (`stop, running`).
+   4. Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur le chemin relatif `~/ror_app/` dans le guest. 
       
       PS. Le fichier et le dossier n'existent pas encore <emoji>.
    
@@ -51,10 +51,8 @@ Une fois que tu as finis le script shell de niveau 1 :
 
 
 ## 3. Rendu attendu
-Un joli repo qui contient le script ainsi qu'un `README.md` qui explique comme celui-ci fonctionne et dans quelle situation il fonctionne. 
+Un joli repo qui contient le script ainsi qu'un `README.md` qui explique comment celui-ci fonctionne et dans quelle situation il fonctionne. 
 
 Petit conseil : 
 - Pense à suivre les conventions Shell que tu as apprises hier.**
 - N'hésite pas à créer plusieurs petits scripts shell si tu en resents le besoin.
-
-
