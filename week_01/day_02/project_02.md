@@ -4,7 +4,7 @@ Le but ce programme est de créer un script shell qui va ajouter des utilisateur
 
 ## 2. Le projet
 ### 2.1. Scénario
-Imagine que tu es dev pour une super Startup, qui gère à une infrastructure on-premise 
+Tu es dev pour une super Startup, qui gère à une infrastructure on-premise 
 (:informations_source: `infrastructure on-premise` veut dire que vos applications et services tournent sur les serveurs physiques posséder par l'entreprise), 
 chaque nouvelle personne qui intègre cette Startup doit avoir un compte Linux. 
 Ces comptes sont habituellement créés par l'équipe SysAdmin, mais il s'avère que par un malheureux imprévu, il est pris leurs vacances en mêmes temps :). 
@@ -30,11 +30,13 @@ Ton script shell - Niveau 1:
 
 
 Ton script shell - Niveau 2:
-- Pendant l'exécution du script shell niveau 1, force le futur possesseur du compte à changer de mot de passe à la première connexion
+- Force le futur possesseur du compte à changer de mot de passe à la première connexion
+
 
 - À la fin du script shell niveau 1, ajoute des informations sur la création du compte :
   - Vérifie dans le fichier `/etc/passwd` si le compte s'est bien créer avec un regex qui compare le `username` et les informations du fichier.
   - Selon le résultat du test affiche un message d'erreur ou la ligne du fichier `/etc/passwd` qui matche.
+
 
 - Si des erreurs apparaissent tout au long de l'exécution du script, envoient les, dans ce fichier `add-local-user.err`.
 

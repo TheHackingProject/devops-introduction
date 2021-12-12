@@ -58,7 +58,11 @@ Opération à suivre pour chaque type de VM.
 Un repo qui contient le Vagrantfile et les scripts shell de chaque type de VM ainsi qu'un `README.md` qui explique comment on utilise ce repo.
 
 Petit conseil :
-- Pense à suivre les conventions Shell que tu as apprises hier.**
+- Pense à suivre les conventions Shell que tu as apprises hier.
+
+
 - N'hésite pas à créer plusieurs petits scripts shell par type de VM si tu en resents le besoin.
+
+
 - N'oublie pas que tu peux depuis le VagrantFile, gérer les ports de chaque VM et y référencer des scripts shell qui seront lancés à la création de celles-ci.
 
