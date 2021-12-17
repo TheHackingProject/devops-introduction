@@ -1,12 +1,12 @@
 # Commandes Shell basiques.
 
-Dans ce project tu vas t'amuser avec les commandes shell les plus courantes. Celles-ci vont te permettre de maîtriser un plus ton terminal et par la même occasion améliorer ta productivité.
+Dans ce project tu vas t'amuser avec les commandes shell les plus courantes. Celles-ci vont te permettre de maîtriser un peu plus ton terminal et par la même occasion améliorer ta productivité.
 
 
 ## 1. Introduction
-Une série d'exercices pour te familiariser avec les principaux commandes qu'utilisent les Devs,SysOps et les DevOps au jour le jour !!! La grande classe !!!
+Une série d'exercices pour te familiariser avec les principales commandes qu'utilisent les Devs,SysOps et les DevOps au jour le jour. La grande classe :-)
 
-Tu vas rencontrer pas mal d'erreur, qui des fois, ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. Si tu te un peu perdu, ton équipe et le cas échéant Google sont là pour toi.
+Tu vas rencontrer pas mal d'erreur, qui parfois, ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. Si tu te sens un peu perdu, ton équipe et le cas échéant Google seront là pour toi.
 
 
 Nous allons travailler avec ce magnifique texte:
@@ -26,33 +26,33 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 1. Créer un dossier `day_01` et un `exercices_01` sous-dossier dans le répertoire `~/`,  à l'aide de la commande `mkdir`. 
    La commande `pwd` depuis le sous-dossier `exercices_01`, devra afficher un chemin semblable à c`~/day_01/exercices_01/`. 
    Je t'invite à chercher le moyen le plus efficace de le faire. 
-   Petite indice la commande ` man mkdir` peut grandement t'aider à choisir la/les bonnes options :).
+   Petit indice, la commande ` man mkdir` peut grandement t'aider à choisir la/les bonnes options :).
 
 
 ### 2.1.2 Créer et maintenir un fichier/dossier
 
 
-1. Copier le texte (qui se trouve dans la partie Introduction) dans un fichier `maintain_file.txt` et placé ce fichier dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
+1. Copier le texte (qui se trouve dans la partie Introduction) dans un fichier `maintain_file.txt` et placer ce fichier dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
 
 2. Copier le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/` et ensuite dans le dossier `~/opsDev/day_01` et enfin supprimer cette copie, en une seule commande.
 
-3. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver le. Ensuite supprimer le. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans sous-dossier `~/opsDev/day_01/exercices_01/` **et tous cela en une seule commande**.
+3. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver qu'il est vide. Ensuite supprimer ce fichier. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans un sous-dossier `~/opsDev/day_01/exercices_01/` **et tout cela en une seule commande**.
 
-4. Copier le dossier `~/opsDev/day_01/exercices_01` dans dans un nouveau dossier `~/opsDev/day_01_copy/` 
-   et supprimer le dossier `~/opsDev/day_01_copy`, **en une seul commande bien sûr**.
+4. Copier le dossier `~/opsDev/day_01/exercices_01` dans un nouveau dossier `~/opsDev/day_01_copy/` 
+   et supprimer le dossier `~/opsDev/day_01_copy`, **en une seule commande bien sûr**.
 
 
 ### 2.2. Afficher un texte
 
 Ajouter le résultat de cette commande `man cp` dans le fichier `~/opsDev/day_01/exercices_01/display_file.txt`.
 
-1. Afficher le contenue du fichier dans le terminal.
+1. Afficher le contenu du fichier dans le terminal.
 
-2. Essayez les commandes `more` et `less` sur ce fichier quel est la différence entre celles-ci ?
+2. Essayer les commandes `more` et `less` sur ce fichier quelle est la différence entre celles-ci ?
 
-3. Afficher les 5 premiers lignes du fichier.
+3. Afficher les 5 premières lignes du fichier.
 
-4. Afficher les 5 derniers.
+4. Afficher les 5 dernières.
 
 
 ### 2.3. Filtrer et traiter un texte - Niveau 1
@@ -74,15 +74,15 @@ Lacey Palmer
 Ajouter cette liste de noms et prénoms dans ce fichier `~/opsDev/day_01/exercices_01/filter_and_process_file.txt`
 
 1. Afficher dans le terminal :
-   - les 3 premiers lettres de chaque ligne.
-   - les lettres compris entre 4 et 8 de chaque ligne.
+   - les 3 premières lettres de chaque ligne.
+   - les lettres comprises entre 4 et 8 caractères de chaque ligne.
    - uniquement les prénoms. 
    - uniquement les noms.
 
 2. Filtrer et afficher dans le terminal les lignes qui comprennent les lettres 'll' 
-   et ensuite compter le nombre de fois où elles apparaissent 
+   et ensuite compter le nombre de fois où elles apparaissent. 
 
-3. Afficher le terminal ce fichier classé par ordre alphabétique et ensuite dans le sens inverse.
+3. Afficher dans le terminal ce fichier classé par ordre alphabétique et ensuite dans le sens inverse.
 
 4. Séparer chaque ligne dans un fichier dédié (ex: `each_lines01`, `each_line02`, `each_line03`, ...) et ensuite assembler ces fichiers en un seul fichier `assembled-files.txt`.
 
@@ -92,7 +92,7 @@ Ajouter cette liste de noms et prénoms dans ce fichier `~/opsDev/day_01/exercic
 
 1. Créer avec un dossier (`Marvel/`) appartenant au groupe “marvel”.
 
-2. Ajouter 3 utilisateurs (Hulk, Thor, Thanos) à ce groupe
+2. Ajouter 3 utilisateurs (Hulk, Thor, Thanos) à ce groupe.
 
 3. Créer un sous-dossier (`Good/`) partagé par "Thor” et “Hulk”.
 
