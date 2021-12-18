@@ -18,6 +18,11 @@ Tout joyeux, il se met à rédiger des instructions concernant le test qu'il veu
 ### 2.2. La feuille de route
 Voici les instructions que le CTO a écrites, en vue de tester une application ROR avant sa mise en production.
 
+PS. Tu vas avoir besoin d'ouvrir un port spécifique sur le `guest` et le faire correspondre un port spécifique du host, de manière à pouvoir 
+vérifier que ton application s'est bien lancé à l'intérieur du `guest`.
+C'est une chose que l'on n'a pas abordé dans le cours,
+mais je suis sûr que tu es capable de trouver par tes propres moyens comment faire :).
+
 #### 2.2.1. Script - Shell Niveau 1.
 1. Depuis ta machine (host), crée une VM (guest) de type Ubuntu 18.04.
 
