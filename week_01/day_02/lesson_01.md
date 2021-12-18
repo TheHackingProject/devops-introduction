@@ -1,8 +1,8 @@
 # Shell, les fondamentaux - Partie 2
-Dans ce cours, tu vas découvrir des commandes Shell un peu plus complexe, mais qui en valent la peine. 
+Dans ce cours, tu vas découvrir des commandes Shell un peu plus complexes, mais qui en valent la peine. 
 
 ## 1. Introduction
-La fonction première du Shell est de facilité au maximum la vie des devs. Par conséquent, le Shell n'est pas seulement fait que de commandes, il comporte aussi des symboles extrêmement utiles.
+La fonction première du Shell est de faciliter au maximum la vie des devs. Par conséquent, le Shell n'est pas seulement fait que de commandes, il comporte aussi des symboles extrêmement utiles.
 
 ## 2. La ressource
 
@@ -12,7 +12,7 @@ Cette [doc](https://tldp.org/LDP/GNU-Linux-Tools-Summary/html/x11655.htm) te ré
 
 
 #### 2.1.1. Examples
-Voici quelques examples concrets :
+Voici quelques exemples concrets :
 
 ```sh
 # Create multiple files using curly bracket.
@@ -48,13 +48,13 @@ Voici quelques examples concrets :
 ```
 
 
-## 3.2. Entré et sortie des commandes
+## 3.2. Entrée et sortie des commandes
 ### 3.2.1. Rediriger la sortie d'une commande vers un fichier
 
 Avec le Shell, il est possible de rediriger la sortie d'une commande vers un fichier vide ou non. 
-Cela te servira dans quelques semaines lorsque tu voudras par example, dans ta CI Github Actions, rediriger des commandes ou automatiser certaines tâches au lancement de ta VM ou ton `container docker` :).
+Cela te servira dans quelques semaines lorsque tu voudras par exemple, dans ta CI Github Actions, rediriger des commandes ou automatiser certaines tâches au lancement de ta VM ou ton `container docker` :).
 
-Mais a assez de bavardages pour l'instant et place à quelques examples :
+Mais trêve de bavardages pour l'instant et place à quelques exemples :
 
 #### #### Avec le symbole ">"
 ```sh
@@ -93,20 +93,20 @@ Second line
 
 Deux remarques : 
 - L'utilisation de `>>` crée directement le fichier si celui-ci n'existe pas.
-- L'utilisation de `>>`  ajoute le contenu, a ligne, **et sans écraser les lignes du fichier existant.
+- L'utilisation de `>>`  ajoute le contenu, à la ligne, **et sans écraser les lignes du fichier existant.
 
 
 ### 3.2.2. stdin, stdout, stderr
-Cette [doc](https://www.guru99.com/linux-redirection.html) explique avec moult examples 
+Cette [doc](https://www.guru99.com/linux-redirection.html) explique avec moult exemples 
 comment on utilise ces trois types de redirection.
 
 ### 3.2.3. Pipe (|) 
 
 Dans le Shell, ce symbole est utilisé pour connecter la sortie d'une commande directement à l'entrée d'une autre commande. 
-Ce symbole est extrêmement utile, crois-moi tu t'en passeras plus désormais :).
+Ce symbole est extrêmement utile, crois-moi tu ne t'en passeras plus désormais :).
 
-Sa syntaxe plutôt simple : `command1 [args] | command2  [args]`. 
-Example :
+Sa syntaxe est plutôt simple : `command1 [args] | command2  [args]`. 
+Exemple :
 
 ```sh
 ➜ ls -al /etc | tail -1
@@ -114,7 +114,7 @@ Example :
 ➜ echo "Assassin Creed games are awesome" | tee -a file.txt
 ```
 Essaye cette commande pour voir. 
-Si la commande `tail` ou `tee` ne te disent rien. 
+Si les commandes `tail` ou `tee` ne te disent rien. 
 Les commandes `man`, `info`, `help` et le cas échéant Google sont tes amis.
 
 ### 3.3. Les Regex dans le Shell
@@ -124,9 +124,9 @@ Voici une [doc](https://www.guru99.com/linux-regular-expressions.html) très bie
 Quant à ce [tutoriel](https://www.cyberciti.biz/faq/grep-regular-expressions/), il montre beaucoup d'exemples d'utilisation des regex avec la commande `grep`.
 
 ## 4. Points importants à retenir
-Au risque de vous surprendre tous est important dans ce cours. 
-De ce fait, au moindre doute dans les jours et semaines à venir n'hésiter pas revenir dessus.
+Au risque de vous surprendre tout est important dans ce cours. 
+De ce fait, au moindre doute dans les jours et semaines à venir, n'hésite pas revenir dessus.
 
 ## 5. Pour aller plus loin
-Ce cours est plutôt cours (#jeuxdemotsduturfu), mais dense en informations (commandes et symboles) qui te serviront maintes et maintes fois.
+Ce cours est plutôt court (#jeuxdemotsduturfu), mais dense en informations (commandes et symboles) qui te serviront maintes et maintes fois.
 Mais pas d'inquiétude, on aura l'occasion durant ce parcours de les utiliser.

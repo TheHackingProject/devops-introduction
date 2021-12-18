@@ -1,5 +1,5 @@
-# Commandes Shell un peu plus complexe.
-Hier tu t'es amusé avec les commandes basiques. Aujourd'hui on va jouer avec ces mêmes commandes ainsi ceux que vous venez de découvrir dans le cours d'aujourd'hui.
+# Commandes Shell un peu plus complexes.
+Hier tu t'es amusé avec les commandes basiques. Aujourd'hui on va jouer avec ces mêmes commandes ainsi celles que vous venez de découvrir dans le cours d'aujourd'hui.
 
 ## 1. Introduction
 Aujourd'hui, une série d'exercices un peu plus compliquée qu'hier, mais tout à fait faisable par des débrouillards comme vous.
@@ -12,7 +12,7 @@ Aujourd'hui, une série d'exercices un peu plus compliquée qu'hier, mais tout �
 1. À l'aide de la commande `echo` écrire dans le terminal `I remain the Captain on my destiny` 
    et rediriger la sortie de la commande dans un fichier `~/opsDev/day02/project01/destiny.txt`. En une commande bien sûr.
 
-2. Toujours avec la commande `echo` depuis le terminal, ajouté dans le même fichier, 
+2. Toujours avec la commande `echo` depuis le terminal, ajouter dans le même fichier, 
    la phrase `Ony if I stay focus on my goals.` sans écraser la premiere phrase. 
    Ensuite afficher le contenu de votre fichier dans le terminal. Le tout en une commande bien sûr.
 
@@ -33,24 +33,24 @@ Aujourd'hui, une série d'exercices un peu plus compliquée qu'hier, mais tout �
 
 7. Extraire depuis `/etc/passwd` les noms des utilisateurs et le placer dans le fichier `~/opsDev/day02/project01/name_extracted.txt`.
    Ensuite trier ce fichier par ordre alphabétique.
-   Puis numéroté chaque ligne du fichier.
+   Puis numéroter chaque ligne du fichier.
    Et enfin afficher le résultat dans le terminal avec la commande `more`.
 
-8. Afficher dans le terminal, les lignes comprises entre 3 et 7 du fichier `/etc/passwd`.
+8. Afficher dans le terminal, les éléments compris entre les lignes 3 et 7 du fichier `/etc/passwd`.
 
 
 ### 2.3. Filtrer et traiter un texte - Niveau 2
 1. Afficher dans le terminal, les lignes qui commencent par `root` dans le fichier `/etc/passwd`
 
-2. Afficher dans le terminal, les lignes du fichier `/etc/passwd` qui se termine par `sync`.
+2. Afficher dans le terminal, les lignes du fichier `/etc/passwd` qui se terminent par `sync`.
 
 4. Afficher dans le terminal, toutes les lignes du fichier `/etc/passwd` contenant `root,bin ou sync`.
 
 5. Afficher dans le terminal, le résultat de cette commande `egrep 'no(b|n)' /etc/passwd`.
 
-PS. Quelle est cette commande sortie des enfers :), elle ressemble étrangement a la commande `grep`. Je t'invite à chercher la différence :).
+PS. Quelle est cette commande sortie des enfers :), elle ressemble étrangement à la commande `grep`. Je t'invite à chercher la différence :).
 
-6. Afficher dans le terminal, les 6 premières lignes du fichier `/etc/passwd`, contenant 3 caractères numérique.
+6. Afficher dans le terminal, les 6 premières lignes du fichier `/etc/passwd`, contenant 3 caractères numériques.
 
 *Petite indice, pour la partie 2.2., la commande `grep`, sera ta meilleure amie.*
 

@@ -1,12 +1,12 @@
 # Le Shell Scripting
-Il est temps de s'amuser. Il est temps de commencer à automatiser des opérations plus ou moins complexes. 
+Il est temps de s'amuser. Commençons par automatiser des opérations plus ou moins complexes. 
 
 ## 1. Introduction
 
-La programmation shell, est un "minilangage" de programmation intégré à Linux. Ce langage n'est pas aussi complet que le `Ruby` ou le `JS`, mais il permet : 
+La programmation shell, est un "minilangage" de programmation intégré à Linux. Ce langage n'est pas aussi complet que le `Ruby` ou le `JS`, mais il permet de : 
 - gérer vos données (supprimer, filtrer, extraire, etc.), 
 - surveiller votre machine (applications, process)
-- lancer des tâches à des fréquences prédéfinit, 
+- lancer des tâches à des fréquences prédéfinies, 
 - installer, mettre à jour des logiciels sur des serveurs distant, 
 - etc.
 
@@ -39,8 +39,8 @@ ou on-premise qui n'auront pas forcément ton shell préféré préinstaller :).
 
 Point important : Si on ne spécifie pas le shell, celui de l'utilisateur est utilisé par défaut.
 
-### 2.1.2 Comment le Shell script est interprété
-Maintenant que l'on a ce magnifique bout de code comment on l'exécute ?
+### 2.1.2 Comment le Shell script est interprété ?
+Maintenant que l'on a ce magnifique bout de code, comment on l'exécute ?
 
 Je pourrais te le dire directement, mais il faut que tu comprennes d'abord comment le shell lis et lance un script.
 
@@ -48,12 +48,12 @@ Eh bien, c'est pas si compliqué :
 
 1. Le shell lis la première ligne `#!/bin/bash` pour savoir quel type de shell utilisé.
 2. Ensuite le Shell, que tu as spécifié au début, lit tout le fichier ligne par ligne. 
-   Expliquer d'une manière plus concise le shell fait ceci `bin/bash <FILENAME>` (si bien sûr, c'est le bash que tu as choisi).
+   Expliqué d'une manière plus concise, le shell fait ceci `bin/bash <FILENAME>` (si bien sûr, c'est le bash que tu as choisi).
 
 ### 2.1.2 Rendre exécutable un script shell
 Mais comment on exécute shell script bon sang de bonsoir ?
 
-Un peu de patience, tout vient à point nommer pour celui qui sait attendre :).
+Un peu de patience, tout vient à point nommé pour celui qui sait attendre :).
 
 Tout d'abord on doit rendre le script exécutable en donnant les droits d'exécution à l'utilisateur qui souhaite l'utiliser.
 
@@ -69,25 +69,25 @@ Tout d'abord on doit rendre le script exécutable en donnant les droits d'exécu
 ```
 
 Pas besoin, de mille et une explications, hier tu as appris à décrypter et utiliser les permissions linux. 
-Au cas où, cette [doc](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-groupes-permissions) peux te rafraîchir la mémoire.
+Au cas où, cette [doc](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-groupes-permissions) peut te rafraîchir la mémoire.
 
 
 Ensuite on lance notre script shell comme ceci `./first_script.sh`, tu remarques ici, que j'ai spécifié le `chemin relatif` du fichier. 
-Le chemin relatif ou absolue, est nécessaire lorsque tu veux exécuter du shell script. 
+Le chemin relatif ou absolu, est nécessaire lorsque tu veux exécuter du shell script. 
 Ce chemin indique à votre shell où se situe le fichier qui contient le code shell.
 
-Tu peux, maintenant, exécuter n'importe quelle commande que tu as appris jusqu'ici dans ce script et à toi la gloire :
+Tu peux, maintenant, exécuter n'importe quelle commande que tu as appris jusqu'ici dans ce script, et à toi la gloire :
 
 ![First script 1](../../assets/images/first_script1.png)
 
 
 ### 2.1.3 Les variables
-Les variables sont assez simple à créer et à lire :
+Les variables sont assez simples à créer et à lire :
 
 ![First script 2](../../assets/images/first_script2.png)
 
 Le shell script est très permissif comme tu t'en rendras compte bientôt.
-De ce fait, pour t'éviter des mal de crâne lunaires sur la syntax des variables, 
+De ce fait, pour t'éviter des maux de crâne lunaires sur la syntax des variables, 
 voici quelques informations qui vont te permettre d'aborder les variables sereinement :
 
 1. Le nom d'une variable peut être en minuscule ou majuscule, mais la convention préconise l'utilisation de la majuscule.
@@ -118,12 +118,12 @@ Pour le `case statements`, tu dois t'en douter, rien de nouveau. Néanmoins, pre
 
 ## 3. Points importants à retenir
 
-Le shell script est très permissif, de ce fait, le choix de la syntaxe et sa typologie sont très important.
+Le shell script est très permissif, de ce fait, le choix de la syntaxe et sa typologie sont très importants.
 
 Pour un script shell bien écrit voici quelques règles à suivre :
 
 - Dès la creation de ton fichier, rends le directement exécutable, pour éviter d'oublier.
-- Au debut de ton fichier, précise toujours le langage Shell.
+- Au début de ton fichier, précise toujours le langage Shell.
 - Écrit toujours tes variables en majuscule.
 
 ## 4. Pour aller plus loin
