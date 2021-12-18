@@ -15,7 +15,7 @@ De ce fait ton lead dev, te demander d'améliorer cette partie, en générant de
 ### 2.2. Instructions
 Comme d'habitude ton lead dev à écrit quelques instructions à suivre, histoire de te guider :
 
-#### 2.2.1. Refactorer et améliorer to script
+#### 2.2.1. Re-factorer et améliorer ton script
 1. Remplacer la commande `read` par un argument pour le `username`.
 2. Si l'exécuteur du programme ne fournit pas d'arguments, affiche un message explicatif.
 3. L'exécuteur peut avoir la possibilité d'ajouter un commentaire à la création du `username`.  

@@ -181,13 +181,13 @@ Ce fichier, une fois les commentaires effacés, ressemble à celui-là
 La première ligne spécifie la version de L'outil Vagrant, ici nous utilisons la version 2.
 
 Ensuite, la deuxième ligne désigne la `box` (l'image de l'OS) que l'on souhaite utiliser.
-La plupart des `box` sont hébergés sur le [Vagrant Cloud ](https://app.vagrantup.com/boxes/search).
-Nous allons utiliser l'OS d'Ubuntu 16. Chaque `box` qui se trouve sur Vagrant Cloud contient des explications sur la manière dont on l'utilise.
+La plupart des `box`, sont hébergés sur  [Vagrant Cloud ](https://app.vagrantup.com/boxes/search).
+Nous allons utiliser l'OS d'Ubuntu 16. Chaque `box` qui se trouve sur Vagrant Cloud contient des explications sur la manière dont on les utilise.
 
 Pour utiliser un `box` rien de plus simple. 
 ![Vagrantfile with ubuntu box](../../assets/images/vagrantfile-with-ubuntu-box.png)
 
-Enfin lances la commande `vagrant up` dans le dossier où se trouve le Vagrantfile.
+Enfin, lances la commande `vagrant up` dans le dossier où se trouve le Vagrantfile.
 ![vagrant-up-command-output](../../assets/images/vagrant-up-command-output.png)
 
 A la différence de Virtualbox où la création de la VM nécessite une image de l'OS, de créer un espace de stockage, mettre en place un réseau afin de pouvoir te connecter etc.
