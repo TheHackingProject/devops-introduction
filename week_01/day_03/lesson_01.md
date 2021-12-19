@@ -38,7 +38,7 @@ Cette technologie, limite les resources (CPU, RAM, etc.) utilisés par un `group
 C'est fut, une annonce incroyable pour cette époque, car avant le `process containers` on ne pouvait limiter l'accès que d'un seul `process`.
 
 Par la suite Google renomma cette technologie en `Cgroups (control groups)` pour éviter la confusion avec le terme `container`.
-Et enfin cette technologie fut intégrée au `Linux Kernel`, ce qui permis en 2007, la naissance du LXC (Linux Container), l'ancêtre des `containers` tel que tu vas les découvrir la semaine prochaine :).
+Et enfin cette technologie fut intégrée au `Linux Kernel`, ce qui permis en 2007, la naissance du LXC (`Linux Container`), l'ancêtre des `containers` tel que tu vas les découvrir la semaine prochaine :).
 
 La suite de l'histoire la semaine prochaine avec la découverte de Docker :).
 
@@ -149,7 +149,7 @@ sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(l
 sudo apt-get update && sudo apt-get install vagrant
 ```
 
-4. Vérifier que vagrant est bien installer avec cette commande.
+4. Vérifier que vagrant est bien installé avec cette commande.
 ```shell
 vagrant --version
 ```
@@ -181,7 +181,7 @@ Ce fichier, une fois les commentaires effacés, ressemble à celui-là
 La première ligne spécifie la version de L'outil Vagrant, ici nous utilisons la version 2.
 
 Ensuite, la deuxième ligne désigne la `box` (l'image de l'OS) que l'on souhaite utiliser.
-La plupart des `box`, sont hébergés sur  [Vagrant Cloud ](https://app.vagrantup.com/boxes/search).
+La plupart des `box`, sont hébergés sur [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
 Nous allons utiliser l'OS d'Ubuntu 16. Chaque `box` qui se trouve sur Vagrant Cloud contient des explications sur la manière dont on les utilise.
 
 Pour utiliser un `box` rien de plus simple. 
@@ -190,7 +190,7 @@ Pour utiliser un `box` rien de plus simple.
 Enfin, lances la commande `vagrant up` dans le dossier où se trouve le Vagrantfile.
 ![vagrant-up-command-output](../../assets/images/vagrant-up-command-output.png)
 
-A la différence de Virtualbox où la création de la VM nécessite une image de l'OS, de créer un espace de stockage, mettre en place un réseau afin de pouvoir te connecter etc.
+À la différence de Virtualbox où la création de la VM nécessite une image de l'OS, de créer un espace de stockage, mettre en place un réseau afin de pouvoir te connecter, etc.
 Avec Vagrant une seule commande suffit.
 
 Tu peux maintenant te connecter à cette VM avec `vagrant ssh` et boom ! 
@@ -219,6 +219,31 @@ Dans notre cas si tu lances Virtualbox, tu vas t'apercevoir qu'une VM portant le
 Comme avec les commandes de Vagrant, tu peux suspendre, arrêter, relancer et détruire cette VM.
 
 Vagrant permet d'aller encore plus loin dans la customisation des VMs, mais tu en as assez vu pour aujourd'hui, demain est un autre jour :).
+
+#### 2.1.5. 🚀 ALERTE BONNE ASTUCE
+Après avoir lancé `vagrant up`, ta VM ne peut plus être changé.
+
+- Si tu fais des changements dans le Vagrantfile, tu dois d'arrêter et relancer ta VM via ces commandes : 
+
+```shell
+# Stop a Vagrant box
+vagrant halt
+
+# Restart your Vagrant box
+vagrant up
+```
+
+- ou tu peux utiliser ce raccourci :
+```shell
+# Stop and restart Vagrant box
+vagrant releao
+```
+
+
+## 4. Points importants à retenir
+- Il est important de comprendre la relation entre l'hyperviseur et Vagrant, Car certaines erreurs de l'outil Vagrant nécessite souvent d'aller jeter un coup d'œil au tableau de bord de Virtualbox.
+
+- Comprendre également les différents composants de Vagrant et comment ils interagissent est primordiale.
 
 ## 5. Pour aller plus loin
 Pas besoin pour le moment.
