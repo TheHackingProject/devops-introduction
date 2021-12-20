@@ -1,4 +1,4 @@
-# Titre de la deuxième ressource
+# Manage plusieurs images et conteneurs avec Docker-compose
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction

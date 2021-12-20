@@ -1,4 +1,4 @@
-# Les composants d'un conteneur Docker
+# Initiation à Docker
 
 ## 1. Introduction
 Dans cette ressource, ....
@@ -6,13 +6,16 @@ Dans cette ressource, ....
 ## 2. La ressource
 Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
-### 2.1. Linux Namespaces
+### 2.1. Démarrer son conteneur
 blabla
 
-### 2.2. Network Namespaces
+### 2.1.1. Installer Docker
 blabla
 
-### 2.3. Control groups
+### 2.1.2. Utiliser une image docker
+blabla
+
+### 2.1.3. Lancer son conteneur
 blabla
 
 ## 3. Points importants à retenir
