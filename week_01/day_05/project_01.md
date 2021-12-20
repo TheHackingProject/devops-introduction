@@ -35,7 +35,7 @@ Here is the best pyramide in the world :
 
 
 ### 2.2. La pyramide vide
-Reproduis e même programme sauf que cette fois l'intérieur de ta pyramide doit être vide, comme ceci :
+Reproduis le même programme sauf que cette fois l'intérieur de ta pyramide doit être vide, comme ceci :
 ```shell
 Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)
 > 9
@@ -52,4 +52,4 @@ Voici la pyramide :
 ```
 
 ## 3. Rendu attendu
-Un repo github avec toutes tes scripts.
+Un repo github avec tous tes scripts.
