@@ -26,26 +26,15 @@ Ce schéma va te permettre de mieux comprendre la différence :
 *TODO: schéma comparatif LXC vs hyperviseur type 2*
 
 
-En 2013, Google déclenche à nouveau les hostilités en rendant le projet `LMCTFY (Let Me Contain That For You)` open source, ce projet est un logiciel Linux qui permet de gérer des conteneurs.
-Cette au cours de cette même année que Google decides de donner ce projet à Docker.
-
-Docker est né en 2008 en tant que projet open source qui travaillait sur beaucoup de concepts nouveaux, parmi eux :
-- une meilleure gestion des conteneurs via une interface en ligne de commande
-- la gestion des applications dédiées à tourner dans ces conteneurs
-- et la possibilité d'utiliser les conteneurs peu importe l'environment (Linux, Windows, MAc, etc.)
-
-
-Maintenant que tu as toute l'histoire, et apr conséquent une veu globale, 
-nous allons rentrer dans les détails et analyser les différents composants qui constitue, aujourd'hui, un conteneur Docker.
+Maintenant que tu en sais un peu plus sur l'histoire des conteneurs, l'heure est venue d'aller voir sous le capot ce qui se cache derrière les conteneurs.
 
 Mais avant d'aborder ces sujets, afin que soit claire pour toi, analysons la différence entre la virtualisation et les conteneurs.
 
-### 2.2. Quelle est la différence avec la virtualisation
-
-Ce n'est pas tout à fait la même chose. Comme je l'ai dit la semaine dernière les conteneurs sont une forme de virtualisation. 
+### 2.2. Quelle est la différence avec la virtualisation ?
+Ce n'est pas tout à fait la même chose, comme je te l'ai dit la semaine dernière les conteneurs sont une forme de virtualisation. 
 Cependant, laisse-moi être encore plus précis :
 
-- la virtualisation permet à plus OS de s'exécuter simultanément sur une seule machine/serveur.
+- la virtualisation permet à plusieurs OS de s'exécuter simultanément sur une seule machine/serveur.
 
 
 - alors que les conteneurs, partagent le même noyau d'exploitation et isolent les processus de chaque application des autres applications et du reste du système.
@@ -56,18 +45,25 @@ Cependant, laisse-moi être encore plus précis :
 Cela signifie que, la virtualisation utilise un hyperviseur pour simuler les éléments nécessaire à l'installation d'un OS, 
 ce qui permet d'exécuter plusieurs OS en parallèle. 
 
-La virtualisation est plus lourde que les conteneurs, car lorsque ta machine possède des ressources limitées, 
+La virtualisation est plus lourde que le système des conteneurs, car lorsque ta machine possède des ressources limitées, 
 avoir des applications légères et qui puissent être déployées en plusieurs fois est capitale. 
 Ainsi, les conteneurs Linux s'exécutent en natif sur leur l'OS, qu'ils partagent entre eux.
-Ce qui permet aux applications/services de rester légers et de s'exécuter rapidement en parallèle.
+Ce qui permet aux applications/services de rester légers et de s'exécuter rapidement et en parallèle.
+
+
+### 2.3. Les conteneurs
+Dans les ressources suivantes, tu vas découvrir les différents composants d'un conteneur.
+Cette partie bien que théorique va te permettre de mieux comprendre le fonctionnement global des conteneurs.
+Ce qui va te permettre d'avoir un sérieux avantages face à ceux qui utilise les conteneurs sans savoir ce qui se passe vraiment sous le capot 
+et avec ces connaissances tu pourras te debugger plus facilement dans le conteneur et en dehors.
 
 
 ## 3. Points importants à retenir
-Rappelles toi la différence entre LXC, la virtualisation et les conteneurs Docker. 
-Nous avons en grande ligne aborde la différence entre ces trois technologies, mais tu peux de ton côté faire des recherches supplémentaires.
+Rappelles toi la différence entre LXC et la virtualisation. 
+Nous avons en grande ligne abordée la différence entre ces deux technologies, mais tu peux de ton côté faire des recherches supplémentaires.
 Ils existent de nombreux articles sur ces sujets.
 
-Je te conseille vivement de bien assimiler ce cours car, ces sujets sont souvent discutés dans les entretiens
+Je te conseille vivement de bien assimiler ce cours car, ces sujets sont souvent abordés dans les entretiens
 
 ## 4. Pour aller plus loin
 Pas besoin pour le moment

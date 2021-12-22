@@ -1,8 +1,7 @@
-# Découverte du Dockerfile
-Description de la ressource au format texte et en 1 paragraphe max (pas plus)
+# Script Shell - Niveau 3
 
 ## 1. Introduction
-Une introduction sur la ressource.
+Nous allons parler des fonctions
 
 ## 2.Historique et contexte
 Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.

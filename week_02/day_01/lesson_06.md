@@ -1,4 +1,4 @@
-# Les composants d'un conteneur : L'environnement chroot
+# Découverte de LXC & LXD
 
 ## 1. Introduction
 Dans cette ressource, nous allons explorer les différents composants d'un conteneur Docker.

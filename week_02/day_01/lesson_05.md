@@ -1,4 +1,4 @@
-# Les composants d'un conteneur : L'environnement chroot
+# Les composants d'un conteneur : Control groups
 
 ## 1. Introduction
 Dans cette ressource, nous allons explorer les différents composants d'un conteneur Docker.

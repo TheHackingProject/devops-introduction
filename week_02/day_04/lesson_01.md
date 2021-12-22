@@ -1,4 +1,4 @@
-# Script Shell - Niveau 3
+# Manage plusieurs images et conteneurs avec Docker-compose
 
 ## 1. Introduction
 Nous allons parler des fonctions

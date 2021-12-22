@@ -1,13 +1,18 @@
-# Les composants d'un conteneur Docker
+# Les composants d'un conteneur : L'environnement chroot
 
 ## 1. Introduction
-Dans cette ressource, ....
+L'environnement `chroot` est le système à l'origine des conteneurs, sans `chroot` pas de conteneurs.
+Mais pourquoi ce système est si important ?
+Voyons cela en détails.
 
 ## 2. La ressource
-Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
 
-### 2.1. Linux Namespaces
-blabla
+### 2.1. Le chroot en détails
+Comme son nom l'indique le système `chroot`, te permet de changer dans ton `filesystem` de `root`.
+
+Mais pas exactement, en réalité, ce système change le dossier racine d'un process.
+Cette distinction ne vous parais peut-être pas important, mais il change tous.
+
 
 ### 2.2. Network Namespaces
 blabla
