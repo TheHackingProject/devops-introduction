@@ -29,7 +29,7 @@ Avec ce système on peut donc créer une "prison" pour un utilisateur.
 Par exemple un espace dev, ce dev aura juste la possibilité d'entrée dans cet espace, effectuer une opération (configurer un serveur Apache, déposer/retirer un fichier, etc.) et ressortir. 
 
 ### 2.2. Créer un environnement chroot.
-L'objectif n'est pas maîtriser l'environnement `chroot` mais savoir comment il marche et les éléments nécessaires à sa création.
+L'objectif n'est pas de maîtriser l'environnement `chroot` mais savoir comment il marche et les éléments nécessaires à sa création.
 Cette [video](https://www.youtube.com/watch?v=2wSJREC7RV8) t'expliques comment créer un environnement `chroot` .
 
 Tu peux reproduire l'exercice de la video très facilement dans une VM au lieu d'utiliser ta machine.
