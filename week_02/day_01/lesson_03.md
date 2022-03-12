@@ -12,9 +12,9 @@ Eh bien, un des `namespaces` (parce qu'il en y a plusieurs) va encapsuler, cette
 de manière que le process qui est à l'intérieur de ce `namespace` **semble avoir une instance de cette ressource.**
 
 En d'autres mots, les `namespaces` permettent la repartition des ressources du `kernel`
-de manière à ce qu'un groupe de processes ait seulement accès aux ressources qui lui sont allouées.
+de manière à ce qu'un groupe de process ait seulement accès aux ressources qui lui sont allouées.
 
-Ainsi chaque groupe de processes aura accès à des ressources différentes.
+Ainsi chaque groupe de process aura accès à des ressources différentes.
 
 **Autrement dit les namespaces permettent à un conteneur d'avoir des resources dédiées de manière sécurisé.
 
@@ -42,6 +42,7 @@ Ce qui veut dire que ce process peut avoir des accès `root` dans le `Namespace 
 mais pas dans les autres namespaces.
 
 En d'autres mots, le process parent d'un conteneur aura des privilèges `root` à l'intérieur du conteneur, mais pas l'extérieur de celui-ci.
+Ce qui va te permettre de lancer des commandes en tant que `root` dans un conteneur
 
 #### 2.1.5. PID namespace
 Permet à conteneur d'avoir un process parent avec PID égale à 1 ainsi que des process enfant qui ont des PIDs supérieur à 1.
@@ -61,9 +62,34 @@ Ce qui permet depuis un conteneur de `ping` un autre conteneur en utilisant son 
 Ce namespace permet de contrôler le `system mounts points` d'un conteneur. 
 Concrètement, le `Mount namespace` rend possible la création de dossier/fichier partagé ou non par un ou plusieurs conteneurs.
 
+#### 2.1.5. Cgroups
 
-## 3. Points importants à retenir
-La ressource en quelques points importants.
+Cet élément est en soi très complexe à expliquer et à même comprendre au point même que des admins Linux avec 3 ou 4 ans
+d'expériences ont du mal à utiliser et configurer efficacement le `cgroups`.
+
+Mais rassure, que toi et moi avons juste besoin de comprendre à grande échelle, ce que fait le Cgroups. C'est parti !!!
+
+Comme je te l'ai dit plus haut le `Cgroups` limite l'accès d'un processus aux ressources disponible (RAM, CPU, I/Os, ...), 
+à l'aide de plusieurs sous-systèmes.
+
+Pour ton information personnelle, voici la liste ces sous-systèmes les plus importantes, histoire que tu puisses te la raconter auprès de tes potes :).
+Dans cette liste tu trouveras également des liens utiles au cas où tu voudrais allez plus loin.
+
+- [blkio](https://access.redhat.com/documentation/fr-fr/red_hat_enterprise_linux/6/html/resource_management_guide/ch-subsystems_and_tunable_parameters) : limite le nombre de I/Os de chaque process. Il nous permet de configurer la limite à ne pas dépasser
+- [cpu](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-cpu), [cpuacct](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-cpuacct), [cpuset](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-cpuset) : Ces trois sous-système permettent attacher, configurer le CPU à un process, mais également monitorer ce CPU.
+- [devices](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-devices) : permet d'autoriser ou refuser l'accès aux périphériques à un process, en d'autres mots, tu peux autoriser oun non certains conteneurs à accéder aux périphériques de ton PC.
+- [freezer](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-freezer) : permet de suspendre ou relancer un conteneur à l'aide du signal `sigstop`.
+- [memory](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-memory) : permet de limiter la RAM utiliser par un conteneur
+- [net_cls](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/sec-net_cls) : permet de taguer des packets de réseau avec un `classid`, afin de mieux gérer (priorisation, suppression, etc.) et filtrer les packets venant d'autres conteneurs
+- [net_prio](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/net_prio) : permet une gestion du réseau de manière dynamique.
+
+Dans quelques années si tu poursuis la voie du DevOps et le chemin de Kubernetes, tu auras besoin de revenir sur le `cgroups`, crois-moi :).
+
 
 ## 4. Pour aller plus loin
-Quelques éléments en ligne pour aller plus loin
+Tu l'as compris les namespaces, ce n'est pas pour les fragiles.
+A prime abord ça peut te sembler trop compliqué et finalement par nécessaire pour utiliser LXC et Docker.
+Mais là se trouve la différence entre celui qui utilise un outil et qui à la moindre erreur abandonne le navire 
+et celui qui est capable en cas de bug mystique de plonger dans le fonctionnement interne et en ressortir avec une solution.
+
+

@@ -1,4 +1,4 @@
-# Découvrir Docker
+# Découverte des LXC & LXD
 Description du projet au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction
