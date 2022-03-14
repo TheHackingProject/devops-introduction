@@ -20,7 +20,7 @@ C'est donc à partir du système `jails`, qu'en en 2001, Jacques Gélinas a cré
 Je vous épargne les détailles, mais en quelques mots, ce projet à permis d'améliorer le système d'isolation des environnements sous Linux. 
 
 Et c'est en 2006 que Google a développé le `cgroups`, qui par la suite, a été intégré au kernel Linux.
-Son intégration du `cgroups` a permis la naissance de `LXC`.
+Son intégration du `cgroups` à permis la naissance de `LXC`.
 
 Le système LXC permet la virtualization au niveau du Linux kernel. À la différence de Virtualbox qui est un hyperviseur.
 Ce schéma va te permettre de mieux comprendre la différence :
