@@ -1,4 +1,4 @@
-# Titre de la deuxième ressource
+# Découverte du Dockerfile
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction

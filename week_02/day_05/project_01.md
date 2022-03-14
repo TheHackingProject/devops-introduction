@@ -1,4 +1,4 @@
-# Titre du projet
+# Déployer ses conteneurs en production.
 Description du projet au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction
@@ -15,3 +15,9 @@ etc..
 
 ## 3. Rendu attendu
 Un récapitulatif de ce que nous attendons du projet.
+
+
+Notes: 
+Simuler la mise en production via le Vagrantfile :
+  - d'abord installer docker et docker-compose dans la VM 
+    et ensuite depuis Github pull son docker-compose et le lancé

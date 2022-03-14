@@ -3,7 +3,6 @@ Avant de mettre les mains dans le cambouis, commençons d'abord par répondre à
 Linux, qu'est-ce que c'est ? Quelle est son origine ? Et pourquoi l'utilise-t-on de nos jours ?. 
 
 
-
 ## 1. Historique et contexte
 ### 1.1. Linux les origines
 

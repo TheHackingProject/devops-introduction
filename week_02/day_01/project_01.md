@@ -1,4 +1,4 @@
-# Titre du projet
+# Découvrir Docker
 Description du projet au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction
@@ -15,3 +15,8 @@ etc..
 
 ## 3. Rendu attendu
 Un récapitulatif de ce que nous attendons du projet.
+
+
+Notes:
+- 3 exercices simples 
+- Créer soi-même une image docker, push cette image sur Docker Hub
