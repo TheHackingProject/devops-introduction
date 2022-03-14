@@ -17,8 +17,10 @@ En vérité la technologie des conteneurs est apparue en 2000 sous le nom de `Fr
 `jails`, mais qu'est-ce que c'est ? Mais si rappelles toi on en parler la semaine dernière, quand on a évoqué l'histoire de la virtualisation.
 
 C'est donc à partir du système `jails`, qu'en en 2001, Jacques Gélinas a créé le [projet VServer](https://fr.wikipedia.org/wiki/Linux_Virtual_Server). 
-Je vous épargne les détailles, mais en quelques mots, ce projet à permis d'améliorer le système d'environnement isolé Linux. Et en 2006, Google a développé le `cgroups`, qui par la suite, a été intégré au kernel Linux.
-L'intégration du `cgroups` dans le kernel Linux a permis la naissance de `LXC`.
+Je vous épargne les détailles, mais en quelques mots, ce projet à permis d'améliorer le système d'isolation des environnements sous Linux. 
+
+Et c'est en 2006 que Google a développé le `cgroups`, qui par la suite, a été intégré au kernel Linux.
+Son intégration du `cgroups` a permis la naissance de `LXC`.
 
 Le système LXC permet la virtualization au niveau du Linux kernel. À la différence de Virtualbox qui est un hyperviseur.
 Ce schéma va te permettre de mieux comprendre la différence :
@@ -30,7 +32,7 @@ Maintenant que tu en sais un peu plus sur l'histoire des conteneurs, l'heure est
 
 Mais avant d'aborder ces sujets, afin que soit claire pour toi, analysons la différence entre la virtualisation et les conteneurs.
 
-### 2.2. Quelle est la différence avec la virtualisation ?
+### 2.2. Quelle est la différence les conteneurs et la virtualisation ?
 Ce n'est pas tout à fait la même chose, comme je te l'ai dit la semaine dernière les conteneurs sont une forme de virtualisation. 
 Cependant, laisse-moi être encore plus précis :
 
@@ -54,8 +56,8 @@ Ce qui permet aux applications/services de rester légers et de s'exécuter rapi
 ### 2.3. Les conteneurs
 Dans les ressources suivantes, tu vas découvrir les différents composants d'un conteneur.
 Cette partie bien que théorique va te permettre de mieux comprendre le fonctionnement global des conteneurs.
-Ce qui va te permettre d'avoir un sérieux avantages face à ceux qui utilise les conteneurs sans savoir ce qui se passe vraiment sous le capot 
-et avec ces connaissances tu pourras te debugger plus facilement dans le conteneur et en dehors.
+Avec ces connaissances t'auras un sérieux avantages face à ceux qui utilise les conteneurs sans savoir ce qui se passe vraiment sous le capot 
+et tu pourras te debugger plus facilement.
 
 
 ## 3. Points importants à retenir
@@ -63,7 +65,7 @@ Rappelles toi la différence entre LXC et la virtualisation.
 Nous avons en grande ligne abordée la différence entre ces deux technologies, mais tu peux de ton côté faire des recherches supplémentaires.
 Ils existent de nombreux articles sur ces sujets.
 
-Je te conseille vivement de bien assimiler ce cours car, ces sujets sont souvent abordés dans les entretiens
+Je te conseille vivement de bien assimiler ce cours car, ces sujets sont souvent abordés dans les entretiens.
 
 ## 4. Pour aller plus loin
 Pas besoin pour le moment

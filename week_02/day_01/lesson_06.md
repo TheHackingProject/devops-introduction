@@ -6,7 +6,6 @@ Cette partie bien que théorique va te permettre de mieux comprendre le fonction
 
 - avoir un sérieux avantages face à ceux qui utilise Docker sans savoir ce qui se passe vraiment sous le capot.
 
-
 - mieux te debugger dans le conteneur et en dehors.
 
 ## 2. La ressource
