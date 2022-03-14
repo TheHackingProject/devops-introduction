@@ -1,26 +1,55 @@
-# Titre du projet
-Un challenge qui résume la semaine
-
+# C'est les katas
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+Dans ce projet, tu vas faire plein de katas, sélectionnés par mes soins,
+ils te permettront d'être plus à l'aise avec les principes da base avant d'entamer la semaine prochaine,
+les dernières notions que tu dois connaître afin de devenir inarrêtable sur le Shell script.
 
-## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
+## 2. Le Projet
 
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
+### 2.1. Validation du mot de passe
+Fais ce [kata](https://www.codewars.com/kata/52e1476c8147a7547a000811) en suivant les consignes.
 
-etc..
+### 2.2. Trouver la distance à parcourir
+Fais ce [kata](https://www.codewars.com/kata/55e7280b40e1c4a06d0000aa) en suivant les consignes.
+
+### 2.3. La pyramide plein
+Tu te rappelles de la pyramide que tu as dû faire en Ruby (un doux souvenir pour certains et amères pour d'autres).
+
+Eh bien il va falloir la ire en Shell <emoji>. 
+
+Crée un programme qui va générer la pyramide de cette manière :
+```shell
+Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)
+> 9
+Here is the best pyramide in the world :
+    #
+   ###
+  #####
+ #######
+#########
+ #######
+  #####
+   ###
+    #
+```
+
+
+### 2.2. La pyramide vide
+Reproduis le même programme sauf que cette fois l'intérieur de ta pyramide doit être vide, comme ceci :
+```shell
+Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)
+> 9
+Voici la pyramide :
+    #
+   # #
+  #   #
+ #     #
+#       #
+ #     #
+  #   #
+   # #
+    #
+```
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
-
-
-Challenges :
-- Pyramide plein
-  - selon le nombre choisi
-- Pyramide vide:
-  - Selon le nombre choisi
-
-- Kata compliqués
+Un repo github avec tous tes scripts.
