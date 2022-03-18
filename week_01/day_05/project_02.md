@@ -36,7 +36,7 @@ Tu dois créer un POC microservice composé de deux applications (ROR et JS de p
 qui communiquent entre elles, par exemple une API et un front.
 
 1. L'une des applications devra interagir avec une base de données (MySQL, PostgresSQL ou mongoDB)
-2. L'une des applications devra interagir avec un agent de messages (Rabbitmq ou Redis)
+2. L'autre devra interagir avec un agent de messages (Rabbitmq ou Redis)
 
 Chaque élément du POC devra être dans une VM dédié, l'ensemble du POC devra être lancé et opérationnel avec une seule commande `vagrant up`.
 
