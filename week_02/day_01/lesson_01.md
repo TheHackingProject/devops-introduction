@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 Tous comme la première semaine, nous allons d'abord commencer par répondre à quelques questions.
-Docker, qu'est-ce que c'est ? Quelle est son origine ? Et pourquoi l'utilise-t-on de nos jours ?.
+Docker, qu'est-ce que c'est ? Quelle est son origine ? Et pourquoi l'utilise-t-on de nos jours ?
 
 ## 2. Historique et contexte
 ### 2.1. L'origines des conteneurs
