@@ -1,8 +1,8 @@
-# C'est les katas
+# Les katas
 ## 1. Introduction
 Dans ce projet, tu vas faire plein de katas, sélectionnés par mes soins,
 ils te permettront d'être plus à l'aise avec les principes da base avant d'entamer la semaine prochaine,
-les dernières notions que tu dois connaître afin de devenir inarrêtable sur le Shell script.
+les dernières notions que tu dois connaître qui te permettront de devenir inarrêtable sur le Shell script.
 
 ## 2. Le Projet
 
@@ -19,7 +19,7 @@ Eh bien il va falloir la ire en Shell <emoji>.
 
 Crée un programme qui va générer la pyramide de cette manière :
 ```shell
-Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)
+Salut, bienvenue dans ma super pyramide ! De combien d'étages as-tu besoin ? Combien d'étages veux-tu ? (choisis un nombre impair)
 > 9
 Here is the best pyramide in the world :
     #
@@ -35,9 +35,9 @@ Here is the best pyramide in the world :
 
 
 ### 2.2. La pyramide vide
-Reproduis le même programme sauf que cette fois l'intérieur de ta pyramide doit être vide, comme ceci :
+Reproduis le même programme, sauf que cette fois l'intérieur de ta pyramide doit être vide, comme ceci :
 ```shell
-Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ? (choisis un nombre impair)
+Salut, bienvenue dans ma super pyramide ! De combien d'étages as-tu besoin ? Combien d'étages veux-tu ? (choisis un nombre impair)
 > 9
 Voici la pyramide :
     #
