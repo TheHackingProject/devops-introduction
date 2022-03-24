@@ -1,1 +1,1 @@
-Titre de la cinquième journée
+Katas et VMs Vagrant à foison.

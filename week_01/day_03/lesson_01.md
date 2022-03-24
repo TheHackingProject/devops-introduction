@@ -2,19 +2,21 @@
 Après deux jours sur l'environnement Linux et les commandes Shell, 
 il est temps d'aborder la virtualization, qui est un aspect important dans la compréhension des `containers docker`.
 
+
 ## 1. Introduction
 Tu te demandes pourquoi je te parle de virtualization au lieu d'aborder directement les `containers Docker`.
 Eh bien parce que les ` containers` sont une forme de virtualisation. De ce fait comprendre la virtualisation t'aidera à mieux comprendre comment fonctionne les `containers`.
 
-## 2. Historique et contexte
 
+## 2. La ressource
+### 2.1. Historique et contexte
 Dans les années 70, quand les ordinateurs ont commencé à se propager, seules les universités et grandes entreprises pouvaient y avoir accès.
-En effet, a cette époque les petites entreprises et encore moins les particuliers ne pouvaient pas s'offrir le luxe d'avoir un ordinateur, à la place, 
-ils les louaient à $1000/mois. 
+En effet, a cette époque les petites entreprises et encore moins les particuliers ne pouvaient pas s'offrir le luxe d'avoir un ordinateur, à la place,
+ils les louaient à $1000/mois.
 Avec l'inflation de nos jours, c'est un peu près $8000/mois, je te laisse imaginer le prix d'un ordinateur dans ces temps-là :).
 Tu comprends pourquoi peu de personne avait accès à un ordinateur.
 
-Et c'est là qu'entre en scène les débrouillards de l'époque qui ont essayé d'optimiser au maximum l'utilisation des ordinateurs, 
+Et c'est là qu'entre en scène les débrouillards de l'époque qui ont essayé d'optimiser au maximum l'utilisation des ordinateurs,
 en inventant plusieurs technologies de partage d'un même ordinateur par plusieurs utilisateurs et programmes, parmi eux :
 
 - En 1970, la virtualisation par IBM (nous allons y revenir) et le système d'exploitation Unix.
@@ -22,7 +24,7 @@ en inventant plusieurs technologies de partage d'un même ordinateur par plusieu
 - le `chroot (chroot = change root) environment` en 1979, qui dans le `filesystem` permet de changer le chemin du `root directory` d'un `process` et ses `child process`.
   En d'autres mots, avec `chroot` un process à un accès limité au filesystem du `chroot environment`.
 
-  C'étais le début des environnements partagé par plusieurs utilisateurs, 
+  C'étais le début des environnements partagé par plusieurs utilisateurs,
   car avec les systèmes `jails`, un administrateur système pouvait partager avec plusieurs utilisateurs des environnements sécurisés.
 
 
@@ -35,9 +37,9 @@ en inventant plusieurs technologies de partage d'un même ordinateur par plusieu
 PS. Le concept `process` et `child process`, n'est pas évident à appréhender, de ce fait, voici une [documentation](https://www.geeksforgeeks.org/difference-between-process-parent-process-and-child-process/) qui te servira d'antisèche :).
 
 L'idée d'avoir un environnement partagé à continué à son chemin au fil des technologies inventées par les devs et les enterprises.
-C'est en 2006 que les devs de Google ont annoncé travailler sur une technologie révolutionnaire appelée `process containers`. 
+C'est en 2006 que les devs de Google ont annoncé travailler sur une technologie révolutionnaire appelée `process containers`.
 
-Cette technologie, limite les resources (CPU, RAM, etc.) utilisés par un `groupe de process`. 
+Cette technologie, limite les resources (CPU, RAM, etc.) utilisés par un `groupe de process`.
 C'est fut, une annonce incroyable pour cette époque, car avant le `process containers` on ne pouvait limiter l'accès que d'un seul `process`.
 
 Par la suite Google renomma cette technologie en `Cgroups (control groups)` pour éviter la confusion avec le terme `container`.
@@ -46,7 +48,7 @@ Et enfin cette technologie fut intégrée au `Linux Kernel`, ce qui permis en 20
 La suite de l'histoire la semaine prochaine avec la découverte de Docker :).
 
 
-## 3. La ressource
+### 2.2. La virtualisation
 Maintenant que tu en sais plus sur les origines des `containers docker`, 
 tu vas découvrir par la pratique la `virtualisation`, 
 ce qui te permettra t'expérimenter et comprendre des concepts qui te seront d'un grand secours la semaine prochaine avec les `contaieners Docker`. 
@@ -83,11 +85,12 @@ C'est deux types d'hyperviseurs peuvent être représenté comme ceci :
 
 Maintenant que tu en sais plus, nous allons découvrir la virtualisation de type 2 avec VirtualBox.
 
-### 3.1. Ta première VM
-#### 3.1.1. Installer Virtualbox
+
+###2.2. Ta première VM
+#### 2.2.1. Installer Virtualbox
 Cette [doc](https://linuxhint.com/install-virtualbox-linux/) te montre comment installer VirtualBox sur Ubuntu
 
-#### 3.1.2. Démarrer une VM.
+#### 2.2.2. Démarrer une VM.
 Cette [video](https://www.youtube.com/watch?v=sB_5fqiysi4) te montre comment démarrer une VM sans anicroche.
 
 Comme tu l'as vu dans la video, créer des VM n'est pas si compliqué, ce qui l'est par contre, c'est de configurer cette VM et interagir avec elle.
@@ -104,10 +107,8 @@ Je te vois venir, la question que tu te poses surement, c'est pourquoi en parler
 Hé, bien la réponse est simple tu peux tirer avantages de VirtualBox sans pour autant connaitre chaque aspect technique de celui-ci à l'aide d'un outil appelé VirtualBox
 
 
-### 3.2. Gagner en productivité avec Vagrant.
-
-#### 3.2.1. Vagrant qu'est-ce que c'est ?
-
+### 2.3. Gagner en productivité avec Vagrant.
+#### 2.3.1. Vagrant qu'est-ce que c'est ?
 Vagrant est un outil pour construire et manager des VMs. Il encapsule l'hyperviseur présent sur la machine.
 En d'autres mots, l'outil Vagrant se situe entre la VM et l'hyperviseur, ce qui veut dire que la création des VMs se fait à l'aide commande lancé avec Vagrant.
 Voici un schéma qui va certainement t'aider.
@@ -132,9 +133,8 @@ Les prouesses de Vagrant sont dû à 3 composants :
 De ce fait Vagrant en permettant de contrôler le workflow complet des VMs et de faire travailler une team de devs sur exactement le même environnement de développement.
 
 
-### 3.3. Lancer sa VM à l'aide de Vagrant
-
-#### 3.3.1. Installer Vagrant
+### 2.3. Lancer sa VM à l'aide de Vagrant
+#### 2.3.1. Installer Vagrant
 Bien la première chose est d'installer Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
 
 1. Ajouter la clé APT sur ta machine. Les clés PAT permettent de garantir que le dépôt où se trouve le paquet (application/outil) que vous voulez installer est sûr.
@@ -175,8 +175,7 @@ Dans ce fichier lances la commande `vagrant init` qui va générer le Vagrantfil
 vagrant init
 ```
 
-#### 3.3.2. Utiliser le vagrantfile et lancer la VM.
-
+#### 2.3.2. Utiliser le vagrantfile et lancer la VM.
 Ce fichier, une fois les commentaires effacés, ressemble à celui-là
 
 ![Basic Vagrantfile](../../assets/images/basic-vagrantfile.png)
@@ -209,8 +208,7 @@ Une fois que tu as finis de t'amuser avec tu peux :
 
 Mais pour l'instant laisse cette VM `up`, j'ai une dernière chose à te montrer.
 
-#### 3.3.3. Accéder au VM créer par Vagrant depuis VirtualBox
-
+#### 2.3.3. Accéder au VM créer par Vagrant depuis VirtualBox
 Comme je te l'ai dit plus haut, Vagrant encapsule Virtualbox. C
 e qui permet d'utiliser Virtualbox sans pour autant connaître tous ses éléments techniques.
 **C'est ce que l'on appelle l'abstraction**. En d'autres mots, l'abstraction permet d'utiliser des outils/applications/fonctions/classes sans pour autant maîtriser/connaître leurs fonctionnements interne, 
@@ -223,7 +221,7 @@ Comme avec les commandes de Vagrant, tu peux suspendre, arrêter, relancer et d�
 
 Vagrant permet d'aller encore plus loin dans la customisation des VMs, mais tu en as assez vu pour aujourd'hui, demain est un autre jour :).
 
-#### 2.1.5. 🚀 ALERTE BONNE ASTUCE
+#### 2.3.4. 🚀 ALERTE BONNE ASTUCE
 Après avoir lancé `vagrant up`, ta VM ne peut plus être changé.
 
 - Si tu fais des changements dans le Vagrantfile, tu dois d'arrêter et relancer ta VM via ces commandes : 
@@ -242,11 +240,10 @@ vagrant up
 vagrant releao
 ```
 
-
-## 4. Points importants à retenir
+## 3. Points importants à retenir
 - Il est important de comprendre la relation entre l'hyperviseur et Vagrant, Car certaines erreurs de l'outil Vagrant nécessite souvent d'aller jeter un coup d'œil au tableau de bord de Virtualbox.
 
 - Comprendre également les différents composants de Vagrant et comment ils interagissent est primordiale.
 
-## 5. Pour aller plus loin
+## 4. Pour aller plus loin
 Pas besoin pour le moment.

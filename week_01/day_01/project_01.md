@@ -1,15 +1,13 @@
 # Commandes Shell basiques.
-
 Dans ce project tu vas t'amuser avec les commandes shell les plus courantes. Celles-ci vont te permettre de maîtriser un peu plus ton terminal et par la même occasion améliorer ta productivité.
 
 
 ## 1. Introduction
-Une série d'exercices pour te familiariser avec les principales commandes qu'utilisent les Devs,SysOps et les DevOps au jour le jour. La grande classe :-)
+Une série d'exercices pour te familiariser avec les principales commandes qu'utilisent les Devs, SysOps et les DevOps au jour le jour. La grande classe :-)
 
 Tu vas rencontrer pas mal d'erreur, qui parfois, ne seront pas très expressives, mais ainsi va la vie dans le monde merveilleux de Linux. Si tu te sens un peu perdu, ton équipe et le cas échéant Google seront là pour toi.
 
-
-Nous allons travailler avec ce magnifique texte:
+Nous allons travailler avec ce magnifique texte :
 
 ```
 Lorem ipsum dolor sit amet. Ex galisum iste id cumque odit et exercitationem labore nam assumenda dolorem. Est placeat consequuntur eos quia enim non dolor voluptas.
@@ -22,23 +20,21 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 
 ## 2. Le projet
 ### 2.1.1. Créer un fichier/dossier
-
-1. Créer un dossier `day_01` et un `exercices_01` sous-dossier dans le répertoire `~/`,  à l'aide de la commande `mkdir`. 
-   La commande `pwd` depuis le sous-dossier `exercices_01`, devra afficher un chemin semblable à c`~/day_01/exercices_01/`. 
-   Je t'invite à chercher le moyen le plus efficace de le faire. 
-   Petit indice, la commande ` man mkdir` peut grandement t'aider à choisir la/les bonnes options :).
+1. Crées un dossier `day_01` et un sous-dossier `exercices_01` dans le répertoire `~/`, à l'aide de la commande `mkdir`.
+   Une fois terminé, la commande `pwd` depuis le sous-dossier `exercices_01`, devra afficher un chemin semblable à c`~/day_01/exercices_01/`. 
+   
+   La commande `mkdir` regorge d'options diverses et variés, qui pourraient t'aider à créer le dossier `day_01` et sous-dossier` exercices_01` directement.
+   Je te laisse cherche l'option qu'il te faut. Petit indice, la commande ` man mkdir` peut grandement t'aider à choisir la/les bonnes options.
 
 
 ### 2.1.2 Créer et maintenir un fichier/dossier
+1. Depuis ton terminal, copies le texte (qui se trouve dans la partie Introduction) dans un fichier `maintain_file.txt` et placer ce fichier dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
 
+2. Depuis ton terminal, copies le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/` et ensuite dans le dossier `~/opsDev/day_01` et enfin supprimer cette copie, en une seule commande.
 
-1. Copier le texte (qui se trouve dans la partie Introduction) dans un fichier `maintain_file.txt` et placer ce fichier dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
+3. Depuis ton terminal, déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver qu'il est vide. Ensuite supprimer ce fichier. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans un sous-dossier `~/opsDev/day_01/exercices_01/` **et tout cela en une seule commande**.
 
-2. Copier le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/` et ensuite dans le dossier `~/opsDev/day_01` et enfin supprimer cette copie, en une seule commande.
-
-3. Déplacer le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans `~/opsDev/day_01/`. Le chemin d'origine doit être vide `~/opsDev/day_01/exercices_01/`, prouver qu'il est vide. Ensuite supprimer ce fichier. Enfin, copier de nouveau le texte dans `maintain_file2.txt` dans un sous-dossier `~/opsDev/day_01/exercices_01/` **et tout cela en une seule commande**.
-
-4. Copier le dossier `~/opsDev/day_01/exercices_01` dans un nouveau dossier `~/opsDev/day_01_copy/` 
+4. Depuis ton terminal, copies le dossier `~/opsDev/day_01/exercices_01` dans un nouveau dossier `~/opsDev/day_01_copy/` 
    et supprimer le dossier `~/opsDev/day_01_copy`, **en une seule commande bien sûr**.
 
 

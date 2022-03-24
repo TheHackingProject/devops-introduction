@@ -16,12 +16,12 @@ Une fois bien installé le thé à la main, ton Lead dev sort de la salle de ré
 
 Dans ta tête, tu commences à paniquer en te demandant ce que tu as bien pu faire <emoji>.
 
-Une fois aarivé à ton bureau, il commence à se plaindre des contraintes que la direction et le business ne cessent de lui imposer.
+Une fois arrivé à ton bureau, il commence à se plaindre des contraintes que la direction et le business ne cessent de lui imposer.
 Ils reprochent au service IT, le manque d'agilité de l'équipe face au besoin client, du temps que prend chaque feature à être développé, des erreurs de code et de mise en prod qui souvent font tomber le site, etc.
 
 Après 5 minutes à se lamenter sans vraiment s'adresser à toi,
 il te regarde droit dans les yeux et dit, nous avons pris la décision d'adopter la migration vers le cloud et d'adopter une architecture en microservice !
-Ne sachant pas quoi répondre tu te tais, et attends la suite.
+Ne sachant pas quoi répondre tu te tais et attends la suite.
 
 Quelques secondes après il ajoute, l'équipe SysOps malheur sur eux, sont rentrés de vacances.
 Cependant, ils sont trop occupés pour le moment à rattraper le retard de ces dernières semaines.

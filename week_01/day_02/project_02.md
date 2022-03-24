@@ -5,7 +5,7 @@ Le but ce programme est de créer un script shell qui va ajouter des utilisateur
 ## 2. Le projet
 ### 2.1. Scénario
 Tu es dev pour une super Startup, qui gère une infrastructure on-premise 
-(:informations_source: `infrastructure on-premise` veut dire que vos applications et services tournent sur les serveurs physiques possédés par l'entreprise), 
+(:information_source: `infrastructure on-premise` veut dire que vos applications et services tournent sur les serveurs physiques possédés par l'entreprise), 
 chaque nouvelle personne qui intègre cette Startup doit avoir un compte Linux. 
 Ces comptes sont habituellement créés par l'équipe SysAdmin, mais il s'avère que par un malheureux imprévu, ils aient pris leurs vacances en même temps :). 
 Mais toi super dev qui as des connaissances en Shell script, tu te proposes d'écrire un super programme de création de compte, comme ça à l'avenir n'importe qui pourra créer un compte sans avoir besoin de l'équipe SysAdmin.

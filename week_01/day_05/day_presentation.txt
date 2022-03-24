@@ -1,1 +1,1 @@
-Description de la cinquième journée au format texte et en un paragraphe.
+Tu vas faire plein d'exercices pour mieux maîtriser les commandes et ensuite tu vas lancer une application ROR/JS dans une VM Vagrant.

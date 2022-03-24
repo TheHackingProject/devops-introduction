@@ -39,18 +39,18 @@ ou on-premise qui n'auront pas forcément ton shell préféré préinstaller :).
 
 Point important : Si on ne spécifie pas le shell, celui de l'utilisateur est utilisé par défaut.
 
-### 2.1.2 Comment le Shell script est interprété ?
+### 2.1.2. Comment le Shell script est interprété ?
 Maintenant que l'on a ce magnifique bout de code, comment on l'exécute ?
 
 Je pourrais te le dire directement, mais il faut que tu comprennes d'abord comment le shell lis et lance un script.
 
-Eh bien, c'est pas si compliqué :
+Eh bien, ce n'est pas si compliqué :
 
 1. Le shell lis la première ligne `#!/bin/bash` pour savoir quel type de shell utilisé.
 2. Ensuite le Shell, que tu as spécifié au début, lit tout le fichier ligne par ligne. 
    Expliqué d'une manière plus concise, le shell fait ceci `bin/bash <FILENAME>` (si bien sûr, c'est le bash que tu as choisi).
 
-### 2.1.2 Rendre exécutable un script shell
+### 2.1.3. Rendre exécutable un script shell
 Mais comment on exécute shell script bon sang de bonsoir ?
 
 Un peu de patience, tout vient à point nommé pour celui qui sait attendre :).
@@ -81,7 +81,7 @@ Tu peux, maintenant, exécuter n'importe quelle commande que tu as appris jusqu'
 ![First script 1](../../assets/images/first_script1.png)
 
 
-### 2.1.3 Les variables
+### 2.1.4. Les variables
 Les variables sont assez simples à créer et à lire :
 
 ![First script 2](../../assets/images/first_script2.png)
@@ -96,7 +96,7 @@ voici quelques informations qui vont te permettre d'aborder les variables serein
 4. Cette syntaxe `${CHARACTERISTIC}` est obligatoire si tu veux ajouter un texte à la suite de la variable.
 
 
-### 2.1.4 Lire les inputs
+### 2.1.5. Lire les inputs
 La commande `read`, permet de lire les `inputs` de ton clavier, example : 
 
 ![First script 3](../../assets/images/first_script3.png)
@@ -104,13 +104,13 @@ La commande `read`, permet de lire les `inputs` de ton clavier, example :
 Je t'invite à en apprendre plus sur cette commande à l'aide de tes commandes préférées `man, help, info`.
 
 
-### 2.1.5 Les conditions - If statements
+### 2.1.6. Les conditions - If statements
 Cette [doc](https://acloudguru.com/blog/engineering/conditions-in-bash-scripting-if-statements) explique l'utilisation des conditions ainsi que la différence entre les deux types de syntaxe du `if`.
 
 Ce [thread stackoverflow](https://stackoverflow.com/questions/669452/is-double-square-brackets-preferable-over-single-square-brackets-in-ba) te donne quelques précisions le choix entre les deux types d'utilisation des `brackets` dans le `if`.
 
 
-#### Case - statements
+#### 2.1.7. Case - statements
 Pour le `case statements`, tu dois t'en douter, rien de nouveau. Néanmoins, prends garde à la syntaxe :).
 
 ![First script 4](../../assets/images/first_script4.png)
