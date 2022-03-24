@@ -11,7 +11,7 @@ Voyons cela en détails.
 Comme son nom l'indique le système `chroot`, te permet de changer dans ton `filesystem` de `root`.
 
 Mais pas exactement, en réalité, ce système change le dossier racine d'un process.
-Cette distinction ne vous parais peut-être pas important, mais il change tous.
+Cette distinction ne vous parais peut-être pas important, mais il change tous. 😍
 
 ![Chroot jail](../../assets/images/chroot-jail.png)
 
@@ -22,7 +22,7 @@ ce qui implique :
   cas avoir accès au reste du `filesystem`.
 
 
-- et que du point de vue de l'environnement `chroot` le dossier racine est le dossier `chroot`
+- et que du point de vue de l'environnement `chroot`, le dossier racine est le dossier `chroot`
 
 **Ainsi l'environnement `chroot` permet de créer un espace conteneurisé ou une vue limitée d'un système.**
 Avec ce système on peut donc créer une "prison" pour un utilisateur. 
@@ -32,12 +32,12 @@ Par exemple un espace dev, où cette personne aura juste la possibilité d'entr�
 L'objectif n'est pas de maîtriser l'environnement `chroot` mais savoir comment il marche et les éléments nécessaires à sa création.
 Cette [video](https://www.youtube.com/watch?v=2wSJREC7RV8) t'expliques comment créer un environnement `chroot` .
 
-Tu peux reproduire l'exercice de la video très facilement dans une VM au lieu d'utiliser ta machine.
+Tu peux reproduire l'exercice de la video très facilement dans une VM au lieu d'utiliser ta machine. 😉
 
 ## 3. Points importants à retenir
-Pour l'instant il est important que tu comprennes l'utilité d'un environnement `chroot`.
-C'est que tu auras compris ici, est ce qui te permettra dans le projet du jour de comprendre, 
-ce qui se passe au-delà des commandes que tu vas rentrer dans ton terminal.
+Pour l'instant, il est important que tu comprennes l'utilité d'un environnement `chroot`.
+C'est que tu auras compris ici, est ce qui te permettra dans le projet du jour, 
+de comprendre ce qui se passe au-delà des commandes que tu vas rentrer dans ton terminal.
 
 ## 4. Pour aller plus loin
 Cet excellent [article](https://www.howtogeek.com/441534/how-to-use-the-chroot-command-on-linux/) 
