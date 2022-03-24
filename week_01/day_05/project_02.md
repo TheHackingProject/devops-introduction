@@ -4,7 +4,7 @@
 Dans ce projet, tu vas construire un environnement de dev capable d'interagir.
 L'objectif est, de t'habituer à utiliser des VM à la place de ton host pour tester tes applications. 
 
-Ainsi, en utilisant des VM, tu pourras tester tes applications dans un environnement assez similaire à celui de production.
+Ainsi, en utilisant des VM, tu pourras tester tes applications dans un environnement assez similaire à celui de la production.
 
 
 ## 2. Le Projet
@@ -16,12 +16,12 @@ Une fois bien installé le thé à la main, ton Lead dev sort de la salle de ré
 
 Dans ta tête, tu commences à paniquer en te demandant ce que tu as bien pu faire <emoji>.
 
-Une fois au niveau de ton bureau, il commence à se plaindre des contraintes que la direction et le business ne cessent de lui imposer.
+Une fois aarivé à ton bureau, il commence à se plaindre des contraintes que la direction et le business ne cessent de lui imposer.
 Ils reprochent au service IT, le manque d'agilité de l'équipe face au besoin client, du temps que prend chaque feature à être développé, des erreurs de code et de mise en prod qui souvent font tomber le site, etc.
 
 Après 5 minutes à se lamenter sans vraiment s'adresser à toi,
-il te regarde droit dans les yeux et dit, nous avons pris la décision d'adopter de migrer vers le cloud et d'adopter une architecture en microservice !
-Ne sachant pas quoi répondre tu te tais, attends la suite.
+il te regarde droit dans les yeux et dit, nous avons pris la décision d'adopter la migration vers le cloud et d'adopter une architecture en microservice !
+Ne sachant pas quoi répondre tu te tais, et attends la suite.
 
 Quelques secondes après il ajoute, l'équipe SysOps malheur sur eux, sont rentrés de vacances.
 Cependant, ils sont trop occupés pour le moment à rattraper le retard de ces dernières semaines.
@@ -36,7 +36,7 @@ Tu dois créer un POC microservice composé de deux applications (ROR et JS de p
 qui communiquent entre elles, par exemple une API et un front.
 
 1. L'une des applications devra interagir avec une base de données (MySQL, PostgresSQL ou mongoDB)
-2. L'une des applications devra interagir avec un agent de messages (Rabbitmq ou Redis)
+2. L'autre devra interagir avec un agent de messages (Rabbitmq ou Redis)
 
 Chaque élément du POC devra être dans une VM dédié, l'ensemble du POC devra être lancé et opérationnel avec une seule commande `vagrant up`.
 

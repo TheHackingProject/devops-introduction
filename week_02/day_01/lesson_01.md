@@ -6,6 +6,7 @@ Docker, qu'est-ce que c'est ? Quelle est son origine ? Et pourquoi l'utilise-t-o
 
 ## 2. Historique et contexte
 ### 2.1. L'origines des conteneurs
+
 La semaine dernière, tu as découvert l'histoire de la virtualisation et 
 appris que cette technologie est né du besoin de partager un ordinateur/serveur avec plusieurs utilisateurs afin de rentabiliser et améliorer le travail d'un groupe de personnes.
 Nous avons terminé notre histoire par l'invention du  `Cgroups (control groups)` par Google en 2006. Cette technologie
@@ -23,6 +24,7 @@ Je vous épargne les détailles, mais en quelques mots, ce projet à permis d'am
 
 L'intégration du `cgroups` à permis la naissance de `LXC`, un système de virtualization au niveau du Linux kernel. À la différence de Virtualbox qui est un hyperviseur.
 
+
 Ce schéma va te permettre de mieux comprendre la différence :
 
 *TODO: schéma comparatif LXC vs hyperviseur type 2*
@@ -30,13 +32,15 @@ Ce schéma va te permettre de mieux comprendre la différence :
 
 Maintenant que tu en sais un peu plus sur l'histoire des conteneurs, l'heure est venue, d'aller voir ce qui se cache derrière les conteneurs.
 
+
 Mais avant d'aborder ce sujet, afin que soit claire pour toi, analysons la différence entre la virtualisation et les conteneurs.
 
-### 2.2. Quelle est la différence les conteneurs et la virtualisation ?
+
+### 2.2. Quelle est la différence entre les conteneurs et la virtualisation ?
 Ce n'est pas tout à fait la même chose, comme je te l'ai dit la semaine dernière les conteneurs sont une forme de virtualisation. 
 Cependant, laisse-moi être encore plus précis :
 
-- la virtualisation permet à plusieurs OS de s'exécuter simultanément sur une seule machine/serveur.
+- la virtualisation permet à plusieurs OS de s'exécuter simultanément sur une seule et même machine/serveur.
 
 
 - alors que les conteneurs, partagent le même noyau d'exploitation et isolent les processus de chaque application des autres applications et du reste du système.
@@ -44,7 +48,7 @@ Cependant, laisse-moi être encore plus précis :
 *TODO : schéma comparatif hyperviseur vs conteneurs* > https://www.linkedin.com/pulse/docker-vs-lxc-virtual-machines-phucsi-nguyen
 
 
-Cela signifie que, la virtualisation utilise un hyperviseur pour simuler les éléments nécessaire à l'installation d'un OS, 
+Cela signifie que, la virtualisation utilise un hyperviseur pour simuler les éléments nécessaires à l'installation d'un OS, 
 ce qui permet d'exécuter plusieurs OS en parallèle. 
 
 La virtualisation est plus lourde que le système des conteneurs, car lorsque ta machine possède des ressources limitées, 
@@ -62,8 +66,8 @@ et tu pourras te debugger plus facilement. :blush:
 
 ## 3. Points importants à retenir
 Rappelles toi la différence entre LXC et la virtualisation. 
-Nous avons en grande ligne abordée la différence entre ces deux technologies, mais tu peux de ton côté faire des recherches supplémentaires.
-Ils existent de nombreux articles sur ces sujets.
+Nous avons en grande ligne abordé la différence entre ces deux technologies, mais tu peux de ton côté faire des recherches supplémentaires.
+Il existe de nombreux articles sur ces sujets.
 
 Je te conseille vivement de bien assimiler ce cours car, ces sujets sont souvent abordés dans les entretiens. 😉
 
