@@ -1,1 +1,1 @@
-Description de la première journée au format texte et en un paragraphe.
+Il est temps de découvrir LXD et LXD (les conteneurs Linux) qui sont les ancêtres direct des conteneurs Docker

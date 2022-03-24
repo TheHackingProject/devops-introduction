@@ -41,7 +41,7 @@ Maintenant que tu as le contexte, il est temps de faire un POC d'une application
 on aurait pu directement passer à Docker, mais nous avons besoin de d'abord former les devs aux conteneurs et pour cela,
 rien de mieux que LXC pour expliquer le fonctionnement global des conteneurs.
 
-### 2.2.1 LXC conteneur - Niveau 1
+### 2.2.1. LXC conteneur - Niveau 1
 Voici donc les étapes à respecter : 
 1. Crées une VM Vagrant de type `ubuntu 18 LTS`, 
 2. A l'intérieur de la VM, installes LCX et LXD.
@@ -50,11 +50,11 @@ Voici donc les étapes à respecter :
 5. Faits en sorte d'arriver à requêter cette application depuis ta machine. 
 
 
-### 2.2.2 LXC conteneur - Niveau 2
+### 2.2.2. LXC conteneur - Niveau 2
 
 Il est temps d'automatiser les étapes du ci-dessus, à l'aide d'un Vagrantfile et d'un script shell.
 
-#### 🚀 ALERTE BONNE ASTUCE
+#### 2.2.3. 🚀 ALERTE BONNE ASTUCE
 Ici tu vas devoir créer un script assez complexe et pour t'aider un peu voici quelques conseil :
 - penses toujours à découper ton script étape par étape. 
 - penses à verifier chaque étape avant de passer à la prochaine.

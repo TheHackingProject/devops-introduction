@@ -17,8 +17,9 @@ sur le fonctionnement des conteneurs Linux, car Docker qui est aujourd'hui la r�
 Et crois moi que lors de tes futurs entretien et tes débuts sur Docker en milieu professionnelle, cette connaissance fera clairement la différence.
 
 
-## 2. Créer un conteneur Linux 
-## 2.1. Installer LXC et LXD
+## 2. La ressource
+### 2.1. Créer un conteneur Linux 
+#### 2.1.1. Installer LXC et LXD
 
 Avent même l'installation laisse-moi juste rapidement évoquer la différence entre LXC & LXD :
 
