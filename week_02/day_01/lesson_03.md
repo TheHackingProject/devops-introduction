@@ -1,7 +1,6 @@
 # Les composants d'un conteneur : Linux Namespaces
 
 ## 1. Introduction
-
 Afin que nous soyons tous sur la même longueur d'ondes voici une petite piqûre de rappel sur les [process Linux](https://www.it-connect.fr/les-processus-sous-linux/). 😄
 
 Les `namespaces` sont des concepts Linux de base, ce sont des entités qui encapsule (qui entoure) les resources Linux.

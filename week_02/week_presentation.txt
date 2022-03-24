@@ -1,2 +1,2 @@
 Après avoir pratiqué la virtualization avec les hyperviseurs et appris les bases du shell script.
-Tu es enfin prêt à attaquer une autre forme de virtualisation, j'ai nommé les containers.
+Tu es enfin prêt à attaquer une autre forme de virtualisation, j'ai nommé les conteneurs.

@@ -4,8 +4,9 @@
 Tous comme la première semaine, nous allons d'abord commencer par répondre à quelques questions.
 Docker, qu'est-ce que c'est ? Quelle est son origine ? Et pourquoi l'utilise-t-on de nos jours ?
 
-## 2. Historique et contexte
-### 2.1. L'origines des conteneurs
+## 2. La ressource
+### 2.1. Historique et contexte
+#### 2.1.1. L'origines des conteneurs
 
 La semaine dernière, tu as découvert l'histoire de la virtualisation et 
 appris que cette technologie est né du besoin de partager un ordinateur/serveur avec plusieurs utilisateurs afin de rentabiliser et améliorer le travail d'un groupe de personnes.
@@ -36,7 +37,7 @@ Maintenant que tu en sais un peu plus sur l'histoire des conteneurs, l'heure est
 Mais avant d'aborder ce sujet, afin que soit claire pour toi, analysons la différence entre la virtualisation et les conteneurs.
 
 
-### 2.2. Quelle est la différence entre les conteneurs et la virtualisation ?
+#### 2.1.2. Quelle est la différence entre les conteneurs et la virtualisation ?
 Ce n'est pas tout à fait la même chose, comme je te l'ai dit la semaine dernière les conteneurs sont une forme de virtualisation. 
 Cependant, laisse-moi être encore plus précis :
 
@@ -57,7 +58,7 @@ Ainsi, les conteneurs Linux s'exécutent en natif sur un OS qu'ils partagent ent
 Ce qui permet aux applications/services de rester légers et de s'exécuter rapidement et en parallèle.
 
 
-### 2.3. Les conteneurs
+#### 2.1.3. Les conteneurs
 Dans le prochain cours, tu vas découvrir les différents composants d'un conteneur.
 Cette partie bien que théorique va te permettre de mieux comprendre le fonctionnement global des conteneurs.
 Avec ces connaissances, t'auras un sérieux avantages face à ceux qui utilise les conteneurs sans savoir ce qui se passe vraiment sous le capot 
