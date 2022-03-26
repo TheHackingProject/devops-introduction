@@ -1,1 +1,1 @@
-Maintenant que tu sais manager les images et des conteneurs Docker, place à l'automation avec le Dockerfile
+Maintenant que tu sais manager les images et les conteneurs Docker, place à la productivité avec le Dockerfile
