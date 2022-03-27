@@ -1,1 +1,1 @@
-Description de la quatrième journée au format texte et en un paragraphe.
+Les Dockerfile ne sont plus un secret pour toi, mais comment tu fais lorsque t'as plusieurs Dockerfile à manager ? Eh bien la réponse, c'est d'utiliser Docker-compose.
