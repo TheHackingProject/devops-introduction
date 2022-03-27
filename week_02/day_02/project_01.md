@@ -8,30 +8,31 @@ L'objectif est de te faire découvrir un maximum de commandes Docker que les Dev
 ## 2. Le projet
 ### 2.1. Scénario
 On est vendredi apres-midi, il est 15h45 et tu viens de "commit" le dernier bout de code de ton ticket.
-Tu jettes un coup d'œil à droite personne, à gauche personne, ta team n'est pas à son bureau.
-Tu décides d'aller voir où ils se sont cachés en attendant 17h00, l'heure officiel du week-end.
+Tu jettes un coup d'œil à droite personne, à gauche personne, ta team n'est pas dans l'open-space.
+Tu décides d'aller voir où ils se cachent en attendant 17h00, l'heure officiel du week-end :smiley:.
 Tu décides d'aller regarder dans à la cafeteria, certains de les retrouver là-bas.
-En marchant vers la cafeteria, tu passes devant le bureau du CTO, à l'intérieur du tu aperçois le CTO, lead devs et une dev senior en plein discussion.
+En marchant vers la cafeteria, tu passes devant le bureau du CTO, à l'intérieur tu aperçois le CTO, le lead devs et une dev senior en plein discussion.
 Priant pour qu'ils ne te remarquent pas tu accélères le pas, mais trop tard, ton nom vient de résonner dans le bureau.
 
-Tu avances donc dans le bureau, en te demandant comment ce que tu as bien pu coder de tellement moche
-pour qu'ils soient dans l'obligation de te parler à trois <emoji>.
+Tu avances donc dans le bureau, en te demandant ce que tu as bien pu coder de tellement moche
+pour qu'ils décident de te parler à trois <emoji>.
 
-La dev senior prend d'un ton jovial, t'annoncer qu'ils sont en train de réfléchir à la meilleure facon de Dockeriser la stack applicatifs.
-Elle poursuit en disant ceci, personne dans notre équipe connait vraiment Docker et le dernier POC que tu as fait LXC, 
-nous a permis de voir que tu es capable de présenter de nous présenter des sujets techniques bien construits, on se demandait du coup si tu pouvais nous faire une demo de Docker pas à pas.
-L'idée est que cette demo soient divisé en plusieurs parties afin que la team puisse suivre sans problème.
+La dev senior d'un ton jovial, t'annoncer qu'ils sont en train de réfléchir à la meilleure facon de Dockeriser la stack applicatifs.
+Elle poursuit en disant ceci, personne dans notre équipe connait vraiment Docker et le dernier POC que tu as fait sur LXC, 
+nous a permis de voir que tu es capable de nous présenter des sujets techniques bien construits, 
+on se demandait du coup, si tu pouvais nous faire une demo de Docker, un genre de demo pas à pas.
+L'idée est que cette demo soient divisé en plusieurs parties afin que la team puisse suivre sans problème !
 
-Tous le monde te regarde, en attente de tes prochaines parole.
-Et là avec plein d'assurance, tu dis, oui bien sûr pas de souci, vous auriez des conseils à me donner sur la manière de procéder.
+Tout le monde te regarde, en attente de tes prochaines paroles.
+Et là avec plein d'assurance, tu dis, oui bien sûr pas de souci, 
+vous auriez des conseils à me donner sur la manière de procéder.
 
-Et la tous le monde rigole et le CTO dis, justement on souhaite que tu fasses preuve d'initiative, débrouilles toi. Allez bon week et à Lundi, 
-si tu pouvais nous faire ta premiere présentation mercredi après-midi 
-juste après le retro-planning, ça serait super !
-
+Et là ! Tout le monde rigole et le CTO dis, justement on souhaite que tu fasses preuve d'initiative, débrouilles toi. 
+Il enchaine en disant, si tu pouvais nous faire ta premiere présentation mercredi après-midi 
+juste après le retro-planning, ça serait super, allez bon week et à Lundi !
 
 Dans ta tête, tu te dis que le week-end tranquille que tu avais prévu, vient de tomber à l'eau.
-LE samedi après-midi, tu décides de faire des recherches sur des exercices et tutoriel docker simple à faire et à suire.
+Le samedi après-midi, tu décides de faire des recherches sur des exercices et tutoriel docker simple à faire et à suivre.
 Et miracle, tu tombes sur une series d'exercices qui permettent d'avoir une bonne vue d'ensemble de Docker.
 
 ### 2.2. Une image Docker qui scrape Wikipedia.
@@ -72,4 +73,4 @@ Voici les étapes de ce script :
 5. Pousser de ce conteneur sur DockerHub.
 
 
-### 2.3. Une image Docker qui contient une application ROR 
+## 3. Rendu attendu
