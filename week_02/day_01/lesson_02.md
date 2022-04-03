@@ -11,7 +11,7 @@ Voyons cela en détails.
 Comme son nom l'indique le système `chroot`, te permet de changer dans ton `filesystem` de `root`.
 
 Mais pas exactement, en réalité, ce système change le dossier racine d'un process.
-Cette distinction ne vous parais peut-être pas important, mais il change tous. 😍
+Cette distinction ne vous parait peut-être pas important, mais il change tout. 😍
 
 ![Chroot jail](../../assets/images/chroot-jail.png)
 
@@ -26,7 +26,7 @@ ce qui implique :
 
 **Ainsi l'environnement `chroot` permet de créer un espace conteneurisé ou une vue limitée d'un système.**
 Avec ce système on peut donc créer une "prison" pour un utilisateur. 
-Par exemple un espace dev, où cette personne aura juste la possibilité d'entrée dans cet espace, effectuer une opération (configurer un serveur Apache, déposer/retirer un fichier, etc.) et ressortir. 
+Par exemple un espace dev, où cette personne aura juste la possibilité d'entrer dans cet espace, d'effectuer une opération (configurer un serveur Apache, déposer/retirer un fichier, etc.) et de ressortir. 
 
 ### 2.2. Créer un environnement chroot.
 L'objectif n'est pas de maîtriser l'environnement `chroot` mais savoir comment il marche et les éléments nécessaires à sa création.
@@ -36,9 +36,9 @@ Tu peux reproduire l'exercice de la video très facilement dans une VM au lieu d
 
 ## 3. Points importants à retenir
 Pour l'instant, il est important que tu comprennes l'utilité d'un environnement `chroot`.
-C'est que tu auras compris ici, est ce qui te permettra dans le projet du jour, 
+Ce que tu auras compris ici, est ce qui te permettra dans le projet du jour, 
 de comprendre ce qui se passe au-delà des commandes que tu vas rentrer dans ton terminal.
 
 ## 4. Pour aller plus loin
 Cet excellent [article](https://www.howtogeek.com/441534/how-to-use-the-chroot-command-on-linux/) 
-va plus loin, en plus d'un exemple, il explique avec moult détails l'utilité du `chroot`.
+va plus loin, en plus d'un exemple, il explique avec moult détails, l'utilité du `chroot`.
