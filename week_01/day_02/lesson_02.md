@@ -78,13 +78,13 @@ Ce chemin indique à votre shell où se situe le fichier qui contient le code sh
 
 Tu peux, maintenant, exécuter n'importe quelle commande que tu as appris jusqu'ici dans ce script, et à toi la gloire :
 
-![First script 1](../../assets/images/first_script1.png)
+[First script 1](https://i.imgur.com/ahW8aVq.png)
 
 
 ### 2.1.4. Les variables
 Les variables sont assez simples à créer et à lire :
 
-![First script 2](../../assets/images/first_script2.png)
+[First script 2](https://i.imgur.com/23MHESH.png)
 
 Le shell script est très permissif comme tu t'en rendras compte bientôt.
 De ce fait, pour t'éviter des maux de crâne lunaires sur la syntax des variables, 
@@ -99,7 +99,7 @@ voici quelques informations qui vont te permettre d'aborder les variables serein
 ### 2.1.5. Lire les inputs
 La commande `read`, permet de lire les `inputs` de ton clavier, example : 
 
-![First script 3](../../assets/images/first_script3.png)
+[First script 3](https://i.imgur.com/OqqWxqx.png)
 
 Je t'invite à en apprendre plus sur cette commande à l'aide de tes commandes préférées `man, help, info`.
 
@@ -113,7 +113,7 @@ Ce [thread stackoverflow](https://stackoverflow.com/questions/669452/is-double-s
 #### 2.1.7. Case - statements
 Pour le `case statements`, tu dois t'en douter, rien de nouveau. Néanmoins, prends garde à la syntaxe :).
 
-![First script 4](../../assets/images/first_script4.png)
+[First script 4](https://i.imgur.com/EO2FX28.png)
 
 
 ## 3. Points importants à retenir
