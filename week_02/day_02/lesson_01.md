@@ -2,10 +2,10 @@
 
 ## 1. Introduction
 Hier et la semaine dernière, tu as découvert l'histoire des conteneurs.
-Aujourd'hui place à la découverte des conteneurs Docker.
+Aujourd'hui, place à la découverte des conteneurs Docker.
 
 ## 2. La ressource
-Dans l'histoire des conteneurs, hier on s'est arrêté en 2006 avec la participation de Google à la naissance de LXC.
+Dans l'histoire des conteneurs, hier on s'est arrêté avec la participation de Google à la naissance de LXC en 2006.
 
 En 2013, Google déclenche à nouveau les hostilités en confiant 
 son logiciel `LMCTFY (Let Me Contain That For You)`, 
@@ -17,7 +17,7 @@ Docker est né en 2008 en tant que projet open source qui travaillait sur beauco
 - la gestion des applications dédiées à tourner dans ces conteneurs
 - et la possibilité d'utiliser les conteneurs peu importe l'environment (Linux, Windows, MAc, etc.)
 
-C'est donc en 2013 que Docker a vraiment commencé à parlé de lui. Aujourd'hui les conteneurs Docker ne sont plus vraiment comme ceux de 2013, mais l'essentiel est toujours présent.
+Mais ce n'est que en 2013 que Docker a vraiment commencé à parlé de lui. Aujourd'hui les conteneurs Docker ne sont plus vraiment comme ceux de 2013, mais l'essentiel est toujours présent.
 
 Maintenant laisse place à l'action. Au lieu de te parler théorie et architecture des conteneurs Docker, passons directement à la pratique.
 C'est délibérer de ma part, car je sais qu'avec le cours d'hier,
@@ -181,8 +181,8 @@ Status: Downloaded newer image for hello-world:latest
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
-...
 ```
+
 
 Au début, Docker n’a pas pu trouver l’image `hello-world` localement, il a donc téléchargé l’image depuis Docker Hub, 
 qui est le référentiel par défaut. Une fois l’image téléchargée, 
