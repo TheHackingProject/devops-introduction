@@ -92,7 +92,7 @@ latest: digest: sha256:ec4a7795f60d7c9ff1bcc33df2991f080a65ce93d79d152193858b42d
 
 Sur DockerHub tu peux retrouver ton image sur le tableau de bord de ton compte, comme l’image ci-dessous.
 
-![Docker image pushed on DockerHub](../../assets/images/docker-image-pushed-on-dockerhub.png)
+![Docker image pushed on DockerHub](https://i.imgur.com/0fiUhRt.png)
 
 
 ## 3. Points importants à retenir
