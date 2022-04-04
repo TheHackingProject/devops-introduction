@@ -13,7 +13,7 @@ Comme son nom l'indique le système `chroot`, te permet de changer dans ton `fil
 Mais pas exactement, en réalité, ce système change le dossier racine d'un process.
 Cette distinction ne vous parait peut-être pas important, mais il change tout. 😍
 
-![Chroot jail](../../assets/images/chroot-jail.png)
+![Chroot jail](https://i.imgur.com/WYeto94.png)
 
 Sur l'image ci-dessus, la partie en rouge représente l'environnement `chroot`, 
 ce qui implique :
