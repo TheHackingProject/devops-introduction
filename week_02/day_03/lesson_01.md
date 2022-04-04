@@ -45,7 +45,7 @@ il installe par défaut les composants les plus importants qui sont :
 C'est en réalité l'association de ces 4 composants qui permettent la création d'un conteneur.
 
 Voici un schéma pour illustrer tous ça.
-![Docker OCI](../../assets/images/docker_oci.png)
+![Docker OCI](https://i.imgur.com/sVGevuD.png)
 
 
 ## 3. Points importants à retenir
