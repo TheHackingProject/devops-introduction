@@ -22,13 +22,13 @@ Et comme on s'y attend un Vagrantfile va être généré.
 
 Ce fichier ressemble à celui-ci sans les commentaires :
 
-![Initial Vagrantfile](../../assets/images/basic-vagrantfile.png)
+![Initial Vagrantfile](https://i.imgur.com/JGG4Lhb.png)
 
 
 #### 2.1.1. Définir un hostname 
 Pour définir un `hostname` spécifique, il suffit d'ajouter ce code, `config.vm.hostname = "VM_NAME"` à ton Vagrantfile, comme ceci :
 
-![Box with customized hostname](../../assets/images/box-with-hostname.png)
+![Box with customized hostname](https://i.imgur.com/Txsnq84.png)
 
 Cette [doc](https://www.maketecheasier.com/hostname-in-linux/) t'explique en quelques mots pourquoi un hostname peut s'avérer utile.
 
@@ -39,7 +39,7 @@ Pour tester, lance la commande `hostmane` dans la VM.
 Dans certaines infrastructures connaitre les addresses IP des VM est très important, par exemple une architecture micro-services avec une application par VM nécessite de connaître les IP de chaque VM pour permettre les interactions entre elles.
 Ainsi, pour définir l'IP privée d'une VM, ajoute ce code `config.vm.network "private_network", ip: "PRIVATE_IP"`, comme dans cette exemple :
 
-![Box with customized hostname](../../assets/images/box-private-ip.png)
+![Box with customized with custom IP](https://i.imgur.com/zl0g0nP.png)
 
 Lance la commande `hostname -I | awk '{print $2}'` dans la VM pour tester.
 
@@ -48,7 +48,7 @@ PS. Si tu es un peu perdu aves les IP privées et publiques cette [doc](https://
 #### 2.1.3. Ouverture des ports
 Le port d'une VM peut être partagé sur un des ports du host, avec cette ligne `config.vm.network :forwarded_port, guest: VM_PORT, host: HOST_PORT`, dans cette exemple :
 
-![Box with customized hostname](../../assets/images/box-port-forwarding.png)
+![Box with customized port](https://i.imgur.com/kUZwkwc.png)
 
 Ainsi, il devient possible d'accéder à la VM depuis votre host, 
 ce qui peut être intéressant, par exemple,
@@ -85,7 +85,7 @@ Un `man curl` t'en apprendra davantage.
 Lorsque l'on commence à lancer plusieurs VM, il devient indispensable d'ajuster les capacités de la VM aux éléments qui vont tourner à l'intérieur ainsi qu'aux capacités du host.
 Pour cela, il est nécessaire de passer par le provider `virtualbox`, comme dans cette exemple :
 
-![Box with customized hostname](../../assets/images/box-limit-capacities.png)
+![Box with customized resources](https://i.imgur.com/ZlRn3Yk.png)
 
 Pour tester, lance depuis la VM ces commandes :
 
@@ -100,7 +100,7 @@ echo "Memory: $(grep -c MemTotal /proc/meminfo)"
 #### 2.1.4 Lancer plusieurs VM
 Avec le Vagrantfile, lancer plusieurs VM customisées, devient un jeu d'enfant. Par exemple :
 
-![Vagrant multi VMs](../../assets/images/vagrant-multi-VMs.png)
+![Vagrant multi VMs](https://i.imgur.com/ftEDnZj.png)
 
 Comme tu peux le voir, ce n'est que du Ruby, tout est là, pas besoin d'explications. :).
 
