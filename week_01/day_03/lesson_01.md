@@ -178,7 +178,7 @@ vagrant init
 #### 2.3.2. Utiliser le vagrantfile et lancer la VM.
 Ce fichier, une fois les commentaires effacés, ressemble à celui-là
 
-![Basic Vagrantfile](../../assets/images/basic-vagrantfile.png)
+[Basic Vagrantfile](https://i.imgur.com/JGG4Lhb.png)
 
 La première ligne spécifie la version de L'outil Vagrant, ici nous utilisons la version 2.
 
@@ -187,10 +187,10 @@ La plupart des `box`, sont hébergés sur [Vagrant Cloud](https://app.vagrantup.
 Nous allons utiliser l'OS d'Ubuntu 16. Chaque `box` qui se trouve sur Vagrant Cloud contient des explications sur la manière dont on les utilise.
 
 Pour utiliser un `box` rien de plus simple. 
-![Vagrantfile with ubuntu box](../../assets/images/vagrantfile-with-ubuntu-box.png)
+![Vagrantfile with ubuntu box](https://i.imgur.com/Zk2gqcV.png)
 
 Enfin, lances la commande `vagrant up` dans le dossier où se trouve le Vagrantfile.
-![vagrant-up-command-output](../../assets/images/vagrant-up-command-output.png)
+![vagrant-up-command-output](https://i.imgur.com/5h3vqYj.png)
 
 À la différence de Virtualbox où la création de la VM nécessite une image de l'OS, de créer un espace de stockage, mettre en place un réseau afin de pouvoir te connecter, etc.
 Avec Vagrant une seule commande suffit.
@@ -215,7 +215,8 @@ e qui permet d'utiliser Virtualbox sans pour autant connaître tous ses élémen
 c'est le cas par exemple des outils du Cloud (Heroku, Vercel, AWS), qui simplifient l'accès à des services, qui, pour la plupart sont extrêmement compliqués à créer par soi-même.
 
 Dans notre cas si tu lances Virtualbox, tu vas t'apercevoir qu'une VM portant le nom du dossier dans lequel il réside existe.
-![Virtualbox with started vagrant box](../../assets/images/virtualbox-with-started-vagrant-box.png)
+![Virtualbox with started vagrant box](https://i.imgur.com/XexZcPr.png)
+
 
 Comme avec les commandes de Vagrant, tu peux suspendre, arrêter, relancer et détruire cette VM.
 
