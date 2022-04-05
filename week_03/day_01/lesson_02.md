@@ -1,23 +1,32 @@
-# Titre de la deuxième ressource
-Description de la ressource au format texte et en 1 paragraphe max (pas plus)
+# Découverte de Cloud Provider, AWS.
 
 ## 1. Introduction
-Une introduction sur la ressource.
 
-## 2.Historique et contexte
-Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.
+Comme Mathieu Nebra a.k.a Mat (wouais c'est mon pote à la compote :smiley:) te l'a dit.
+AWS est de loin le leader parmi les fournisseurs du Cloud aussi en terme :
+- présence mondiale (implementation de datacenters à travers le monde)
+- de variétés de service que AWS propose.
+- d'adoption auprès des petites, moyennes et grandes enterprises et également des particuliers.
 
-## 3. La ressource
-Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
+Toutes ces raisons expliquent pourquoi on a choisie de vous faire découvrir AWS au lieu d'un autre.
 
-### 3.1. Première sous partie
-blabla
+## 2. La ressource
+### 2.1. Créer un compte AWS
 
-### 3.2. Deuxième sous partie
-blabla
+Mais avant de découvrir les services AWS et d'amuser avec tu dois d'abord créer un compte AWS.
+Pour cela continuons avec l[e cours de Mr Nebra](https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services/4811646-creer-un-compte-sur-aws)
 
-## 4. Points importants à retenir
-La ressource en quelques points importants.
+Une fois cette partie terminée place à la découverte de AWS.
 
-## 5. Pour aller plus loin
-Quelques éléments en ligne pour aller plus loin
+### 2.2. Découvrir la console AWS
+
+Cher dev, la console AWS sera pour les deux prochaines semaines ta résidence principale. 
+De ce fait je te conseille de bien t'installer confortablement et de plonger franco [dans la prochaine partie du cours de Mathieu N](https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services/4819941-premiers-pas-dans-la-console-aws)
+
+Pour rien te cacher cette console à fait pas mal de victime, car elle est beaucoup trop surchargée :smiley:,
+mais rassure toi, régulièrement AWS essaye de l'alléger.
+En attendant ne perd pas espoir, car en réalité elle très simple à utiliser.
+
+
+## 3. Pour aller plus loin
+Pas besoin pour l'instant.

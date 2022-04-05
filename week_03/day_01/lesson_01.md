@@ -1,23 +1,30 @@
-# Titre de la première ressource
-Description de la ressource au format texte et en 1 paragraphe max (pas plus)
+# Le cloud ! Mais qu'est-ce que c'est ?
 
 ## 1. Introduction
-Une introduction sur la ressource.
+Si je devais te décrire le Cloud,
+je dirais te dirais de penser le Cloud comme un PC qui appartient à quelqu'un d'autres, que tu utilises temporairement.
+Car enfin de compte la base du Cloud c'est des PC sans écran accessible à distance. :smile:.
 
-## 2.Historique et contexte
-Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.
+Oui je vois à ta tête que tu n'aies pas satisfait de ma réponse !
+Dans ce cas, essayons rendre mon explication plus consistent.
 
-## 3. La ressource
-Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
+## 2. La ressource
+### 2.1. Le cloud les origines et les différents types de Cloud.
+Pour aller un peu plus en détail pas besoin de réinventer la roue, [le cours d'OpenClassrooms](https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services) 
+introduit à la perfection les origines et les types de services que le Cloud offres.
+Pour le moment les parties "Qu'est-ce que le cloud ?", "Choisir le bon type de cloud" et 
+"La galaxie Amazon Web Services" de ce cours suffiront amplement.
 
-### 3.1. Première sous partie
-blabla
+PS. Pour avoir droits de visionner les vidéos n'hésite pas à te créer un compte.
 
-### 3.2. Deuxième sous partie
-blabla
+La dernière partie, "La galaxie Amazon Web Services", parle également des services AWS mais tu peux ne pas tenir compte de cette partie pour le moment, car nous allons découvrir les services AWS étape par étape :smile:.
 
-## 4. Points importants à retenir
-La ressource en quelques points importants.
+## 3. Points importants à retenir
+Voici ce que tu dois retenir :
 
-## 5. Pour aller plus loin
-Quelques éléments en ligne pour aller plus loin
+- Ne pas oublier que le Cloud est à la base rien d'autres que des serveurs que toi et moi on loue pour une durée plus ou moins longue.
+- Connaitre les différents types de Cloud
+- Connaitre les principaux "Cloud Provider", j'ai nommé Amazon (AWS), Google (GCP), Microsoft (Azure) et IBM et Alibaba.
+
+## 4. Pour aller plus loin
+Pas besoin pour l'instant.
