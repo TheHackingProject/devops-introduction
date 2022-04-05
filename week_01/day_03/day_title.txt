@@ -1,1 +1,1 @@
-LA virtualisation avec VirtualBox et Vagrant
+La virtualisation avec VirtualBox et Vagrant.

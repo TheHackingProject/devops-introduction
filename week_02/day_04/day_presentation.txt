@@ -1,1 +1,1 @@
-Les Dockerfile ne sont plus un secret pour toi, mais comment tu fais lorsque t'as plusieurs Dockerfile à manager ? Eh bien la réponse, c'est d'utiliser Docker-compose.
+Les Dockerfile ne sont plus un secret pour toi, mais comment tu fais lorsque t'as plusieurs Dockerfile à manager ? Eh bien la réponse, c'est utiliser Docker-compose.

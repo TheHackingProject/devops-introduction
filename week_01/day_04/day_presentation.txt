@@ -1,1 +1,1 @@
-Tu vas apprendre à gérer tes machines Virtualles à l'aide de Vagrant
+Tu vas apprendre à gérer tes machines Virtuelles à l'aide de Vagrant.
