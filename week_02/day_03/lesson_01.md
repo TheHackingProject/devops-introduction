@@ -49,7 +49,7 @@ Voici un schéma pour illustrer tous ça.
 
 
 ## 3. Points importants à retenir
-En résumé tu dois garder en tête que Docker est ensemble de composants qui ont chacun un rôle bien précis.
+En résumé, tu dois garder en tête que Docker est ensemble de composants qui ont chacun un rôle bien précis.
 Le "front" aussi appelé `client` envoie les commandes au "back" `docker daemon` via une API REST. 
 Ensuite `docker daemon` communique à son tour avec `containerd` et `runc` pour créer un conteneur.
 

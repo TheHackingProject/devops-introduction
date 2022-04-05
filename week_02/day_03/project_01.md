@@ -1,4 +1,4 @@
-# Dockeriser ses applications
+# Dockeriser ses applications - Niveau 1
 
 ## 1. Introduction
 Aujourd'hui place à la création de Dockerfile d'une mini stack applicatifs composées de deux applications et une BDD MySQL.
@@ -65,11 +65,11 @@ Eh bien on va faire en sorte que ce soit le cas, en suivant ces recommendations 
    là se trouve toutes les informations que dont tu auras besoin pour créer un Dockerfile mysql opérationnel.
    
 2. Construis l'image à partir du Dockerfile.
-3. Vérifie que le conteneur créer à aà partir du Dckerfile mysql fonctionne par tes propres moyens, [voici un début de solution](https://stackoverflow.com/questions/25503412/how-do-i-know-when-my-docker-mysql-container-is-up-and-mysql-is-ready-for-taking) pour tester que ton contenuer marche bien.
-4.Et enfin pousse l'image sur ton compte DockerHub.
+3. Vérifie que le conteneur créer à partir du Dckerfile mysql fonctionne par tes propres moyens, [voici un début de solution](https://stackoverflow.com/questions/25503412/how-do-i-know-when-my-docker-mysql-container-is-up-and-mysql-is-ready-for-taking) pour tester que ton contenuer marche bien.
+4. Et enfin pousse l'image sur ton compte DockerHub.
 
 Maintenant que tu as un conteneur mysql fonctionnelle, il est temps de connecter ton application ROR, que tu as "Dockeriser" plus haut.
-Une que tu as vérifier que tes deux conteneurs intérigissent sans quoique. Tu peux te feliciter, car tu commences à rentrer dans la cours des grands ! 
+Une que tu as vérifié que tes deux conteneurs interagissent sans quoique. Tu peux te féliciter, car tu commences à rentrer dans la cour des grands ! 
 
 
 ## 3. Rendu attendu
