@@ -59,7 +59,7 @@ Le CTO ub sourire aux lèvres dit ceci : "Ah ça tombe que tu dises cela, vous a
   - créer un `Security Groups` spécifique pour les instances qui seront gérées par l'`ASG`. 
 
 #### 2.2.3. Tester la scalabilité de ton front en React.
-Pour tester la scalabilité de ton application, je te laisse trouver le meilleur outil par toi-même, il en existe de toute sorte par example celui-ci <???????> est fait en Javascript, pourrait faire l'affaire. 😉
+Pour tester la scalabilité de ton infrastructure, je te laisse trouver le meilleur outil par toi-même, il en existe de toute sorte par example celui-ci <???????> est fait en Javascript, pourrait faire l'affaire. 😉
   
 
 ## 3. Rendu attendu

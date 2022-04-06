@@ -1,1 +1,1 @@
-Description de la cinquième journée au format texte et en un paragraphe.
+Hier tu as commencé à utiliser l'interface de ligne de commande d'AWS, aujourd'hui tu vas allez plus loin et créer une infrastructure complète avec AWS CLI.

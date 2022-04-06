@@ -50,7 +50,7 @@ Opération à suivre pour chaque type de VM :
       PS. Le fichier et le dossier n'existent pas encore <emoji>.
    
 
-3. Depuis le host, via ton navigateur préféré, verifie que ton application marche bien. <emoji> 
+3. Depuis le host, via ton navigateur préféré, verifies que ton application marche bien. <emoji> 
    
    PS. Attention le port de ton application dans le guest doit être accessible depuis le host.
 

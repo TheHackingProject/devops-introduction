@@ -12,7 +12,7 @@ Mais toi super dev qui as des connaissances en Shell script, tu te proposes d'é
 
 
 ### 2.2. Instructions
-Oulala, mais dans quelle galère tu t'es embarqué. Bon je vais t'aider un peu :
+Hulula, mais dans quelle galère tu t'es embarqué. Bon je vais t'aider un peu :
 
 Ton script shell - Niveau 1:
 - se nommera `add-local-user.sh`
@@ -34,7 +34,7 @@ Ton script shell - Niveau 2:
 
 
 - À la fin du script shell niveau 1, ajoute des informations sur la création du compte :
-  - Vérifie dans le fichier `/etc/passwd` si le compte s'est bien crée avec un regex qui compare le `username` et les informations du fichier.
+  - Vérifie dans le fichier `/etc/passwd` si le compte s'est bien créé avec un regex qui compare le `username` et les informations du fichier.
   - Selon le résultat du test affiche un message d'erreur ou la ligne du fichier `/etc/passwd` qui matche.
 
 
