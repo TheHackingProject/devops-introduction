@@ -1,17 +1,28 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Lancer son application un serveur AWS
 
-## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+## 1. Introduction$
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
+### 2.1. Scénario
 
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
 
-etc..
+### 2.2. Feuille de route
+1. ROR
+- Lancer un serveur EC2 de type t3.micro avec EBS 10GiB
+- installer nécessaire pr lancer une application ROR
+- bloquer les ports excepter port requis pour apps
+
+- lancer application ROR et check
+
+
+2. React
+- Sur le même serveur
+  - installer nécessaire pr React
+  - lancer l'app
+  - ouverture d'un autre port qui va bien et check
+
+
+
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Un repo github qui contient, le fichier docker-compose et le Makefile qui va bien.
