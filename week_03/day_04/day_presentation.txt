@@ -1,1 +1,1 @@
-Description de la quatrième journée au format texte et en un paragraphe.
+Continuons la découverte de AWS avec les fameux bucket S3 et la gestion des droits et accès des utilisateurs.
