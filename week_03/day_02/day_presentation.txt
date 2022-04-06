@@ -1,1 +1,1 @@
-Description de la deuxième journée au format texte et en un paragraphe.
+Aujourd'hui, tu vas passer à la vitesse supérieure dans l'utilisation des serveurs sur AWS.

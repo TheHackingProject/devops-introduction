@@ -1,4 +1,4 @@
-# Découverte de Cloud Provider, AWS.
+# Découverte du Cloud Provider AWS.
 
 ## 1. Introduction
 

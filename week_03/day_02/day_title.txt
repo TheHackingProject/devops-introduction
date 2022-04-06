@@ -1,1 +1,1 @@
-Titre de la deuxième journée
+Les concepts avancés des serveurs AWS.
