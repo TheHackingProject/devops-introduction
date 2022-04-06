@@ -17,3 +17,5 @@ Pas besoin pour l'instant
 Théorie :
 - EC2
 - EBS
+- User data
+- SSH
