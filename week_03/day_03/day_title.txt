@@ -1,1 +1,1 @@
-Titre de la troisième journée
+L'auto-scaling des serveurs avec AWS
