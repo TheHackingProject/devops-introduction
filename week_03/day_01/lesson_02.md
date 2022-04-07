@@ -19,14 +19,13 @@ Pour cela continuons avec l[e cours de Mr Nebra](https://openclassrooms.com/fr/c
 Une fois cette partie terminée place à la découverte de AWS.
 
 ### 2.2. Découvrir la console AWS
-
 Cher dev, la console AWS sera pour les deux prochaines semaines ta résidence principale. 
 De ce fait je te conseille de bien t'installer confortablement et de plonger franco [dans la prochaine partie du cours de Mathieu N](https://openclassrooms.com/fr/courses/4810836-decouvrez-le-cloud-avec-amazon-web-services/4819941-premiers-pas-dans-la-console-aws)
 
 Pour rien te cacher cette console à fait pas mal de victime, car elle est beaucoup trop surchargée :smiley:,
 mais rassure toi, régulièrement AWS essaye de l'alléger.
-En attendant ne perd pas espoir, car en réalité elle très simple à utiliser.
+En attendant ne perds pas espoir, car en réalité elle très simple à utiliser.
 
 
-## 3. Pour aller plus loin
+## 4. Pour aller plus loin
 Pas besoin pour l'instant.
