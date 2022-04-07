@@ -24,9 +24,7 @@ Tous d'abord le prix, les instances EC2 sont facturé en fonction
 - **et chose important tu n'es pas facturé si l'instance est arrêtée.**
 
 ### 2.3. Les types d'instances EC2
-
 #### 2.3.1. Les instances "On Demands"
-
 Avec ces types d'instances, tu paies pour ce que tu utilises, rien plus rien de moins.
 Ce type d'instances est utilisé pour du court-terme ou pour une charge de travail ininterrompue (un api qui doit tourner en continu par exemple).
 
