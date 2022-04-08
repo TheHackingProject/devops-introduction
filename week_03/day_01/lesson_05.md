@@ -71,10 +71,10 @@ Ses caractéristiques :
 
 
 ## 3. Points importants à retenir
-Comme tu le verras par dans les prochaines jours et bien après les volumes EBS sont des sous-éléments de plusieurs services de AWS.
-De ce fait, connaitre l'utilité de chaque type de volume facilitera grandement tes  ision.
+- Comme tu le verras par dans les prochaines jours et bien après les volumes EBS sont des sous-éléments de plusieurs services de AWS.
+  De ce fait, connaitre l'utilité de chaque type de volume facilitera grandement ton choix de l'un ou l'autre.
 
-En ce qui concerne une instance EC2, un volume EBS, n'est rien d'autre qu'un disque dur distant connecté.
+- En ce qui concerne une instance EC2, un volume EBS, n'est rien d'autre qu'un disque dur distant connecté.
 
 ## 4. Pour aller plus loin
-Pour en savoir plus sur le stackage de type EBS, la [documentation de AWS sera ton guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)
+Pour en savoir plus sur le stockage de type EBS, la [documentation de AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)  sera ton guide.
