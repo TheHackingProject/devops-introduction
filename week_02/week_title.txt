@@ -1,1 +1,1 @@
-Semaine 2 - LXC, Docker et Docker-compose
+LXC, Docker et Docker-compose.

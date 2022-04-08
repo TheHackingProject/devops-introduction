@@ -1,1 +1,1 @@
-Dans cette semaine, vous allez faire corps avec Linux et découvrir la virtualisation.
+Dans cette semaine, tu vas faire corps avec Linux et découvrir la virtualisation.

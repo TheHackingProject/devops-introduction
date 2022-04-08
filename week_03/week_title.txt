@@ -1,1 +1,1 @@
-Titre de la première semaine
+Découverte des services AWS de bases.
