@@ -6,20 +6,20 @@
 ## 2. La ressource
 ### 2.1. Explorer les volumes EBS (Elastic Block Store)
 
-Video pr découvrir 
+ToDo : faire la vidéo
 ....
 
 ### 2.1. Les types volumes EBS
-Comme pour les instances EC2, les volumes EBS ont également des caractéristiques et un prix différents selon le type de EBS choisi.
+Comme pour les instances EC2, les volumes EBS ont également des caractéristiques et un prix différents selon le type de volume choisi.
 Connaitre ses éléments te permettra de choisir le bon type selon le besoin.
 
-Comme je l'ai dit dans la video, les volumes EBS, il faut voir cela comme étant des clés USB.
-Techniquement ce sont des espaces de stockage qui se connecte automatiquement à l'instance choisie.
-Cette connexion peut se faire soit à la création, soit après la création de l'instance. 
-Dans le deuxième cas des étapes supplémentaires devront être effectué, ces étapes dependent bien sûr, de l'OS installé sur ton instance.
+Comme je l'ai dit dans la video, tu peux visualiser les volumes EBS des clés USB.
+Techniquement ce sont des espaces de stockage qui se connecte à l'instance choisi.
+Cette connexion peut se faire soit à la création (dans ce cas c'est automatique), soit après la création de l'instance. 
+Dans le deuxième cas, des étapes supplémentaires devront être effectué, ces étapes dependent bien sûr, de l'OS installé sur ton instance.
 
 Avant de parler des différents types de volumes, parlons d'abord de type de disque qu'offre AWS.
-Avec AWS tu peux choisir des disques HDD ou SSD, pour être sûr que l'on est sur la même longueur d'ondes voici [leurs inconvénients et avantages](https://laptopsreviewers.com/knowledge-base/ssd-vs-hdd/)
+Avec AWS tu peux choisir des disques HDD ou SSD, pour être sûr que l'on est sur la même longueur d'ondes voici leurs [inconvénients et avantages](https://laptopsreviewers.com/knowledge-base/ssd-vs-hdd/)
 
 Voici les different type de volumes EBS :
 
@@ -34,7 +34,7 @@ Voyons en détails l'utilité de chaque volume EBS.
 
 #### 2.1.1. Utilité du gp2
 Ce type de volume est recommandé pour la plupart des utilisations, car il a des performances équilibrées.
-C'est d'ailleurs, ce type de volume qui est monté par défaut, donc en tant `root Volume`, sur instance EC2 à la création.
+C'est d'ailleurs, ce type de volume qui est monté par défaut, en tant `root volume`, sur instance EC2 à la création.
 
 Ses caractéristiques :
 - sa taille varie entre 1GiB et 16TiB 
@@ -72,7 +72,7 @@ Ses caractéristiques :
 
 ## 3. Points importants à retenir
 Comme tu le verras par dans les prochaines jours et bien après les volumes EBS sont des sous-éléments de plusieurs services de AWS.
-De ce fait connaitre l'utilité de chaque type de volume facilitera grandparent ta décision.
+De ce fait, connaitre l'utilité de chaque type de volume facilitera grandement tes  ision.
 
 En ce qui concerne une instance EC2, un volume EBS, n'est rien d'autre qu'un disque dur distant connecté.
 
