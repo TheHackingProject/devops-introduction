@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-Comme Mathieu Nebra a.k.a Mat (wouais c'est mon pote à la compote :smiley:) te l'a dit.
+Comme Mathieu Nebra a.k.a Mat (wouais ! C'est mon pote à la compote :smiley:) te l'a dit.
 AWS est de loin le leader parmi les fournisseurs du Cloud aussi en terme :
 - présence mondiale (implementation de datacenters à travers le monde)
 - de variétés de service que AWS propose.

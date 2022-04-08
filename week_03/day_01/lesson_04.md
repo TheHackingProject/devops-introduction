@@ -17,7 +17,7 @@ de connaitre comment est calculé le prix instance EC2, les différents types d'
 et les principaux caractéristiques. De manière à pour voir demain choisir la bonne instance en fonction de ce que toi, ta team ou ton entreprise ont comme contraintes et besoin.
 
 Tous d'abord le prix, les instances EC2 sont facturé en fonction 
-- de la région (nous allons revenir sur ce point dans le cours de Vendredi)
+- de la région (nous allons revenir sur ce point dans le cours de vendredi)
 - du type d'instance,
 - de l'OS qui va tourner sur l'instance Linux, Windows ou Private OS (RHEL, SLES, Windows SQL).
 - La facturation est faite par seconde (avec un minimum de 60 seconde payable dans tous les cas)
@@ -39,7 +39,7 @@ Tu l'as compris, ces instances sont utilisées pour la longue durée, example h�
 
 #### 2.3.4. Les instances programmées ou "Scheduled Reserved Instances"
 Avec ces types d'instances on peut programmer leurs utilisations.
-Example, je veux que cette instance démarre tous les Mercrcedi en 14h00 et 15h30 pendant 1 mois.
+Example, je veux que cette instance démarre tous les mercredi en 14h00 et 15h30 pendant 1 mois.
 
 C'est en gros des `cronjobs` :smile:
 
@@ -50,7 +50,7 @@ Ah ce sont les instances que je préfère et voici pourquoi :
 - ils peuvent aller jusqu'à 90% moins cher comparé à une instance `On Demand`
 - avec ces instances on décide du prix que l'instance va coûter, si ce prix est dépassé l'instance est supprimé automatiquement
 
-Ce type d'instances est utile pour des charges de travail qui peuvent échouer sans conséquences, example des jobs, de la compression d'images, de l'analyse de donnée, des taches asynchrones non critiques etc.
+Ce type d'instances est utile pour des charges de travail qui peuvent échouer sans conséquences, example des `jobs`, de la compression d'images, de l'analyse de donnée, des taches asynchrones non critiques, etc.
 En gros toutes les charges de travail qui peuvent être relancés sans problème.
 
 
