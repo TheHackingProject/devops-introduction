@@ -2,7 +2,6 @@
 
 ## 1. Introduction
 
-
 ## 2. La ressource
 ### 2.1. Explorer les volumes EBS (Elastic Block Store)
 
