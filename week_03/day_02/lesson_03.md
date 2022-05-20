@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 Tu commences à avoir une certaine vue d'ensemble du service EC2, mais il manque encore quelques fonctionnalités de ce service à ton arc, pour que tu puisses voler de tes propres ailes.
-Une e ces fonctionnalit s'appelle le `Security Groups` ou tout simplement un pare-feu qui permet de protéger le traffic entrant et sortant **d'une instance EC2**.
+Une de ces fonctionnalité s'appelle le `Security Groups` ou tout simplement un pare-feu qui permet de protéger le traffic entrant et sortant **d'une instance EC2**.
 
 `Ce pare-feu opère au niveau de l'instance EC2`, cette notion est importante, car d'autres services d'AWS, 
 que tu auras l'occasion de découvrir par toi-même à l'avenir peuvent permettre ou bloquer le traffic au niveau du VPC par example.
@@ -13,7 +13,7 @@ que tu auras l'occasion de découvrir par toi-même à l'avenir peuvent permettr
 Ce service agit comme un pare-feu virtuel qui permet de contrôler le traffic d'un ou plusieurs instances EC2.
 Il est possible de le créer lors de la création de l'instance ou après.
 
-Une fois le pare-feu créer tu peux configurer des règles qui autorisent le traffic vers ou depuis les instances associées à ce pare feu.
+Une fois le pare-feu créer, tu peux configurer des règles qui autorisent le traffic vers ou depuis les instances associées à celui-ci.
 
 
 ### 2.2. Security Groups - Illustration
@@ -21,7 +21,7 @@ Une fois le pare-feu créer tu peux configurer des règles qui autorisent le tra
 ToDo : Video
 
 ### 2.3. A ne pas oublier
-Les `SG` sont assez simple à utiliser, mais il est quand même important de faire extrêmement attention lorsqu'on les utilise, voici quelques éléments à toujours gared en tête : 
+Les `SG` sont assez simple à utiliser, mais il est quand même important de faire extrêmement attention lorsqu'on les utilise, voici quelques éléments à toujours garder en tête : 
 - Les nouvelles règles du pare-feu sont prises en compte immédiatement, donc fait attention surtout quand tu es en production 😃
 - **Par défaut les nouveaux `SG` accepte le traffic sortant de l'instance et refuse le traffic entrant dans l'instance**.
 - Avec les `SG` tu ne peux pas explicitement **refuser** un traffic (IP, rang d'IP ou autres `SG`).

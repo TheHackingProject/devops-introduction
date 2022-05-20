@@ -33,7 +33,7 @@ Appliques ces règles de pare-feu :
 1. L'instance où se trouve ton application React doit être accessible par tout le monde uniquement sur le port où l'application React démarre. Les autres ports de cette instance doivent être inaccessible.
 2. L'instance où se trouve ton application ROR doit être accessible uniquement par l'instance qui héberge ton application React, 
    et que sur le port où démarre ton application ROR. Les autres ports de cette instance doivent être inaccessible.
-3. L'instance où se trouve la DBB doit être accessible que à l'instancee où se trouve ton application ROR,
+3. L'instance où se trouve la DBB doit être accessible uniquement par l'instance où se trouve ton application ROR,
    et que sur le port où démarre ta DBB. Les autres ports de cette instance doivent être inaccessible.
 
 #### 2.2.2. Rendre ton instance résiliant au redémarrage

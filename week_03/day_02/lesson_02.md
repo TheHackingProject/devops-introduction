@@ -14,14 +14,16 @@ Aujourd'hui, nous allons nous concentrer sur le service qui est la base du rése
 Chaque PC/serveur lié à un autre par un cable, un routeur ou le wifi nécessite d'avoir une interface réseau ([NIC](https://waytolearnx.com/2019/06/nic-carte-reseau-informatique.html)).
 Le NIC est le lien entre le PC/serveur et la méthode de connection utilisée.
 Une fois les 2 ou plusieurs PC/serveurs connectés cela crée un réseau entre ces appareils.
-Ce réseau doit ensuite être configurer et une des parties importantes à configurer s'appellent la `plage IP`. Cette plage IP sera utilisé par les utilisateurs et les appareils qui se trouvent sur ce réseau pour "se trouver".
+Ce réseau doit ensuite être configuré et une des parties importantes à configurer s'appellent la `plage IP`. Cette plage IP sera utilisé par les utilisateurs et les appareils qui se trouvent sur ce réseau pour "se trouver".
 
 Avant d'aller plus loin et pour être sûre que l'on est tous sur la même longueur d'ondes, voici une [piqûre de rappel](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) sur les IPs.
 
 Une plage IP est comme une communauté de personne isolée du reste du monde (un réseau privé), seul les PC/serveurs qui se trouvent dans le même réseau peuvent se trouver et interagir.
 
-Maintenant que tu en sais plus sur le réseau, revenons au VPC. Le VPC est un service AWS qui a pour objectif de créer **un réseau virtuel privé** ce qui permet aux autres services AWS (EC2, ...) d'être créer dans à l'intérieur celui-ci, tous les services qui y seront lancé pourront communiquer ensemble en privé en une utilsant une plage d'IP dédiée.
-Le VPC est donc "une communauté" coupé du monde pour des machines virtuelles (EC2) et autres services d'AWS.
+Maintenant que tu en sais plus sur le réseau, revenons au VPC. 
+Le VPC est un service AWS qui a pour objectif de créer **un réseau virtuel privé** ce qui permet aux autres services AWS (EC2, ...) 
+d'être créer dans à l'intérieur celui-ci, tous les services qui y seront lancés pourront communiquer ensemble en privé grâce à une plage d'IP dédiée.
+Le VPC est donc "une communauté coupée du monde" pour des machines virtuelles (EC2) et autres services d'AWS.
 
 ### 2.2. VPC - Illustration
 
