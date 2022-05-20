@@ -1,17 +1,19 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Dockeriser ses applications - Niveau 2
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
+### 2.1. Scénario
 
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
 
-etc..
+Script Shell en utilisant AWS SDK:
+- Créer serveur AWS 
+- Se connecter et pull repo + lancer mini stack via docker-compose
+- Créer ASG 
+- Créer LB
+- configurer SB
+
+Faire test de charge pour vérifier autoscaling.
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Un repo github qui contient ...
