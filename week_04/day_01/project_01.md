@@ -32,7 +32,7 @@ Voici les étapes à suivre, à l'aide exclusivement de script(s) shell et d'AWS
 4. La BDD doit pour atteindre internet et non l'inverse de sorte que toi ou ta team puissent mettre à jour la DBB ou les packages de l'instance qui l'héberge.
 
 
-##### 2.1.2.1. 🚀 ALERTE BONNE ASTUCE
+##### 🚀 ALERTE BONNE ASTUCE
 - Pense à suivre les conventions Shell que tu as apprises lors de la premiere semaine du parcours**
 - N'hésite pas à créer plusieurs petits scripts shell si tu en ressens le besoin.
 - N'hésite pas tout au long de ton/tes scripts shell à informer l'utilisateur via le terminal où il en est dans la création de l'infrastructure.

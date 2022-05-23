@@ -27,7 +27,7 @@ car la [documentation d'AWS](https://docs.aws.amazon.com/cli/latest/userguide/cl
 1. Crées une instance EC2.
 2. Permette à cette instance d'uniquement lire et lister les éléments qui se trouvent dans ce bucket `mycompanny-prod`
 
-##### 2.4.1 ALERTE BONNE ASTUCE
+##### 🚀 ALERTE BONNE ASTUCE
 Dans les instances EC2, AWS a fait en sorte que `AWS CLI` soit installé par défaut 😄.
 
 

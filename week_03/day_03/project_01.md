@@ -51,7 +51,7 @@ Le CTO ub sourire aux lèvres dit ceci : "Ah ça tombe que tu dises cela, vous a
 
 1. Fais en sorte que l'instance où réside ton front en React soit scalable et soit également derrière un Load Balancer de type `ALB`.
 
-##### 2.2.2.1 🚀 ALERTE BONNE ASTUCE
+##### 🚀 ALERTE BONNE ASTUCE
 
 - Pour cette partie rappelles toi que lors de la création de ton `ASG` : 
   - tu peux créer un `ALB`

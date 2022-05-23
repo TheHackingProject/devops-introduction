@@ -54,7 +54,7 @@ Voici donc les étapes à respecter :
 
 Il est temps d'automatiser les étapes vues ci-dessus, à l'aide d'un Vagrantfile et d'un script shell.
 
-#### 2.2.3. 🚀 ALERTE BONNE ASTUCE
+#### 🚀 ALERTE BONNE ASTUCE
 Ici tu vas devoir créer un script assez complexe et pour t'aider un peu, voici quelques conseils :
 - penses toujours à découper ton script étape par étape. 
 - penses à verifier chaque étape avant de passer à la prochaine.

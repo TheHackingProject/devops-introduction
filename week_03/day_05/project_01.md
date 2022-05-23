@@ -23,7 +23,7 @@ C'est un défi de taille 🔥, mais tu vas y arriver. J'ai confiance en toi. �
 #### 2.2.3. Tester la scalabilité de ton front en React.
 Testes la scalabilité de ton infrastructure.
 
-#### 2.2.4. 🚀 ALERTE BONNE ASTUCE
+#### 🚀 ALERTE BONNE ASTUCE
 - Pense à suivre les conventions Shell que tu as apprises lors de la premiere semaine du parcours**
 - N'hésite pas à créer plusieurs petits scripts shell si tu en ressens le besoin.
 - N'hésite pas tout au long de ton/tes scripts shell à informer l'utilisateur via le terminal où il en est dans la création de l'infrastructure.
