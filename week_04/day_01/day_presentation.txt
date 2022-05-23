@@ -1,1 +1,1 @@
-Aujourd'hui, tu vas approfondir les connaissances que tu as acquises la semaine dernière sur le réseau AWS et pouvoir à ton tour être capable de créer de A à Z, un réseau virtuel privé sur AWS.
+Aujourd'hui, tu vas approfondir les connaissances que tu as acquises la semaine dernière sur le réseau AWS et pouvoir à ton tour, être capable de créer de A à Z, un réseau virtuel privé sur AWS.

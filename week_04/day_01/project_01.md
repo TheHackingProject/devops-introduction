@@ -1,21 +1,24 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# ....
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+...
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
+### 2.1. Scénario
+### 2.2. Feuille de route
+#### 2.2.1. ....
 
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
+#### 2.2.2. ....
 
-etc..
+##### 2.2.2.1 🚀 ALERTE BONNE ASTUCE
+
+
+#### 2.2.3. ...
+
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Un repo github ....
 
-Projet : 
+Project : 
 - Créer un VPC custom manuellement + vérifier le fonctionnement
 - Et tout récréer avc CLI

@@ -1,1 +1,1 @@
-Elastic Beanstalk est un service Paas, c'est également concurrent direct de Heroku qui permet de déployer tes applications à l'aide d'un script spécifique
+Elastic Beanstalk est un service Paas, c'est également concurrent direct d'Heroku, il permet de déployer des applications à l'aide d'un script spécifique.

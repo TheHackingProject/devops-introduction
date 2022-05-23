@@ -1,4 +1,4 @@
-# Monitorer ses instances EC2 avec AWS CloudWatch
+# Monitorer des instances EC2 avec AWS CloudWatch
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction/Historique et contexte

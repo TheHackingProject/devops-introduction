@@ -1,1 +1,1 @@
-Tu vas découvrir les différents services AWS de stockage, qui peuvent répondre aux différents besoins des entreprises.
+Tu vas découvrir les différents services AWS de stockage, qui peuvent répondre aux besoins divers et variés des entreprises.

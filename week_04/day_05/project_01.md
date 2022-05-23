@@ -21,4 +21,4 @@ Un repo github ....
 
 Project :
 - Utiliser le bon type de stockage
-- Projet avec EFS, S3 et RDS
+- Projet avec EFS, S3 et RDS 

@@ -20,5 +20,5 @@
 Un repo github ....
 
 Project :
-- Créer lambda + LB + front React ou API.
-- Lambda privé + publia
+- créer une partie de l'infrastructure avec le code
+- Pre-signed URL AWS S3.
