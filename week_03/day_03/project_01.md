@@ -24,8 +24,8 @@ Toujours pensif tu dis : "Merci pour l'info, tu sais où en est le recrutement d
 En se dirigeant vers l'ascenseur son sac à la main, elle te dit que son contrat a été signé et qu'il arrive ce lundi.
 Tu décides à ton tour de plier bagages et rentrer chez-toi, profiter du week-end.
 
-Le lundi suivant, tu arrives de bonheur en pensant que comme d'habitude tu seras le premier, mais en ouvrant la porte de l'`open-space`, tu entends des voix.
-C'est le CTO et une personne que tu ne reconnais pas à sa voix sont en train d'échanger sur la migration de certaines applications vers AWS.
+Le lundi suivant, tu arrives de bonheur en pensant que comme d'habitude tu seras le premier, mais en ouvrant la porte de l'open-space, tu entends des voix.
+Tu reconnais le CTO à sa voix de stentor mais pas la deuxième personne, ils sont en train d'échanger sur la migration de certaines applications vers AWS.
 
 En te voyant le CTO dit : "Ah bonjour ! Viens que je présente notre nouveau DevOps, 
 il va nous aider à migrer notre infrastructure dans un premier et ensuite automatiser au maximum le deployment des applications."
