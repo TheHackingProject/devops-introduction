@@ -13,7 +13,7 @@ Pour découvrir ce service, je te propose de suivre toute la dernière partie du
 
 ### 2.2. Qu'est-ce-que le stockage de type object, pourquoi utiliser ce type de stockage ?
 
-Je ne vais pas te mentir pour appréhender réellement le stockage de type object, 
+Pour appréhender réellement le stockage de type object, 
 quelques semaines ne serait pas de trop, car le stockage des données est un metier en soi, 
 ce n'est pas pour rien que [des admins databases](https://www.techtarget.com/searchdatamanagement/definition/database-administrator) existent.
 Mais comme je te l'ai déjà, mon but et de donner les bases, de la pratique et une tape dans le dos 👊, 
