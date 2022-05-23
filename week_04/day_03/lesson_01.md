@@ -1,4 +1,4 @@
-# Titre de la deuxième ressource
+# Le deuxième de la semaine : AWS Elastic Beanstalk
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction
@@ -21,3 +21,7 @@ La ressource en quelques points importants.
 
 ## 5. Pour aller plus loin
 Quelques éléments en ligne pour aller plus loin
+
+- Elastic beanstalk
+- fichier .ebextensions
+- les différentes fonctionnalités

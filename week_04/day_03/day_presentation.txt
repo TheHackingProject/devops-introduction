@@ -1,1 +1,1 @@
-Description de la troisième journée au format texte et en un paragraphe.
+Elastic Beanstalk est un service Paas, c'est également concurrent direct d'Heroku, il permet de déployer des applications à l'aide d'un script spécifique.

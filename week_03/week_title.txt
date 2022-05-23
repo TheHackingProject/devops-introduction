@@ -1,1 +1,1 @@
-Découverte des services AWS de bases.
+Initiation à AWS.

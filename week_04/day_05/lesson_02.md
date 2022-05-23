@@ -1,4 +1,4 @@
-#  Stocker ses données sur AWS EFS
+# Stocker ses données sur AWS RDS
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction/Historique et contexte
@@ -19,5 +19,5 @@ Pas besoin pour l'instant
 
 
 Sujets :
-- AWS EFS
+- AWS RDS
 

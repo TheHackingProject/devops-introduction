@@ -1,1 +1,1 @@
-Description de la quatrième journée au format texte et en un paragraphe.
+Tu vas apprendre à monitorer tes instances EC2 et créer ton infrastructure directement depuis le code de ton langage préféré.

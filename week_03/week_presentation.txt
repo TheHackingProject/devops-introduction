@@ -1,1 +1,1 @@
-Cette semaine, tu vas découvrir le Cloud et plus spécifiquement, AWS.
+Cette semaine, tu vas découvrir et explorer le Cloud le plus populaire à ce jour, AWS.

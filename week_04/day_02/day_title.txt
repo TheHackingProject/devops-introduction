@@ -1,1 +1,1 @@
-Titre de la deuxième journée
+À la découverte du service AWS Lambda
