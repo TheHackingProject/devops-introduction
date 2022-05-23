@@ -1,1 +1,1 @@
-Titre de la cinquième journée
+Les différents services de stockage d'AWS.

@@ -15,3 +15,7 @@ etc..
 
 ## 3. Rendu attendu
 Un récapitulatif de ce que nous attendons du projet.
+
+Projet : 
+- Créer un VPC custom manuellement + vérifier le fonctionnement
+- Et tout récréer avc CLI

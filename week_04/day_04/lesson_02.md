@@ -1,4 +1,4 @@
-#  Stocker ses données sur AWS EFS
+# Code son infrastructure avec SDK
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction/Historique et contexte
@@ -16,8 +16,7 @@ Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 ## 4. Pour aller plus loin
 Pas besoin pour l'instant
 
+Sujets : 
+- AWS SDK
 
-
-Sujets :
-- AWS EFS
 

@@ -1,4 +1,4 @@
-# Réseau AWS les bases.
+# VPC customisé.
 
 ## 1. Introduction
 
@@ -16,3 +16,4 @@ Pas besoin pour l'instant
 
 Théorie :
 - VPC custom + subnets
+- Internet Gateway + Nat Gateway + Router Table
