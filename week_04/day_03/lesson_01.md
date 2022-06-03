@@ -1,4 +1,4 @@
-# Le deuxième de la semaine : AWS Elastic Beanstalk
+# Le semi-concurrent de Heroku : AWS Elastic Beanstalk
 Description de la ressource au format texte et en 1 paragraphe max (pas plus)
 
 ## 1. Introduction
