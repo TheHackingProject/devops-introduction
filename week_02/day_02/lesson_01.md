@@ -5,23 +5,23 @@ Hier et la semaine dernière, tu as découvert l'histoire des conteneurs.
 Aujourd'hui, place à la découverte des conteneurs Docker.
 
 ## 2. La ressource
-Dans l'histoire des conteneurs, hier on s'est arrêté avec la participation de Google à la naissance de LXC en 2006.
+Dans l'histoire des conteneurs, hier on s'est arrêté sur la participation de Google à la naissance de LXC en 2006.
 
 En 2013, Google déclenche à nouveau les hostilités en confiant 
 son logiciel `LMCTFY (Let Me Contain That For You)`, 
 qui permet de mieux gérer les conteneurs Linux, 
 à un project open source nommé Docker. 
 
-Docker est né en 2008 en tant que projet open source qui travaillait sur beaucoup de concepts nouveaux, parmi eux :
+Docker est né en 2008 en tant que projet open source, et a été à l'origine de beaucoup de concepts nouveaux, parmi eux :
 - une meilleure gestion des conteneurs via une interface en ligne de commande
 - la gestion des applications dédiées à tourner dans ces conteneurs
-- et la possibilité d'utiliser les conteneurs peu importe l'environment (Linux, Windows, MAc, etc.)
+- et la possibilité d'utiliser les conteneurs quelque soit l'environment (Linux, Windows, MAc, etc.)
 
-Mais ce n'est que en 2013 que Docker a vraiment commencé à parlé de lui. Aujourd'hui les conteneurs Docker ne sont plus vraiment comme ceux de 2013, mais l'essentiel est toujours présent.
+Mais ce n'est qu'en 2013 que Docker a vraiment commencé à parler de lui. Aujourd'hui les conteneurs Docker ne sont plus vraiment comme ceux de 2013, mais l'essentiel est toujours présent.
 
 Maintenant laisse place à l'action. Au lieu de te parler théorie et architecture des conteneurs Docker, passons directement à la pratique.
 C'est délibérer de ma part, car je sais qu'avec le cours d'hier,
-tu es capable de comprendre la plupart des commandes et concepts tu vas découvrir en pratiquant.
+tu es capable de comprendre la plupart des commandes et concepts que nous allons pratiquer ci-dessous.
 
 
 ### 2.1. Démarrer son conteneur
@@ -30,9 +30,9 @@ Pour installer Docker rien de plus simple, il suffit de suivre [la documentation
 
 #### 2.1.2. 🚀 ALERTE BONNE ASTUCE
 
-Par défaut, la commande docker ne peut être exécutée que par l’utilisateur root 
+Par défaut, la commande docker ne peut être exécutée que par l’utilisateur `root` 
 ou par un utilisateur du groupe docker, qui est automatiquement créé lors de l’installation de Docker.
-Si tu essayes lancer la commande docker sans `sudo` ou sans être dans le groupe docker, 
+Si tu essayes de lancer la commande docker sans `sudo` ou sans être dans le groupe docker, 
 Tu vas avoir une erreur de ce type :
 
 ```shell
@@ -45,7 +45,7 @@ Pour éviter de taper `sudo` avant chaque commande , tu dois ajouter ton `userna
 ```shell
 sudo usermod -aG docker ${USER}
 ```
-Une fois la commande, tu dois soit :
+Une fois la commande rentrée, tu dois soit :
 - fermer ta session et ensuite te reconnecter. 
   Pour être sur, je t'invite à redémarrer ton PC histoire d'être vraiment sûr <emoji>.
 - ou lancer cette commande ```su - ${USER}```
@@ -155,21 +155,21 @@ Run 'docker COMMAND --help' for more information on a command.
 
 Comme tu le vois il y a pas mal de choses, mais ne t'inquiète pas en 2 ans,
 je n'ai jamais utilisé la plupart de ces options et commandes 
-et quant aux plus importants tu les découvriras au fur et à mesure.
+et quant à ceux qui sont les plus importantes, tu les découvriras au fur et à mesure.
 
 
-Passons maintenant à certaines de ces commandes qui vont bientôt faire partie du reste de ta vie.
+Faisons maintenant un focus sur certaines de ces commandes qui feront bientôt partie du reste de ta vie.
 
 ### 2.1.2. Utiliser une image docker
 Les conteneurs Docker sont construits à partir d’images Docker. 
 Par défaut, Docker tire ces images de [Docker Hub](https://hub.docker.com/), 
 un registre Docker géré par Docker. 
-Docker Hub à une version payant et gratuit, bien sûr la version gratuite est limitée. 
+Docker Hub a une version payante et gratuite, bien sûr la version gratuite est limitée. 
 Cependant, la version gratuite est assez large pour la plupart 
-des applications et des distributions Linux dont vous aurez besoin y auront des images hébergées.
+des applications et des distributions Linux dont tu auras besoin.
 
 Pour vérifier si tu peux accéder et télécharger des images de Docker Hub, lances `docker run hello-world`
-Le résultat te diras si Docker fonctionne correctement :
+Le résultat te dira si Docker fonctionne correctement :
 
 ```shell
 Unable to find image 'hello-world:latest' locally
@@ -190,8 +190,8 @@ qui est le référentiel par défaut. Une fois l’image téléchargée,
 
 Tu peux rechercher des images disponibles sur Docker Hub en utilisant la commande `docker search`.
 Par exemple, pour rechercher l’image mysql, lances ```docker search mysql```
-Cette instruction va parcourir Docker Hub et retourner une liste de toutes les images dont le nom correspond à `mysql. 
-Dans ce cas, tu auras un résultat similaire à celle-ci :
+Cette instruction va parcourir Docker Hub et afficher la liste de toutes les images dont le nom correspond à `mysql. 
+Dans ce cas, tu auras un résultat similaire à celui-ci :
 
 ```shell
 NAME                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
@@ -224,11 +224,11 @@ cimg/mysql                                                                      
 
 Voici les informations à retenir : 
 - la colonne STARS, indique la popularité du projet, plus le projet est populaire, moins il y a de risque que l'image soit remplie de bugs.
-- dans la colonne OFFICIAL, OK indique une image construite et soutenue par l’entreprise à l’origine du projet. 
-- dans la colonne AUTOMATED, OK indique que l'image est construit automatiquement et push sur Docker Hub via GitHub, Gitlab ou Bitbucket.
+- dans la colonne OFFICIAL, "OK" indique une image construite et soutenue par l’entreprise à l’origine du projet. 
+- dans la colonne AUTOMATED, "OK" indique que l'image est construit automatiquement et push sur Docker Hub via GitHub, Gitlab ou Bitbucket.
 
 
-Une fois que tu as choisie ton image tu peux la télécharger avec `docker pull <image>`, par example : 
+Une fois que tu as choisi ton image tu peux la télécharger avec `docker pull <image>`, par exemple : 
 
 ```shell
 Using default tag: latest
@@ -262,14 +262,14 @@ php                                                    8.0.16-fpm-alpine3.15   7
 
 
 
-Voyons comment exécuter des conteneurs plus en détail.
+Voyons comment exécuter des conteneurs plus en détails.
 
 ### 2.1.3. Rentrer dans une image docker
 
-Le conteneur `hello-world` que tu as exécuté plus haut
+Le conteneur `hello-world` que tu as exécuté plus haut,
 est un exemple de conteneur qui fonctionne et qui quitte après avoir émis un message de test. 
 Cependant, cher dev, les conteneurs peuvent être beaucoup plus utiles, car ils peuvent être interactifs. 
-Enfin de compte ils rassemblent au VMs à la seule différence qu'ils utilisent moins ressources (CPU, RAM).
+En fin de compte, ils ressemblent aux VMs, à la seule différence qu'ils utilisent moins de ressources (CPU, RAM).
 
 Voyons cela en peu plus en détails avec une image docker de `ubuntu`.
 Lances cette instruction `docker run -it ubuntu`, tu devrais avoir un résultat semblable à celui-ci :
@@ -283,21 +283,21 @@ Status: Downloaded newer image for ubuntu:latest
 root@290061f41a7c:/# 
 ```
 
-Je te vois déjà à la fois surpris et fasciner par ces quelques lignes <emoji>.
-Mais si tu analyses cette sortie en détails tu peux en conclure que l'instruction `docker run -it ubuntu` :
-- Vérifie que l'image existe sur ta machine et la télécharge si besoin.
-- et ensuite lance un conteneur avec l'image télécharger
-- ensuite rentre dans ce conteneur
-- et enfin t'affiche en `mode intéractif`. 
-  Ce mode est comme ci tu t'étais en train d'interagir avec PC via le terminal, tout simplement <emoji>
+Je te vois déjà à la fois surpris et fasciné par ces quelques lignes 😃 .
+Mais si tu analyses cette sortie en détails, tu peux en conclure que l'instruction `docker run -it ubuntu` :
+- vérifie que l'image existe sur la machine et qu'elle la télécharge si besoin.
+- ensuite qu'elle lance un conteneur avec l'image téléchargée
+- puis qu'elle rentre dans ce conteneur
+- et enfin qu'elle affiche en `mode intéractif`. 
+  Ce mode est comme ci tu étais en train d'interagir avec un PC via le terminal, tout simplement 🙂.
 
 
 Tu peux maintenant exécuter n’importe quelle commande `bash` ou `sh` 
 à l’intérieur du conteneur. 
 
-:warning: Petite précision, 
-à ce stade et lorsque tu utilises le `mode intéractif`, surtout via des instructions docker rentrer directement depuis ton terminal
-tu opères à l’intérieur du conteneur automatiquement en tant qu’utilisateur root, d'ou cette sortie :
+⚠️ Petite précision, 
+à ce stade et lorsque tu utilises le `mode intéractif`, surtout via des instructions docker, rentrées directement depuis ton terminal
+tu opères à l’intérieur du conteneur automatiquement en tant qu’utilisateur root, d'où cette sortie :
 
 ```shell
 root@290061f41a7c:/# 
@@ -310,11 +310,11 @@ Tu peux ensuite installer nodejs par exemple,
 ```shell
 apt-get update && apt-get install nodejs
 ```
-Ensuite un petit ```node -v```, pour verifier l'installation et la version/
+Ensuite un petit ```node -v```, pour vérifier l'installation et la version/
 Vous verrez le numéro de version affiché dans votre terminal :
 
 Une fois que tu auras finis de t'amuser, tu pourras quitter le conteneur 
-en tapant `exit` ou depuis le clavier avec `crtl + c`
+en tapant `exit` ou depuis le clavier avec `crtl + c`.
 
 Maintenant que tu sais comment lancer des conteneurs à partir des images de Docker Hub, voyons comment gérer les images et conteneurs sur ta machine.
 
@@ -351,7 +351,7 @@ ce34fceb7d27   ubuntu                                          "bash"           
 ```
 
 Pour démarrer un conteneur arrêté, lances l'instruction `docker start`, suivi de l’ID du conteneur ou de son nom. 
-Le conteneur ID est l'identifiant unique d'un conteneur, chaque conteneur créer se verra attribuer un ID unique par Docker.
+Le conteneur ID est l'identifiant unique d'un conteneur, chaque conteneur créé se verra attribuer un ID unique par Docker.
 
 Démarrons le conteneur basé sur Ubuntu à l'aide de son ID, `ce34fceb7d27` :
 
@@ -367,9 +367,9 @@ docker stop elastic_banach
 ```
 
 L'attribution des noms à chaque conteneur est fait aléatoirement par Docker, mais tu peux si tu le désires lui attribuer le nom que tu veux.
-Je te laisse farfouiller dans la [documentation de Docker](https://docs.docker.com/engine/reference/run/) ou l'aide de l'instruction `docker run --help`.
+Je te laisse farfouiller dans la [documentation de Docker](https://docs.docker.com/engine/reference/run/) ou à l'aide de l'instruction `docker run --help`.
 
-Pour supprimer un conteneur lances `docker rm elastic_banach`.
+Pour supprimer un conteneur, lances `docker rm elastic_banach`.
 
 :warning: malheureusement le résultat de cette instruction est plus que claire : 
 
@@ -382,9 +382,9 @@ Ce qui veut dire que tu as l'obligation de d'abord stopper un conteneur avant de
 
 ## 3. Points importants à retenir
 Avec Docker la vie est plus simple :).
-Grâce à celui-ci tu peux interagir avec DockerHUb, 
+Grâce à celui-ci, tu peux interagir avec DockerHUb, 
 source absolue de toutes les images docker public.
-Et enfin tu peux avec Docker manager le cycle de vie de tes conteneurs et images.
+Et enfin, tu peux avec Docker, manager le cycle de vie de tes conteneurs et images.
 
 
 ## 4. Pour aller plus loin
