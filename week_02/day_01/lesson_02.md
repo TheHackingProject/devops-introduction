@@ -30,7 +30,7 @@ Par exemple un espace dev, où cette personne aura juste la possibilité d'entre
 
 ### 2.2. Créer un environnement chroot.
 L'objectif n'est pas de maîtriser l'environnement `chroot` mais savoir comment il marche et les éléments nécessaires à sa création.
-Cette [video](https://www.youtube.com/watch?v=2wSJREC7RV8) t'expliques comment créer un environnement `chroot` .
+Cette [video](https://www.youtube.com/watch?v=2wSJREC7RV8) t'explique comment créer un environnement `chroot` .
 
 Tu peux reproduire l'exercice de la video très facilement dans une VM au lieu d'utiliser ta machine. 😉
 
