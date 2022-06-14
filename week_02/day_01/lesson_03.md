@@ -24,13 +24,13 @@ Comme je le disais plus haut, il existe plusieurs `namespaces`, pour être préc
 Cette distinction est importante, car dans la communauté Linux personne n'est d'accord pour statuer sur le fait que le `cgroups` soit ou pas un `namespace`.
 Et pour cause cher ami, le `cgroups` n'a pas la même fonction que les autres `namaspaces`. 😄
 
-Les 6 premières `namespaces` ont pour objectif de **limiter ce que peut voir un process des ressources de Linux** 
-alors que le `cgroups` **limite l'accès d'un process aux ressources de Linux** 
+Les 6 premières `namespaces` ont pour objectif de **limiter ce que peut voir un process, des ressources de Linux** 
+alors que le `cgroups` **limite l'accès d'un process, aux ressources de Linux** 
 
 
 Laisse-moi répéter cette différence, car elle est importante :
-- les 6 premiers `namesapces` limitent ce que peut voir un process des ressources disponibles.
-- et le `cgroups` limite l'accès d'un process aux ressources disponibles.
+- les 6 premiers `namesapces` limitent ce que peut voir un process, des ressources disponibles.
+- et le `cgroups` limite l'accès d'un process, aux ressources disponibles.
 
 Maintenant que tu connais la différence entre les `namespaces` et le `cgroups`, 
 il est temps que tu découvres les différents types de `namespace`.
@@ -51,7 +51,7 @@ Ce namespace permet à chaque conteneur d'avoir sa propre configuration réseau 
 
 #### 2.1.2. IPC (Interprocess communication) namespace
 Ce namespace permet la communication entre plusieurs namespaces 
-en créant pour chaque namespace une file d'attente de message, ce qui permet aux namespaces et aux conteneurs d'échanger de données.
+en créant pour chaque namespace une file d'attente de message, ce qui permet aux namespaces et aux conteneurs d'échanger des données.
 
 #### 2.1.3. UTS namespace
 Avec ce namespace,  chaque conteneur possède un `hostname` unique.
@@ -62,12 +62,12 @@ Ce namespace permet de contrôler le `system mounts points` d'un conteneur.
 Concrètement, le `Mount namespace` rend possible la création de dossier/fichier partagé ou non par un ou plusieurs conteneurs.
 
 #### 2.1.5. Cgroups
-Cet élément est en soi très complexe à expliquer et même comprendre à tel point  que des admins Linux avec 3 ou 4 ans
+Cet élément est en soi très complexe à expliquer et même à comprendre à tel point que des admins Linux avec 3 ou 4 ans
 d'expériences ont du mal à utiliser et à configurer efficacement le `cgroups`. 😭
 
 Mais rassure toi, nous avons juste besoin de comprendre à grande échelle, ce que fait le Cgroups afin d'avoir une vision d'ensemble. C'est parti !
 
-Comme je te l'ai dit plus haut le `Cgroups` limite l'accès d'un processus aux ressources disponibles (RAM, CPU, I/Os, ...), 
+Comme je te l'ai dit plus haut, le `Cgroups` limite l'accès d'un processus aux ressources disponibles (RAM, CPU, I/Os, ...), 
 à l'aide de plusieurs sous-systèmes.
 
 Pour ton information personnelle, voici la liste des sous-systèmes les plus importants, histoire que tu puisses te la raconter auprès de tes potes 😉.
@@ -88,7 +88,7 @@ Dans quelques années si tu poursuis sur la voie du DevOps et le tortueux chemin
 Tu l'as compris les namespaces, ne sont pas pour les fragiles 😃.
 A prime abord ça peut te sembler trop compliqué et finalement pas nécessaire pour utiliser LXC et Docker.
 
-Mais là se trouve la différence entre celui qui utilise un outil et qui à la moindre erreur abandonne le navire ou mets des heures, voir des jours à débugger 
-et celui qui est capable en cas de bug mystique de plonger dans le fonctionnement interne et d'en ressortir avec une solution.
+Mais là, se trouve la différence entre celui qui utilise un outil et qui à la moindre erreur abandonne le navire ou mets des heures, voir des jours à débugger. 
+Et celui qui est capable en cas de bug mystique de plonger dans le fonctionnement interne et d'en ressortir avec une solution.
 
 
