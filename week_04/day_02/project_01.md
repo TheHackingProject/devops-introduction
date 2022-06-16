@@ -33,7 +33,7 @@ Comme c'est le cas par example pour des entreprises/startup avec des activités
 et ultra confidentielles comme les banques.
 En conséquence, nous allons nous efforcer d'avoir infrastructure avec un maximum de services managés 
 où la gestion de serveurs sera minimal. Pour permettre à l'équipe dev de concentrer sur le développement. 
-Et au service IT de manière généraled'être agile et en réagir rapidement aux demandes des autres services, surtout du business qui n'arrete de demander de nouvelles features à chaque instant !"
+Et au service IT de manière générale d'être agile et en réagir rapidement aux demandes des autres services, surtout du business qui n'arrête de demander de nouvelles features à chaque instant !"
 
 Après cette tirade, il prend une pause, et nous regarde à la recherche de questions, satisfait par notre air concentré, il poursuit :
 "De plus, cette stratégie va permettre à l'équipe SysAdmin de pleinement se concentrer sur les clients internes 
@@ -78,7 +78,7 @@ pour récupérer le dernier taux de 7 devises (EUR, USD, CAD, AUD, GBP, CHF, CNY
 Ensuite afficher cette information sur la page d'accueil de ton application (je te laisse choisir le meilleur moyen d'afficher les informations sur cette page).
 
 Voici les différentes étapes :
-1. Crées la Lambda qui va aller requeter [l'API](https://www.abstractapi.com/exchange-rate-api#docs).
+1. Crées la Lambda qui va appeler cette [l'API](https://www.abstractapi.com/exchange-rate-api#docs).
 2. Trouves une solution pour déclencher cette Lambda toutes les 2 minutes à l'aide [d'Amazon EventBride](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html).
    (C'est un service que l'on n'a pas vu, mais tu verras il est très facile à prendre en main 😄). 
    Ici notre Lambda sera déclenché par Amazon EventBrite :boom:
@@ -91,7 +91,7 @@ L'objectif sera de permettre aux utilisateurs de "download" des PDF qui trouve s
 
 Voici les étapes : 
 1. Crées un bucket S3 nommé par exemple `pdf-folder`, ajoutes-y quelques PDF (10 maximum).
-2. Crées une Lambda qui va chercher toutes les PDF dans le bucket  `pdf-folder`, et en faire un zip.
+2. Crées une Lambda qui va chercher tous les PDF dans le bucket  `pdf-folder`, et en faire un zip.
 3. Crées un `ALB` qui redirige les requêtes vers la Lambda. Ici notre Lambda sera invoqué par un équilibreur de charge 💥
 
 Ainsi les utilisateurs utiliseront l'URL de ton `ALB` sur la route `/` pour directement télécharger ces PDF en format zip.

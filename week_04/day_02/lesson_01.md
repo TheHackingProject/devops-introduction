@@ -24,7 +24,7 @@ Concrètement AWS va s'occuper de :
 - mettre à jour les serveurs (OS, et packets, faille de sécurité, etc.)
 - la scalabilité des serveurs pour répondre à la demande (traffic, CPU, mémoire, etc.)
 - gérer la disponibilité du service, en d'autres mots, pas de coupure de service, car AWS garantie une disponibilité minimum de 99.95 % par mois 😄.
-  Ce qui, tu l'as compris, offre un avantage de non négigable dans le monde brutal des affaires !
+  Ce qui, tu l'as compris, offre un avantage de non négligeable dans le monde brutal des affaires !
 
 Maintenant que tu en sais davantage sur le `serveless`, il est temps de parler d'un des services `serverless` qu'offre AWS, 
 j'ai nommé les Lambdas.
@@ -83,15 +83,15 @@ Le prix par nombre de requêtes se calculent comme ceci :
 - Les premiers 1 OOO 000 de requêtes sont gratuits et au-delà tu seras facturé $0.0000002 par requête (ce qui revient à $0.20 pour 1 000 000 de requêtes)
 
 Le prix par durée de fonctionnement se calcule à l'aide de la quantité de RAM utilisé et la duré d'utilisation de cette RAM :
-- les 400 000 premières secondes d'utilisation de 1GB de RAM sont gratuites, au-delà, $1.00 sera facturé pour 600 000 secondes d'utilisation de un 1GB de RAM. 
+- les 400 000 premières secondes d'utilisation de 1GB de RAM sont gratuites, au-delà, $1.00 sera facturé pour 600 000 secondes d'utilisation d'un 1GB de RAM. 
 
 
 Par souci de clarté jeune moussaillon ! Voici un example, une Lambda qui va fonctionner :
 - pendant 15 secondes en moyenne par mois
 - avec 512MB de RAM 
-- et prendre en charge 1 millions de requêtes au cours du mois,
--  
-je te laisse rentrer ces données [ici](https://s3.amazonaws.com/lambda-tools/pricing-calculator.html) et voir le résultat.
+- et prendre en charge 1 million de requêtes au cours du mois,
+
+Je te laisse rentrer ces données [ici](https://s3.amazonaws.com/lambda-tools/pricing-calculator.html) et voir le résultat.
 
 Comme tu le vois les Lambda ne coutent pas cher du tout 😃
 
@@ -109,7 +109,7 @@ Voici ce que tu dois retenir :
 - Avec les Lambdas, tu as uniquement besoin d'allouer de la mémoire et le CPU sera proportionnel à la mémoire allouer.
 
   Dans le cas où le CPU nécessaire à ta function n'est pas suffisant par rapport à la mémoire que tu as allouée. 
-  Eh bien, ta fonction sera plus lente tous simplement, ce qui n'est pas forcément une bonne chose, car rappels toi, le temps d'exécution d'une Lambda se paie en     monnaie sonnantes et trébuchantes ! De ce fait, ajuster correctement la mémoire de ta Lambda est important
+  Eh bien, ta fonction sera plus lente tous simplement, ce qui n'est pas forcément une bonne chose, car rappels toi, le temps d'exécution d'une Lambda se paie en monnaie sonnante et trébuchantes ! De ce fait, ajuster correctement la mémoire de ta Lambda est important
 
 - Une lambda AWS peut être **invoquée ou déclenchée**
 
