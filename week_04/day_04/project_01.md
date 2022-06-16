@@ -10,7 +10,7 @@
 
 #### 2.2.2. ....
 
-##### 2.2.2.1 🚀 ALERTE BONNE ASTUCE
+##### 🚀 ALERTE BONNE ASTUCE
 
 
 #### 2.2.3. ...
