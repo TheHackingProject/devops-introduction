@@ -1,1 +1,1 @@
-Cette semaine est dédiée à l'apprentissage de Docker est ses composants.
+Au cours des dernières semaines, tu as appris à automatiser des scripts, conteneuriser des applications, déployer manuellement des applications sur AWS. Que dirais-tu maintenant d'apprendre à les déployer avec un outil de CI/CD ?

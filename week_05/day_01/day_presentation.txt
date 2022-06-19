@@ -1,1 +1,1 @@
-Tu vas découvrir les origines des outils d'intégration continue et créer ton premier workflow avec Github Actions.
+Tu vas découvrir l'origines des outil de CI/CD et créer ton premier workflow avec Github Actions.
