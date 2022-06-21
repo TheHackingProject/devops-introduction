@@ -115,15 +115,88 @@ Mais ne t'inquiète pas, tu auras l'occasion d'apprendre Jenkins dans le parcour
 
 
 ## 2. La ressource
-### 2.1. ...
+### 2.1. Qu'est-ce que Github Actions ?
 
-Intégration continue : 
+Github Action est un outil de CI/CD directement intégré à Github, sorti fin 2019. Car avant Github Actions, 
+il fallait avant utiliser des services externes comme Circleci ou TravisCI alors que Github Action est directement intégré à la plateforme Github.
 
-Délivrer en continu
+Du fait de son intégration complète avec Github, il peut également vous aider à automatiser certains de vos workflows directement au sein de Github. 
+La liste des évènements permettant de déclencher un workflow est longue, mais en voici quelques exemples :
 
-Déployer en continu
+- Création ou modification d’une PR (nouveau commentaire par exemple)
+- Push sur une branche 
+- Changement de status d’une issue Github
+- Modification quelconque d’un ticket sur un projet board dans Github
 
-### 2.2. ...
+Et cerise sur le gateau, Github Actions vient avec un mécanisme de composants réutilisables : les Actions.
+Il s’agit de composants logiques, souvent avec du code en amont (que tu apprendre à toi aussi créer un peu plus tard cette semaine, 
+permettant d’effectuer certaines tâches. Là où avant il fallait installer Docker à l'aide de plusieurs commandes une action officielle (de Docker directement) ou personnalisé (qui t'appartient ou de la communauté) te facilite grandement la vie.
+Il est même possible de réutiliser des workflows complet.
+
+Heu minute papillon ! On parle de workflows depuis le début, mais qu'est-ce que cela veut dire exactement ?
+
+Hulula ! Je vais te répondre si tu insistes, alors, un workflow est une procédure automatisée composée d’une ou plusieurs étapes. 
+C’est un peu la définition complète de ce que tu cherches à écrire, mais en YAML.
+
+
+### 2.2. Prérequis : Connaitre le YAML
+LEs workflows Github Actions, sont écrit en YAML, et pour être sûr que l'on est tous sur la
+même longueur d'ondes sur le YAML voici une [piqûre de rappel](https://www.youtube.com/watch?v=fwLBfZFrLgI).
+
+
+### 2.3. Ton premier workflow
+Créer un workflow ne nécessite pas beaucoup de chose, il te faut un repo Github.
+Et à l'intérieur, créer un dossier nommé `.github/workflows/` comme ceci :
+
+```shell
+.github
+└── workflows
+    └── first-workflows.yaml
+```
+___
+⚠️ ALERTE ERREUR COMMUNE
+
+- Au début beaucoup de personne se trompe dans la création du dossier `.github` et sous-dossier `workflows`. 
+  Alors que c'est très important de respecté l'agencement et l'orthographe de ces deux dossiers
+
+
+- Dans le sous-dossier `workflows` est là où doit absolument se trouver tes différentes workflows que tu peux nommer soit en `.yaml` soit en `yml` les deux marchent :smile:.
+___
+
+Voici la syntaxe d'un workflow : 
+
+```yaml
+name : Shell commands
+
+on: [push]
+
+jobs : 
+  run-shell-cmd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo world
+        run : echo "Hello World"
+      - name: execute multiline script
+        run : |
+          ls -al
+          pwd
+          hostname
+```
+
+Ensuite tu n'as plus qu'à commit et push.
+
+Une fois `push` sur Github tu verras exécution de ton flow dans l'onglet `Actions`
+
+Mais que c'est-il passé réellement et que signifie tout le charabia qu'on a écrit dans le fichier YAML ?
+
+Eh bien, place aux explications :
+
+...
+
+- pour chaque job une machine (Linux, Windonws, custom hardware avec plus de RAM un os spécifique des des lisences via des runners dédiées) est créé pour l'executer.
+  ces OS vient avec les logiciels pré-installé pour te faciliter la vie ex: git, npm, yarn, pip, python, ruby, nodjs, go
+- pour chaque jobs des steps (qui vont lancé des actions, déployer sur Heroku, lancé des cmde chell, etc.)
+- un worklows peut avoir plusieurs jobs qui peuvent se lancer en parallèle ou non.
 
 ## 3. Points importants à retenir
 
