@@ -15,6 +15,9 @@
 
 #### 2.2.3. ...
 
+- déployer une application ROR sur Heroku
+- déployer une application React sur Heroku
+- 
 
 ## 3. Rendu attendu
 Un repo github ....
