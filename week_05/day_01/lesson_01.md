@@ -191,14 +191,39 @@ Mais que c'est-il passé réellement et que signifie tout le charabia qu'on a é
 
 Eh bien, place aux explications :
 
-...
+Les éléments de base d'un workflows sont les champs :
+- `name` : nom du workflow, qui est également visible sur l’interface Github.
+- `on` : objet contenant les différents déclencheurs du workflow (liste des évènements disponibles),
+  dans notre example on a choisi l'événement `push`.
+- `jobs` : définit le comportement du workflow.
 
-- pour chaque job une machine (Linux, Windonws, custom hardware avec plus de RAM un os spécifique des des lisences via des runners dédiées) est créé pour l'executer.
-  ces OS vient avec les logiciels pré-installé pour te faciliter la vie ex: git, npm, yarn, pip, python, ruby, nodjs, go
-- pour chaque jobs des steps (qui vont lancé des actions, déployer sur Heroku, lancé des cmde chell, etc.)
-- un worklows peut avoir plusieurs jobs qui peuvent se lancer en parallèle ou non.
+D'autres champs existent, mais je vais te laisser les découvrir toi-même leurs significations avec le projet du jour.
+
+D'un point de vue globale chaque `job`, représente la machine virtuelle sur laquelle le workflow va se lancer.
+Tu peux définir l'OS de ces VMs (ubuntu, windows, debian, etc.) avec le champ `runs-on`, 
+il est également possible de lancer des VMs des customs avec plus de RAM, CPU, Os avec license, etc.
+Les VMs de base de Github viennent tous avec des logiciels (git, npm, yarn, pip, ...) et langages (ruby, pyton, Go, Nodejs..) préinstallés afin de nous faciliter la vie, mais libre à toi d'en rajouter d'autres. :smiley:
+
+Voici la [liste](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#preinstalled-software) des logiciels préinstallés.
+
+Dans chaque `job` un ou plusieurs `steps` vont lancer des `actions`, exemple :
+- déployer ton application sur Heroku,
+- lancer des commandes shell pour effectuer des tâches spécifiques,
+- etc.
+
 
 ## 3. Points importants à retenir
+Voici ce qu'il faut garder en tête :
+- Utiliser des outils, c'est bien, mais connaitre leurs origines te permet d'avoir assez de recul,
+  ce recul, va te donner des informations supplémentaires 
+  (quel était le besoin à la base, comment l'outil a évalué, si l'outil est open-source à quel point la communauté a participé à son l'évolution, est-ce l'outil va continuer à être maintenu, etc.) 
+  pour mieux choisir l'outil celui dont tu as besoin.
+
+
+- Connaitre la différence entre `Continuous Integration`, `Continuous Delivery` et `Continuous Deployment`
+
+
+- Avoir une comprehension globale du fonctionnement de Github Actions. 
 
 
 ## 4. Pour aller plus loin
