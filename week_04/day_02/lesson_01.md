@@ -1,4 +1,4 @@
-# AWS lambda ou comment faire code serverless
+# AWS lambda ou comment faire du code serverless
 
 ## 1. Introduction
 Je sais ! Tu as déjà entendu parler du `serverless` et de fonction `event-driven`.
