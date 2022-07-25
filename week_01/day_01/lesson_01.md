@@ -15,14 +15,15 @@ Maintenant que tu as une vue d'ensemble de Linux. Les questions que tu te poses 
    
 2. Les distributions de Linux, c'est quoi et pourquoi y en a-t-il autant ?
 
-Pour la première question je dirais ceci :
-- Linux est open source (le code source est accessible par tout le monde) et principalement gratuit (la plupart des distributions Linux sont gratuites).
+Voici un début de réponse à à la première question dans cette [article](https://www.ionos.fr/digitalguide/serveur/know-how/unix-vs-linux/).
 
-- Unix est principalement utilisé par ces entreprises : [Sun Microsystems](https://fr.wikipedia.org/wiki/Solaris_(syst%C3%A8me_d%27exploitation)), [HP-UX](https://fr.wikipedia.org/wiki/HP-UX), [AIX](https://fr.wikipedia.org/wiki/AIX)  et sa communauté est très limitée.
+Pour résumer et t'apporter des informations supplémentaires : 
+- Linux est `open source` (ce qui veut dire que le code source est accessible par tout le monde) et principalement gratuit (la plupart des distributions Linux sont gratuites). Il est utilisé par beaucoup de devs et entreprises (RedHat, CentOS, Debian, etc.). De ce fait, sa communauté Linux est gigantesque.
 
-- Linux est utilisé par beaucoup de developers et entreprises (RedHat, CentOS, Debian, etc.).
+- Alors que Unix est principalement utilisé par un nombre limité d'entreprises : [Sun Microsystems](https://fr.wikipedia.org/wiki/Solaris_(syst%C3%A8me_d%27exploitation)), [HP-UX](https://fr.wikipedia.org/wiki/HP-UX), [AIX](https://fr.wikipedia.org/wiki/AIX) et sa communauté est très limitée.
 
-- Au contraire de `Unix`, Linux peut être installé sur plusieurs supports différents (smartphones, console de jeux, IoT, serveurs, etc.).
+
+- Au contraire de Unix, Linux peut être installé sur plusieurs supports différents (smartphones, console de jeux, IoT, serveurs, etc.).
 
 
 ## 2.4. Qu'est-ce qu'un OS ?
