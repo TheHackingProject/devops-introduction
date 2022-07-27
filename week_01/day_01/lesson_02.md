@@ -38,7 +38,7 @@ rm -r directory/
 #### 2.2.2. Se déplacer dans le terminal
 Pour te déplacer sereinement dans le terminal, tu dois d'abord en apprendre plus sur le `Filesystem` de Linux et rien de mieux que [Linux pour t'en apprendre d'avantages](https://www.linux.com/training-tutorials/linux-filesystem-explained/).
 
-Maintenant que tu sais ce qu'est le `Filesystem`, cette [documentation de RedHat](https://www.redhat.com/sysadmin/navigating-linux-filesystem) va t'expliquer comment naviguer dans le `Filesystem` ainsi que la différence entre deux termes très importants, **le chemin relatif et absolue dans le filesystem**. 
+Maintenant que tu sais ce qu'est le `Filesystem`, cette [documentation de RedHat](https://www.redhat.com/sysadmin/navigating-linux-filesystem) va t'expliquer comment naviguer dans le `Filesystem` ainsi que la différence entre deux termes très importants, **le chemin relatif et absolu dans le filesystem**. 
 
 #### 2.2.3. Les permissions et l'appartenance des fichiers
 Cette [documentation](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-groupes-permissions) est parfaite pour avoir une idée claire sur le sujet. La dernière partie sur `Sauvegarder et restaurer les permissions`, ne nous intéresse pas pour l'instant.

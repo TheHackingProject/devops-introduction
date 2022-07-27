@@ -29,8 +29,8 @@ Qui exercitationem consequatur ut rerum alias ex laudantium necessitatibus est l
 1. Depuis ton terminal, copies le texte ci-dessus dans un fichier `maintain_file.txt` et placer ce fichier dans le sous-dossier `~/opsDev/day_01/exercices_01/`.
 
 2. Depuis ton terminal :
-   - copies le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans le repértoire `~/` et le dossier `~/opsDev/day_01`, 
-   - et enfin supprimer la copie qui dans le repértoire `~/`.
+   - copies le fichier `~/opsDev/day_01/exercices_01/maintain_file.txt` dans le repertoire `~/` et le dossier `~/opsDev/day_01`, 
+   - et enfin supprimer la copie qui dans le repertoire `~/`.
    
    **Tu dois faire ces opérations en une seule commande**.
 
@@ -105,7 +105,7 @@ Ajoutes cette liste de noms et prénoms dans ce fichier `~/opsDev/day_01/exercic
 
 3. Crées un sous-dossier (`Good/`) partagé par "Thor” et “Hulk”.
 
-4. Dans le sous-dossier `Good/` ajouter deux fichiers le premier,`Thor_dark_world.txt` accessible par `Thor` uniquement, et le 2ème `Thor_ragnarok` accessible par `Thor` et `Hulk`.
+4. Dans le sous-dossier `Good/` ajouter deux fichiers le 1er,`Thor_dark_world.txt`, accessible par `Thor` uniquement et le 2ᵉ, `Thor_ragnarok.txt`, accessible par `Thor` et `Hulk`.
 
 5. Le fichier `Thor_dark_world.txt` doit être accessible en écriture et lecture pour `Thor` et accessible en lecture uniquement pour `Hulk`.
 
