@@ -134,14 +134,14 @@ En conclusion `Vagrant` te permet de contrôler le cycle de vie de tes VMs et ai
 
 ### 2.3. Lancer sa VM à l'aide de Vagrant
 #### 2.3.1. Installer Vagrant
-Bien la première chose à faire staller Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
+Bien la première chose à faire est d' installer Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
 
-1. Ajouter la clé APT sur ta machine. Les clés PAT permettent de garantir que le dépôt où se trouve le paquet (application/outil) que vous voulez installer est sûr.
+1. Ajoutes la clé APT sur ta machine. Les clés PAT permettent de garantir que le dépôt où se trouve le paquet (application/outil) que tu veux installer est sûr.
 ```shell
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 ```
 
-2. Télécharge le `repository` du paquet sur ta machine. Un `repository` de paquet APT est un serveur réseau ou un répertoire local dans lequel se trouve des paquets qui ont une extension `.deb`.
+2. Télécharges le `repository` du paquet sur ta machine. Un `repository` de paquet APT est un serveur réseau ou un répertoire local dans lequel se trouve des paquets qui ont une extension `.deb`.
 ```shell
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 ```
@@ -161,15 +161,15 @@ Pour ce tutoriel, nous allons lancer une VM de type Ubuntu 16.04 et nous connect
 
 La commande `vagrant init` permet d'instancier l'environment de travail et par la même occasion de créer le fameux `Vagrantfile`
 
-Mais avant de lancer cette commande, il est conseillé de créer un dossier où les éléments créer par le Vagrant ini vont s'ajouter, 
-ceci permet de mieux s'organiser et par la suite pour versionner ce dossier si besoin.
+Mais avant de lancer cette commande, il est conseillé de créer un dossier où les éléments créer par le Vagrant vont s'ajouter, 
+ceci permet de mieux s'organiser et par la suite, versionner ce dossier si besoin.
 
 ```shell
 # Create a directory and move into it :).
 mkdir start_vm_with_vagrant && cd $_
 ```
 
-Dans ce fichier lances la commande `vagrant init` qui va générer le Vagrantfile.
+Dans ce dossier lances la commande `vagrant init` qui va générer le Vagrantfile.
 ```shell
 vagrant init
 ```
@@ -179,11 +179,11 @@ Ce fichier, une fois les commentaires effacés, ressemble à celui-là
 
 [Basic Vagrantfile](https://i.imgur.com/JGG4Lhb.png)
 
-La première ligne spécifie la version de L'outil Vagrant, ici nous utilisons la version 2.
+La première ligne spécifie la version de l'outil Vagrant, ici nous utilisons la version 2.
 
 Ensuite, la deuxième ligne désigne la `box` (l'image de l'OS) que l'on souhaite utiliser.
 La plupart des `box`, sont hébergés sur [Vagrant Cloud](https://app.vagrantup.com/boxes/search).
-Nous allons utiliser l'OS d'Ubuntu 16. Chaque `box` qui se trouve sur Vagrant Cloud contient des explications sur la manière dont on les utilise.
+Nous allons utiliser l'OS d'Ubuntu 16. Chaque `box` qui se trouve sur Vagrant Cloud contient des explications sur la manière de les utiliser.
 
 Pour utiliser un `box` rien de plus simple. 
 ![Vagrantfile with ubuntu box](https://i.imgur.com/Zk2gqcV.png)
@@ -196,20 +196,19 @@ Avec Vagrant une seule commande suffit.
 
 Tu peux maintenant te connecter à cette VM avec `vagrant ssh` et boom ! 
 Te voici dans le terminal de ta VM, libre de l'utiliser comme bon te sembles. 
-La vie est belle :).
+Cher moussaillon ! Quoique l'on en dise, la est belle quand on ne rencontre pas beug 😄.
 
 Cette VM peut accéder à internet télécharger du contenu lancer des applications, etc.
 
-Une fois que tu as finis de t'amuser avec tu peux :
+Une fois que tu as finis de t'amuser avec, tu peux :
 - stopper la VM avec `vagrant suspend`, et relancer la VM avec `vagrant up`
 - éteindre la VM avec `vagrant halt` et rallumer le VM avec `vagrant up`
-- détruire complétement ta VM avec `vagrant destroy`
+- détruire complétement la VM avec `vagrant destroy`
 
 Mais pour l'instant laisse cette VM `up`, j'ai une dernière chose à te montrer.
 
 #### 2.3.3. Accéder au VM créer par Vagrant depuis VirtualBox
-Comme je te l'ai dit plus haut, Vagrant encapsule Virtualbox. C
-e qui permet d'utiliser Virtualbox sans pour autant connaître tous ses éléments techniques.
+Comme je te l'ai dit plus haut, Vagrant encapsule Virtualbox. Ce qui permet d'utiliser Virtualbox sans pour autant connaître tous ses éléments techniques.
 **C'est ce que l'on appelle l'abstraction**. En d'autres mots, l'abstraction permet d'utiliser des outils/applications/fonctions/classes sans pour autant maîtriser/connaître leurs fonctionnements interne, 
 c'est le cas par exemple des outils du Cloud (Heroku, Vercel, AWS), qui simplifient l'accès à des services, qui, pour la plupart sont extrêmement compliqués à créer par soi-même.
 
@@ -217,10 +216,9 @@ Dans notre cas si tu lances Virtualbox, tu vas t'apercevoir qu'une VM portant le
 ![Virtualbox with started vagrant box](https://i.imgur.com/XexZcPr.png)
 
 
-Comme avec les commandes de Vagrant, tu peux suspendre, arrêter, relancer et détruire cette VM.
+Vagrant permet d'aller encore plus loin dans la customisation des VMs, mais tu en as assez vu pour aujourd'hui, demain est un autre jour !
 
-Vagrant permet d'aller encore plus loin dans la customisation des VMs, mais tu en as assez vu pour aujourd'hui, demain est un autre jour :).
-
+---
 #### 2.3.4. 🚀 ALERTE BONNE ASTUCE
 Après avoir lancé `vagrant up`, ta VM ne peut plus être changé.
 
@@ -237,11 +235,12 @@ vagrant up
 - ou tu peux utiliser ce raccourci :
 ```shell
 # Stop and restart Vagrant box
-vagrant releao
+vagrant reload
 ```
+---
 
 ## 3. Points importants à retenir
-- Il est important de comprendre la relation entre l'hyperviseur et Vagrant, Car certaines erreurs de l'outil Vagrant nécessite souvent d'aller jeter un coup d'œil au tableau de bord de Virtualbox.
+- Il est important de comprendre la relation entre l'hyperviseur de type 2 et Vagrant, Car certaines erreurs de l'outil Vagrant nécessite souvent d'aller jeter un coup d'œil au tableau de bord de Virtualbox.
 
 - Comprendre également les différents composants de Vagrant et comment ils interagissent est primordiale.
 
