@@ -109,11 +109,12 @@ Hé, bien la réponse est simple tu peux tirer avantages de VirtualBox sans pour
 #### 2.3.1. Vagrant qu'est-ce que c'est ?
 Vagrant est un outil pour construire et manager des VMs. Il encapsule l'hyperviseur présent sur la machine.
 En d'autres mots, l'outil Vagrant fera office de `middleware/interface` entre la VM et l'hyperviseur, ce qui veut dire que la création des VMs se fera à l'aide commande lancée avec Vagrant.
+
 Voici un schéma qui va certainement t'aider.
 
-![Utilisation de Vagrant}(![image](https://user-images.githubusercontent.com/41822034/181581664-a4f29fd4-0e68-4e83-8df3-df287fffab14.png))
+![Utilisation de Vagrant](https://user-images.githubusercontent.com/41822034/181581664-a4f29fd4-0e68-4e83-8df3-df287fffab14.png)
 
-Ainsi l'utilisateur de Vagrant va construire, lancer, stopper, détruire et réutiliser des VMs à l'aide de commande Vagrant ou un fichier appelé `Vagrantifle`.
+Ainsi l'utilisateur de `Vagrant` va construire, lancer, stopper, détruire et réutiliser des VMs à l'aide de commande Vagrant ou un fichier appelé `Vagrantifle`.
 Ce fichier peut être partagé/versionné, ce qui facilite la replication du même environment.
 
 Les prouesses de Vagrant sont dû à 3 composants : 
@@ -128,12 +129,12 @@ Les prouesses de Vagrant sont dû à 3 composants :
   - deployer directement sur AWS, heroku ou dans Docker, etc.
   - installer directement des outils comme Docker, mongodb ou encore mysql, directement dans votre VM.
 
-De ce fait Vagrant en permettant de contrôler le workflow complet des VMs et de faire travailler une team de devs sur exactement le même environnement de développement.
+En conclusion `Vagrant` te permet de contrôler le cycle de vie de tes VMs et ainsi donner la possibilité aux devs de travailler sur un environnement quasi identique à celui de la production.
 
 
 ### 2.3. Lancer sa VM à l'aide de Vagrant
 #### 2.3.1. Installer Vagrant
-Bien la première chose est d'installer Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
+Bien la première chose à faire staller Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
 
 1. Ajouter la clé APT sur ta machine. Les clés PAT permettent de garantir que le dépôt où se trouve le paquet (application/outil) que vous voulez installer est sûr.
 ```shell
