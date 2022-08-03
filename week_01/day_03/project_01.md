@@ -20,20 +20,20 @@ Voici les instructions que le CTO a écrites, en vue de tester une application R
 
 PS. Tu vas avoir besoin d'ouvrir un port spécifique sur le `guest` et le faire correspondre un port spécifique du host, de manière à pouvoir 
 vérifier que ton application s'est bien lancé à l'intérieur du `guest`.
-C'est une chose que l'on n'a pas encore abordé dans le cours,
+C'est une chose que l'on n'a pas encore abordée dans le cours,
 mais je suis sûr que tu es capable de trouver par tes propres moyens comment faire.
 
 #### 2.2.1. Script - Shell Niveau 1.
-1. Depuis ta machine (host), crée une VM (guest) de type Ubuntu 18.04.
+1. Depuis ta machine (host), crées une VM (guest) de type Ubuntu 18.04.
 
 
 2. Sur ton host ou directement sur le guest (à l'aide de nano, vi ou vim) écrit un script shell composé de plusieurs étapes :
-   1. Installer tous les éléments nécessaires au lancement d'une application ROR.
-   2. Pull l'application depuis ton repo Github/Gitlab.
-   3. Lancer l'application ROR et informer l'utilisateur de son statut (`stop, running`).
-   4. Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur le chemin relatif `~/ror_app/` dans le guest. 
+   - Installer tous les éléments nécessaires au lancement d'une application ROR.
+   - Pull l'application depuis ton repo Github/Gitlab.
+   - Lancer l'application ROR et informer l'utilisateur de son statut (`stop, running`).
+   - Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur le chemin relatif `~/ror_app/` dans le guest. 
       
-      PS. Le fichier et le dossier n'existent pas encore 😏.
+PS. Le fichier et le dossier n'existent pas encore 😏.
    
   
 3. Lance ton script dans le guest.
@@ -59,5 +59,5 @@ Une fois que tu as finis le script shell de niveau 1 :
 Un joli repo qui contient le/les scripts, le Vagrantfile ainsi qu'un `README.md` qui explique comment celui-ci fonctionne et dans quelle situation il fonctionne. 
 
 Petit conseil : 
-- Pense à suivre les conventions Shell que tu as apprises hier.**
+- **Pense à suivre les conventions Shell que tu as apprises hier.**
 - N'hésite pas à créer plusieurs petits scripts shell si tu en ressens le besoin.

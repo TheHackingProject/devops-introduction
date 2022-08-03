@@ -14,10 +14,10 @@ Avec Virtualbox tu peux customiser à peu prêt tous les éléments de ta VM :
 - le type de réseau et sous-réseau
 - et.
 
-Et tout ce que tu peux faire avec Virtualbox, tu peux également le faire avec Vagrant. Dans ce cours nous allons explorer certaines possibilités de customisations qu'offrent Vagrant à travers le Vagrantfile.
+Et tout ce que tu peux faire avec Virtualbox, tu peux également le faire avec Vagrant. Dans ce cours, nous allons explorer certaines possibilités de customisations qu'offrent Vagrant à travers le Vagrantfile.
 
 ### 2.1.  Customiser ses VM
-Nous allons commencer par créer un dossier et lancer la commande `vagrant init` depuis celui-ci.
+Nous allons commencer par créer un dossier et lancer la commande `vagrant init` À l'intérieur.
 Et comme on s'y attend un Vagrantfile va être généré.
 
 Ce fichier ressemble à celui-ci sans les commentaires :
@@ -30,14 +30,15 @@ Pour définir un `hostname` spécifique, il suffit d'ajouter ce code, `config.vm
 
 ![Box with customized hostname](https://i.imgur.com/Txsnq84.png)
 
-Cette [doc](https://www.maketecheasier.com/hostname-in-linux/) t'explique en quelques mots pourquoi un hostname peut s'avérer utile.
+Cette [documentation](https://www.maketecheasier.com/hostname-in-linux/) t'explique en quelques mots pourquoi un hostname peut s'avérer utile.
 
 Pour tester, lance la commande `hostmane` dans la VM.
 
 
 #### 2.1.2. Définir une IP
-Dans certaines infrastructures connaitre les addresses IP des VM est très important, par exemple une architecture micro-services avec une application par VM nécessite de connaître les IP de chaque VM pour permettre les interactions entre elles.
-Ainsi, pour définir l'IP privée d'une VM, ajoute ce code `config.vm.network "private_network", ip: "PRIVATE_IP"`, comme dans cette exemple :
+Dans certaines infrastructures connaitre les addresses IP des VM est très important, 
+par exemple une architecture micro-services avec une application par VM nécessite de connaître les IP de chaque VM pour permettre les interactions entre elles.
+Ainsi, pour définir l'IP privée d'une VM, ajoute ce code `config.vm.network "private_network", ip: "PRIVATE_IP"`, comme dans cet exemple :
 
 ![Box with customized with custom IP](https://i.imgur.com/zl0g0nP.png)
 
@@ -120,7 +121,7 @@ vagrant up
 - ou utiliser ce raccourci :
 ```shell
 # Stop and restart Vagrant box
-vagrant releao
+vagrant reload
 ```
 
 Lorsque tu commences à avoir plusieurs VM, gérer le workflow de chaque VM peut s'avérer utile. 
@@ -136,7 +137,7 @@ vagrant up api-microservice
 ## 4. Points importants à retenir
 Vagrant te donne la possibilité de reproduire, adapter et partager ton environnement de développement.
 Cependant, pense toujours 
-- aux capacités du host, pour éviter qu'il 'crash'.
+- aux capacités du host, pour éviter qu'il crashe.
 - aux ports que tu ouvres sur le host, pour ne pas avoir de conflits, 
   notamment lorsque tu veux `port forward` des ports connus, exemple :
   - rabbitmq: 5672
@@ -147,4 +148,4 @@ Cependant, pense toujours
 
 ## 5. Pour aller plus loin
 Comme je t'ai dit plus haut, avec Vagrant, on peut aller très loin dans la customisation des VM.
-Pour en savoir plus la [doc officielle de Vagrant](https://www.vagrantup.com/docs) est une valeur sûre.
+Pour en savoir plus la [documentation officielle de Vagrant](https://www.vagrantup.com/docs) est une valeur sûre.

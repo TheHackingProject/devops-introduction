@@ -39,10 +39,10 @@ L'idée d'avoir un environnement partagé a continué son chemin au fil des tech
 C'est ainsi qu'en 2006 les devs de Google ont annoncé travailler sur une technologie révolutionnaire appelée `process containers`.
 
 Cette technologie, limite les resources (CPU, RAM, etc.) utilisés par un `groupe de process`.
-C'est fut, une annonce incroyable pour cette époque, car avant le `process containers` on ne pouvait  limiter l'accès que d'un seul `process` à la fois.
+C'est fut, une annonce incroyable pour cette époque, car avant le `process containers` on ne pouvait limiter l'accès que d'un seul `process` à la fois.
 
 Par la suite Google renomma cette technologie en `Cgroups (control groups)` pour éviter la confusion avec le terme `container`.
-Et enfin cette technologie fut intégrée au `Linux Kernel`, ce qui permis en 2007, la naissance du LXC (`Linux Container`), l'ancêtre des `containeurs` tel que tu vas les découvrir la semaine prochaine 😄.
+Et enfin cette technologie fut intégrée au `Linux Kernel`, ce qui permit en 2007, la naissance du LXC (`Linux Container`), l'ancêtre des `containeurs` tel que tu vas les découvrir la semaine prochaine 😄.
 
 La suite de l'histoire la semaine prochaine avec la découverte de Docker 😜.
 
@@ -68,7 +68,7 @@ Mais ne t'inquiète pas, on va expliquer chaque mot.
 
 PS. Une machine virtuelle est un environment virtuel qui fonctionne comme un OS virtuel, mais avec ses propres ressources (RAM, CPU, network, ...).
 
-Il existes deux types d'hyperviseur :
+Il existe deux types d'hyperviseur :
 - un **Hyperviseur de type 2** se lance sur un PC "normal", en tant qu'application, donc sur un PC où est déjà installé un OS.
 
   `Oracle VirtualBox`, `VMware workstation` sont par example des hyperviseurs de type 2.
@@ -86,14 +86,14 @@ Maintenant que tu en sais plus, nous allons découvrir la virtualisation de type
 
 ### 2.2. Ta première VM
 #### 2.2.1. Installer Virtualbox
-Cette [documnetation](https://linuxhint.com/install-virtualbox-linux/) te montre comment installer VirtualBox sur Ubuntu
+Cette [documentation](https://linuxhint.com/install-virtualbox-linux/) te montre comment installer VirtualBox sur Ubuntu
 
 #### 2.2.2. Démarrer une VM.
 Cette [video](https://www.youtube.com/watch?v=sB_5fqiysi4) te montre comment démarrer une VM sans anicroche.
 
 Comme tu l'as vu dans la video, créer des VM n'est pas si compliqué, ce qui l'est par contre, c'est de configurer cette VM et interagir avec elle.
 
-L'interaction et la configuration de VirtualBox et ses VMs sont hors de notre scope et nécessites d'en savoir davantage sur :
+L'interaction et la configuration de VirtualBox et ses VMs sont hors de notre scope et nécessite d'en savoir davantage sur :
 
 - le réseau (le modèle OSI, NAT, la différence entre les IP privée et publique définir un sous-réseau, ouvrir des ports sur la machine host et guest, etc.)
 - les différents types de stockage qu'offre VirtualBox.
@@ -134,7 +134,7 @@ En conclusion `Vagrant` te permet de contrôler le cycle de vie de tes VMs et ai
 
 ### 2.3. Lancer sa VM à l'aide de Vagrant
 #### 2.3.1. Installer Vagrant
-Bien la première chose à faire est d' installer Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
+Bien la première chose à faire est d'installer Vagrant. Cette [doc](https://www.vagrantup.com/docs/installation) de l'organisation Hashicorp, qui au passage a créé `Vagrant` est un bon point de départ.
 
 1. Ajoutes la clé APT sur ta machine. Les clés PAT permettent de garantir que le dépôt où se trouve le paquet (application/outil) que tu veux installer est sûr.
 ```shell
@@ -161,7 +161,7 @@ Pour ce tutoriel, nous allons lancer une VM de type Ubuntu 16.04 et nous connect
 
 La commande `vagrant init` permet d'instancier l'environment de travail et par la même occasion de créer le fameux `Vagrantfile`
 
-Mais avant de lancer cette commande, il est conseillé de créer un dossier où les éléments créer par le Vagrant vont s'ajouter, 
+Mais avant de lancer cette commande, il est conseillé de choisir/créer le dossier où les éléments générés par le Vagrant vont s'ajouter, 
 ceci permet de mieux s'organiser et par la suite, versionner ce dossier si besoin.
 
 ```shell
@@ -195,8 +195,8 @@ Enfin, lances la commande `vagrant up` dans le dossier où se trouve le Vagrantf
 Avec Vagrant une seule commande suffit.
 
 Tu peux maintenant te connecter à cette VM avec `vagrant ssh` et boom ! 
-Te voici dans le terminal de ta VM, libre de l'utiliser comme bon te sembles. 
-Cher moussaillon ! Quoique l'on en dise, la est belle quand on ne rencontre pas beug 😄.
+Te voici dans le terminal de ta VM, libre de l'utiliser comme bon te semble. 
+Cher moussaillon ! Quoique l'on en dise, la vie est belle quand on ne rencontre pas bug 😄.
 
 Cette VM peut accéder à internet télécharger du contenu lancer des applications, etc.
 
