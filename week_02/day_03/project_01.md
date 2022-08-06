@@ -76,5 +76,3 @@ Tu peux te féliciter, car tu commences à rentrer dans la cour des grands !
 ## 3. Rendu attendu
 Un repo github qui contient les instructions pour télécharger 
 et lancer tes trois images (MySQL, application ROR et React) depuis ton compte DockerHub.
-
-
