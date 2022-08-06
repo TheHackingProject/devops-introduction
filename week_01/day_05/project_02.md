@@ -13,7 +13,7 @@ tu décides de corriger tes `pull request` en fonction des retours des membres d
 
 Une fois bien installé le thé à la main, ton Lead dev sort de la salle de réunion, et se dirige directement vers toi.
 
-Dans ta tête, tu commences à paniquer en te demandant ce que tu as bien pu faire <emoji>.
+Dans ta tête, tu commences à paniquer en te demandant ce que tu as bien pu faire 😟.
 
 Une fois arrivé à ton bureau, il commence à se plaindre des contraintes que la direction et de la team business qui ne cessent de se plaindre du service informatique.
 Ils nous reprochent notre manque d'agilité face au besoin client, du temps que prend chaque feature à être développé, des erreurs de code et du temps mise en prod qui souvent font tomber le site.
