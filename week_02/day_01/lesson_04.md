@@ -1,11 +1,11 @@
 # Découverte de LXC & LXD
 
 ## 1. Introduction
-Maintenant tu as une bonne base théorique, il est temps de passer à la pratique et de créer ton premier conteneur Linux 💥
+Maintenant tu as une bonne base théorique, il est temps de passer à la pratique et de créer ton premier conteneur Linux 💥.
 
 Comme tu viens de le voir, un conteneur est un ensemble d'éléments plus ou moins complexe, voir très complexe. 
-En conséquence, à la sortie de ces 6 semaines on n'attend pas de toi que tu maitrises sur le bout des doigts les conteneurs.
-Par contre il est important de connaitre le contexte général, et également de savoir comment les conteneurs ont évolué au fil des années.
+En conséquence, à la sortie de ces 6 semaines, on n'attend pas de toi que tu maitrises sur le bout des doigts les conteneurs.
+Par-contre il est important de connaitre le contexte général, et également de savoir comment les conteneurs ont évolué au fil des années.
 
 Raison pour laquelle, nous allons aujourd'hui nous concentrer sur LXC & LXD qui sont des technologies rarement utilisées en production.
 
@@ -44,17 +44,17 @@ namespaces que tu as jusqu'ici découverts.
 Cela te permettra d'avoir une compréhension plus globale du fonctionnement des conteneurs.
 
 Le tutoriel devient à la fin un peu complexe et tu n'as pas besoin pour l'instant 
-de t'aventurer dans les eaux trop profondes, de ce fait, tu pourras t'arrêter à 41 min et 5 secondes.
+de t'aventurer dans les eaux trop profondes, de ce fait, tu pourras t'arrêter à la 41ᵉ min du tutoriel.
 
 
 ## 3. Points importants à retenir
 LXC & LXD sont les parents des conteneurs de manière générale.
 Raison pour laquelle connaitre LXC est un excellent point de départ dans la découverte des conteneurs et son écosystème.
-Malgrès cela LXC a au fil du temps perdu de sa superbe pour plusieurs raisons que l'on évoquera demain. 
+Malgré cela LXC a au fil du temps perdu de sa superbe pour plusieurs raisons que l'on évoquera demain. 
 C'est pour cela qu'avoir une connaissance de LXC, non pas au niveau des commandes, 
 mais de son fonctionnement général est le moyen le plus sûr d'attaquer Docker avec des bases solides. 
 
 
 ## 4. Pour aller plus loin
-Il existe de nombreux articles/tutorials avancés sur LXC et LXD, que tu trouveras facilement, 
-cependant le moyen le plus simple pour avoir une meilleure compréhension, c'est de commenccer par la documentation officielle de [LXC & LXD](https://linuxcontainers.org/)
+Il existe de nombreux articles/tutoriels avancés sur LXC et LXD, que tu trouveras facilement, 
+cependant le moyen le plus simple pour avoir une meilleure compréhension, c'est de commencer par la documentation officielle de [LXC & LXD](https://linuxcontainers.org/)

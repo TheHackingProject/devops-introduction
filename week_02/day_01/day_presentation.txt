@@ -1,1 +1,1 @@
-Il est temps de découvrir LXD et LXD (les conteneurs Linux) qui sont les ancêtres direct des conteneurs Docker.
+Il est temps de découvrir LXD et LXD (les conteneurs Linux) qui sont les ancêtres directs des conteneurs Docker.
