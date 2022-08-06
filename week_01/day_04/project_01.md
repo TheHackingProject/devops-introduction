@@ -18,9 +18,9 @@ Au vu de ces nouvelles contraintes, une réunion de conception à laquelle tu es
 Soudain, en plein milieu de la réunion, tu as une illumination et dis tout haut, VAGRANT, les autres ne comprenant pas, te regardes à la recherche d'une quelconque réponse sur ton visage plein de certitudes.
 Remarquant tous les regards posés sur toi, tu expliques les raisons qui te poussent à croire que la technologie Vagrant est la solution.
 
-Convaincus par ta plaidoirie, les membres de la reunion valident l'utilisation de `Vagrant` et décident de te confier sa mise en place.
+Convaincus par ta plaidoirie, les membres de la réunion valident l'utilisation de `Vagrant` et décident de te confier sa mise en place.
 
-Te voilà, de nouveau dans une salle affaire <emoji>.
+Te voilà, de nouveau dans une salle affaire :smile:.
 
 ### 2.2. La feuille de route.
 Suite à la décision générale de te confier la mise en place de la solution via Vagrant. 
@@ -28,20 +28,20 @@ Le lead dev, a vu petit à petit ta tête se décomposer, et à la vue de tant d
 
 1. À l'aide du `Vagrantfile`, lance d'abord les différents types de VM (Ubuntu 18.04, Debian 10, RHEL 7, Centos 8, alpine64).
    
-   Fais attention aux ressources que tu alloues à chaque VM, il va dépendre des ressources du host. Pense à bien les répartir.
+   Fais attention aux ressources que tu alloues à chaque VM, il va dépendre des ressources de ta machine. Penses à bien les répartir !
 
 
 2. Pour chaque type de guest, écris le shell script qui va permettre de lancer l'application ROR. 
   
-  Comme hier, utilise l'application ROR de ton choix, parmi ceux que toi ou ton équipe avaient déjà réalisées dans le parcours Fullstack.
+  Comme hier, utilise l'application ROR de ton choix, parmi ceux que toi ou ton équipe avaient déjà réalisé dans le parcours Fullstack.
 
-  Chaque shell script doit suivre les opérations ci-dessous.
+  Chaque script shell doit suivre les opérations ci-dessous.
 
 
 #### 2.2.1. Script - Shell Niveau 1.
 Opération à suivre pour chaque type de VM :
 
-1. Sur ton host ou directement sur le guest (à l'aide de nano, vi ou vim) écrit un script shell composé de plusieurs étapes :
+1. Sur ta machine ou directement sur le guest (à l'aide de nano, vi ou vim) écrit un script shell composé de plusieurs étapes :
    1. Installer tous les éléments nécessaires au lancement d'une application ROR.
    2. Pull l'application depuis Github/Gitlab.
    3. Lancer l'application ROR et informer l'utilisateur de son statut (`stop, running`).
