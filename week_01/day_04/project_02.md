@@ -13,7 +13,7 @@ Ce qui à terme va poser quelques problèmes de sécurité et de traçabilité d
 De ce fait ton lead dev, te demande d'améliorer cette partie, en générant des mots de passe aléatoires.
 
 ### 2.2. Instructions
-Comme d'habitude ton lead dev a écrit quelques instructions à suivre, afin de te guider <emoji> :
+Comme d'habitude ton lead dev a écrit quelques instructions à suivre, afin de te guider 😉 :
 
 #### 2.2.1. Re-factorer et améliorer ton script
 1. Remplacer la commande `read` par un argument pour le `username`.
