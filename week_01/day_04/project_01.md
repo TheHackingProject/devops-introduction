@@ -47,10 +47,10 @@ Opération à suivre pour chaque type de VM :
    3. Lancer l'application ROR et informer l'utilisateur de son statut (`stop, running`).
    4. Envoyer les logs de l'application dans un fichier `app.logs`, qui se trouvera sur le chemin relatif `~/ror_app/` dans le guest.
 
-      PS. Le fichier et le dossier n'existent pas encore <emoji>.
+      PS. Le fichier et le dossier n'existent pas encore 😉.
    
 
-3. Depuis le host, via ton navigateur préféré, verifies que ton application marche bien. <emoji> 
+3. Depuis le host, via ton navigateur préféré, verifies que ton application marche bien. 😄
    
    PS. Attention le port de ton application dans le guest doit être accessible depuis le host.
 
