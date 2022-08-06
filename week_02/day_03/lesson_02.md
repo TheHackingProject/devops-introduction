@@ -20,7 +20,8 @@ Et pour te répondre, rien de mieux que celui qui a été ou qui va être ton me
 Vive Grafikart, [the real King in the north](https://www.youtube.com/watch?v=ff35SjsN7g0) !
 
 [Voici son tutoriel sur le Dockerfile](https://grafikart.fr/tutoriels/dockerfile-636), il comprend tous les éléments pour bien débuter avec les Dockerfile.
-Il est possible qu'à la fin du tutoriel tu n'es pas tout compris, mais ce n'est pas grave, car nous reviendrons sur certains éléments comme les volumes dans les prochains cours.
+Il est possible qu'à la fin du tutoriel, tu n'es pas tout compris, mais ce n'est pas grave, 
+car nous reviendrons sur certains éléments comme les volumes dans les prochains cours.
 
 ## 3. Points importants à retenir
 Voici les points important à retenir : 
@@ -29,7 +30,7 @@ Voici les points important à retenir :
 - la différence entre l'instruction `ADD` et `COPY`. 
   Je te laisse chercher la différence par tes propres moyens 😜.
 - la différence entre l'instruction `ENTRYPOINT` et `CMD`. 
-  Tu peux trouver la différence très facilement je te fais confiance.
+  Tu peux trouver la différence très facilement, je te fais confiance.
 - gardes bien en tête la notion de "layer" qui a été évoqué dans le tutoriel. 
   Ce sujet revient assez souvent dans les entretiens technique, de ce fait,
   pour être bien à l'aise quand la question fatidique va tomber, voici un [article](https://blog.engineering.publicissapient.fr/2020/03/26/autour-des-conteneurs-docker-build-et-ses-layers-docker-en-tient-une-couche/) qui va t'en apprendre plus.

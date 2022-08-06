@@ -67,4 +67,4 @@ Ici tu vas devoir créer un script assez complexe et pour t'aider un peu, voici 
 ## 3. Rendu attendu
 Un repo qui contient le Vagrantfile et un ou plusieurs scripts shell 
 qui reprennent les étapes ci-dessus ainsi qu'un `README.md` 
-qui explique comment on utilise ce repo.
+qui explique comment on utilise ce repository.
