@@ -15,7 +15,7 @@ Fais ce [kata](https://www.codewars.com/kata/55e7280b40e1c4a06d0000aa) en suivan
 ### 2.3. La pyramide plein
 Tu te rappelles la pyramide que tu as dû faire en Ruby (un doux souvenir pour certains et amères pour d'autres).
 
-Eh bien, il va falloir la ire en Shell <emoji>. 
+Eh bien, il va falloir la faire en Shell 😃. 
 
 Crée un programme qui va générer la pyramide de cette manière :
 ```shell
