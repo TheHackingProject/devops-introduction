@@ -25,7 +25,7 @@ Aujourd'hui les conteneurs Docker ne sont plus réellement comme ceux de 2013, m
 
 Maintenant place à l'action !
 Au lieu de te parler théorie et architecture des conteneurs Docker, passons directement à la pratique.
-C'est délibérer de ma part <emoji> ! Car je sais qu'avec le cours d'hier,
+C'est délibérer de ma part 😜 ! Car je sais qu'avec le cours d'hier,
 tu es capable de comprendre la plupart des commandes et concepts que nous allons utiliser ci-dessous.
 
 
@@ -52,7 +52,7 @@ sudo usermod -aG docker ${USER}
 ```
 Une fois la commande rentrée, tu dois soit :
 - fermer ta session et ensuite te reconnecter. 
-  Pour être sûr, je t'invite à redémarrer ton PC afin d'être vraiment sûr <emoji>.
+  Pour être sûr, je t'invite à redémarrer ton PC afin d'être vraiment certain 😀.
 - ou lancer cette commande ```su - ${USER}```
 
 Tu peux maintenant vérifier que ton utilisateur est bien ajouté au groupe docker en tapant `id -nG`,
@@ -289,9 +289,9 @@ root@290061f41a7c:/#
 Je te vois déjà à la fois surpris et fasciné par ces quelques lignes 😃.
 Mais si tu analyses cette sortie en détails, tu peux en conclure que l'instruction `docker run -it ubuntu` :
 - vérifie que l'image existe sur la machine et qu'elle la télécharge si besoin.
-- ensuite qu'elle lance un conteneur avec l'image téléchargée
-- puis qu'elle rentre dans ce conteneur
-- et enfin qu'elle affiche en `mode intéractif`, le conteneur. 
+- ensuite lance un conteneur avec l'image téléchargée
+- puis rentre dans ce conteneur
+- et enfin, affiche en `mode intéractif`, le conteneur. 
   Ce mode est comme si tu étais en train d'interagir avec un PC via le terminal, tout simplement 🙂.
 
 

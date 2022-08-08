@@ -15,7 +15,7 @@ En marchant vers la cafeteria, tu passes devant le bureau du CTO, à l'intérieu
 Priant pour qu'ils ne te remarquent pas tu accélères le pas, mais trop tard, ton nom vient de résonner dans le bureau.
 
 Tu avances donc dans le bureau, en te demandant ce que tu as bien pu coder de tellement moche
-pour qu'ils décident de te parler en groupe <emoji>.
+pour qu'ils décident de te parler en groupe 😭.
 
 La dev senior d'un ton jovial, t'annoncer qu'ils sont en train de réfléchir à la meilleure facon de "`Dockeriser`" la stack applicatifs.
 Elle poursuit en disant ceci, personne dans notre équipe connait vraiment Docker et le dernier POC que tu as fait sur LXC, 

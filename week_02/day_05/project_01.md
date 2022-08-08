@@ -14,15 +14,16 @@ le CTO, les lead dev et les SysOps sont débordés par la réparation des dégâ
 Et pour ne rien arranger le CEO, trouve que le service IT coûte vraiment cher par rapport 
 aux nombres d'applications et outils nécessaires au fonctionnement de la startup.
 
-C'est au cours d'une pause déjeuner où les lead devs vous ont rejoint que l'annonce est tombé.
+C'est au cours d'une pause déjeuner où les lead devs vous ont rejoint que l'annonce est tombée.
 Vous aller dans les prochaines semaines migrer vers le Cloud au lieu de continuer à maintenir des serveurs et à gérer tous les inconvénients liés à cela.
 
 En attendant cette annonce faite par la lead dev, tu dis, mais quel type de "Cloud" on va utiliser ?
 
 Je ne sais pas pour l'instant une étude là-dessus est en cours et dans quelques jours, une annonce officielle sera faite.
-D'ici là, on continue à coder et à "push" sur nos serveurs actuels.
+D'ici là, on continue à coder et à "push" et mettre en production sur nos serveurs actuels.
 
-Merci pour l'info ! Dans tête tu te dis, mais j'aurais vraiment tous vécu dans cette startup, j'ai de la chance d'avoir été embauché ici.
+Merci pour l'info ! Dans ta tête tu te dis, mais j'aurais vraiment tous vécu dans cette startup, 
+j'ai de la chance d'avoir été embauché ici.
 
 Un peu plus tard dans la journée un collègue t'accoste. Dis-moi, j'ai essayé de créer un fichier docker-compose 
 à l'aide du workshop de la dernière fois et j'ai bien réussis,
