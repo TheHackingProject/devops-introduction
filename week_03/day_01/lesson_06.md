@@ -9,10 +9,10 @@ Pour cela AWS a trouvé une solution avec la fonctionnalité `EC2 user data`, vo
 ## 2. La ressource
 ### 2.1. Utiliser les EC2 user data
 
-ToDo : Video à faire 
+**TODO : faire une vidéo.**
 
-PS. N'oublies pas un script exécuter depuis la fonctionnalité `user data` est toujours exécuté en mode `root
+PS. N'oublie pas un script exécuter depuis la fonctionnalité `EC2 user data` est toujours exécuté en mode `root`.
 
 ## 4. Pour aller plus loin
 
-[La documentation de AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html) te fourniras un peu plus d'informations.
+[La documentation de AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html) te fournira un peu plus d'informations.

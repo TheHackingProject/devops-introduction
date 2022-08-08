@@ -1,7 +1,7 @@
 # AWS CLI : Niveau 2
 
 ## 1. Introduction
-Le projet d'aujourd'hui à récréer l'infrastructure de mercredi à l'aide de l'interface de commande d'AWS uniquement.
+Le projet d'aujourd'hui, tu vas récréer l'infrastructure de mercredi à l'aide de l'interface de commande d'AWS uniquement.
 C'est un défi de taille 🔥, mais tu vas y arriver. J'ai confiance en toi. 💪
 
 ## 2. Le projet
@@ -18,7 +18,7 @@ C'est un défi de taille 🔥, mais tu vas y arriver. J'ai confiance en toi. �
 
 #### 2.2.2. Absorber les pics de charge avec les services `ALB` et `ASG`.
 1. Fais en sorte que l'instance où réside ton front en React soit scalable 
-   et soit également derrière un Load Balancer de type `ALB`.
+   et, soit également derrière un Load Balancer de type `ALB`.
 
 #### 2.2.3. Tester la scalabilité de ton front en React.
 Testes la scalabilité de ton infrastructure.

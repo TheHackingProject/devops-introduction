@@ -1,9 +1,9 @@
 # Sécuriser ses serveurs AWS.
 
 ## 1. Introduction
-Tout comme hier, tu vas lancer tes deux applications préférées (ROR et React) ainsi qu'une base de donnée de ton choix hébergé sur un serveur EC2.
-Et en plus tu vas devoir faire communiquer ton infrastructure en réseau privé et ajouter des pare-feu 
-au niveau de des instances EC2.
+Tout comme hier, tu vas lancer tes deux applications préférées (ROR et React) ainsi qu'une base de donnée de ton choix hébergé sur une instance EC2.
+De plus, tu vas devoir faire communiquer ton infrastructure en réseau privé et ajouter des pare-feu 
+au niveau des instances EC2.
 
 ## 2. Le projet
 ### 2.1. Scénario
@@ -39,7 +39,7 @@ Appliques ces règles de pare-feu :
 #### 2.2.2. Rendre ton instance résiliant au redémarrage
 Idéalement ton front en React devrait se trouver derrière un DNS et avec nom de domaine, mais malheureusement ce n'est pas le cas dans ce contexte.
 De ce fait, pour éviter que lors d'un redémarrage accidentel ou non de ton instance
-où reside ton application React, il change d'IP (ce qui rendrait tes utilisateurs ultra mécontent 😏) ajoutes une IP réservé sur cette instance.
+où reside ton application React, AWS change l'IP de celle-ci (ce qui rendrait tes utilisateurs ultra mécontent 😏), ajoutes une IP fixe sur cette instance.
 
 
 ## 3. Rendu attendu
@@ -47,5 +47,5 @@ Un repo github qui contient la video des trois instances EC2, ainsi que les `SG`
 
 Dans cette video, je veux voir :
 - les trois instances qui tournent
-- les IP privée, public et réservé (Elastic IP) de chaque instance s'il y en a besoin 😃.
+- les IP privée, public et fixe (Elastic IP) de chaque instance s'il y en a besoin 😃.
 - les règles qui trouvent dans les `SG` attacher à chaque instance. 

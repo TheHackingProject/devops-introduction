@@ -5,7 +5,7 @@ Tu commences à avoir une certaine vue d'ensemble du service EC2, mais il manque
 Une de ces fonctionnalité s'appelle le `Security Groups` ou tout simplement un pare-feu qui permet de protéger le traffic entrant et sortant **d'une instance EC2**.
 
 `Ce pare-feu opère au niveau de l'instance EC2`, cette notion est importante, car d'autres services d'AWS, 
-que tu auras l'occasion de découvrir par toi-même à l'avenir peuvent permettre ou bloquer le traffic au niveau du VPC par example.
+que tu auras l'occasion de découvrir par toi-même à l'avenir peuvent permettre ou bloquer le traffic au niveau du VPC par exemple.
 
 
 ## 2. La ressource
@@ -18,7 +18,7 @@ Une fois le pare-feu créer, tu peux configurer des règles qui autorisent le tr
 
 ### 2.2. Security Groups - Illustration
 
-ToDo : Video
+TODO : faire une video
 
 ### 2.3. A ne pas oublier
 Les `SG` sont assez simple à utiliser, mais il est quand même important de faire extrêmement attention lorsqu'on les utilise, voici quelques éléments à toujours garder en tête : 

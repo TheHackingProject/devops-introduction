@@ -5,20 +5,19 @@
 ## 2. La ressource
 ### 2.1. Explorer les volumes EBS (Elastic Block Store)
 
-ToDo : faire la vidéo
-....
+*TODO : faire la vidéo*
 
 ### 2.1. Les types volumes EBS
 Comme pour les instances EC2, les volumes EBS ont également des caractéristiques et un prix différents selon le type de volume choisi.
 Connaitre ses éléments te permettra de choisir le bon type selon le besoin.
 
-Comme je l'ai dit dans la video, tu peux visualiser les volumes EBS des clés USB.
-Techniquement ce sont des espaces de stockage qui se connecte à l'instance choisi.
-Cette connexion peut se faire soit à la création (dans ce cas c'est automatique), soit après la création de l'instance. 
-Dans le deuxième cas, des étapes supplémentaires devront être effectué, ces étapes dependent bien sûr, de l'OS installé sur ton instance.
+Comme je l'ai dit dans la video, tu peux visualiser les volumes EBS comme des clés USB.
+Techniquement ce sont des espaces de stockage qui se connecte à l'instance choisie.
+Cette connexion peut se faire soit à la création (dans ce cas, c'est automatique), soit après la création de l'instance. 
+Dans le deuxième cas, des étapes supplémentaires devront être effectuées, ces étapes dependent bien sûr, de l'OS installé sur ton instance.
 
 Avant de parler des différents types de volumes, parlons d'abord de type de disque qu'offre AWS.
-Avec AWS tu peux choisir des disques HDD ou SSD, pour être sûr que l'on est sur la même longueur d'ondes voici leurs [inconvénients et avantages](https://laptopsreviewers.com/knowledge-base/ssd-vs-hdd/)
+Avec AWS tu peux choisir des disques HDD ou SSD, pour être sûr que l'on est sur la même longueur d'ondes voici leurs [inconvénients et avantages](https://laptopsreviewers.com/knowledge-base/ssd-vs-hdd/).
 
 Voici les different type de volumes EBS :
 
@@ -41,7 +40,7 @@ Ses caractéristiques :
 
 #### 2.1.2. Utilité du io1
 Ce type de volume est nécessaire si on a besoin I/O Ops supérieure à 16 000 ou si on a besoin de sauvegarder des infos critiques.
-C'est pour cela que pour la création d'un BDD, il est recommandé.
+C'est pour cela que pour lors de la création d'une base de donnée, cet espace de stockage est recommandé.
 
 Ses caractéristiques :
 - sa taille varie entre 4GiB et 16TiB 
@@ -70,10 +69,11 @@ Ses caractéristiques :
 
 
 ## 3. Points importants à retenir
-- Comme tu le verras par dans les prochaines jours et bien après les volumes EBS sont des sous-éléments de plusieurs services de AWS.
-  De ce fait, connaitre l'utilité de chaque type de volume facilitera grandement ton choix de l'un ou l'autre.
+- Comme tu le verras par dans les prochaines jours et bien après,
+  les volumes EBS sont des sous-éléments de plusieurs services de AWS.
+  De ce fait, connaitre l'utilité de chaque type de volume facilitera grandement ton choix le moment venu.
 
 - En ce qui concerne une instance EC2, un volume EBS, n'est rien d'autre qu'un disque dur distant connecté.
 
 ## 4. Pour aller plus loin
-Pour en savoir plus sur le stockage de type EBS, la [documentation de AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html)  sera ton guide.
+Pour en savoir plus sur le stockage de type EBS, la [documentation de AWS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) sera ton guide.
