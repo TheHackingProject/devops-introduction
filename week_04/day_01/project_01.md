@@ -15,7 +15,7 @@ Voici les étapes à suivre, à l'aide exclusivement de script(s) shell et d'AWS
 1. Crées un VPC avec un `CIDR block` équivalent à 192.168.0.0/16
 
 2. Crées 2 subnets, un privé et un autre public, je te laisse le choix de choix du `CIDR block`, 
-   mais avant de le choisir tu dois prendre en compte que **chaque subnet devra contenir 510 IPs pas une IP de plus ni une de moins.** 😜
+   mais avant de le choisir tu dois prendre en compte que **chaque subnet devra contenir 510 IPs, pas une IP de plus ni une de moins.** 😜
 
 
 #### 2.1.2. Démarrer les instances
@@ -29,15 +29,16 @@ Voici les étapes à suivre, à l'aide exclusivement de script(s) shell et d'AWS
 3. Vérifies que la DBB soit accessible depuis les instances qui se trouvent dans le subnet public.
 
 
-4. La BDD doit pour atteindre internet et non l'inverse de sorte que toi ou ta team puissent mettre à jour la DBB ou les packages de l'instance qui l'héberge.
+4. La BDD doit pour atteindre internet et non l'inverse, de sorte que toi ou ta team puissent mettre à jour la DBB ou les packages de l'instance qui l'héberge.
 
-
-##### 🚀 ALERTE BONNE ASTUCE
+---
+#### 🚀 ALERTE BONNE ASTUCE
 - Pense à suivre les conventions Shell que tu as apprises lors de la premiere semaine du parcours**
 - N'hésite pas à créer plusieurs petits scripts shell si tu en ressens le besoin.
 - N'hésite pas tout au long de ton/tes scripts shell à informer l'utilisateur via le terminal où il en est dans la création de l'infrastructure.
 - Pense à vérifier régulièrement que les services que tu crées au fur à mesure sont `up` et prêt à recevoir du traffic.
 
+---
 
 ## 3. Rendu attendu
 Un repo github qui contient :
