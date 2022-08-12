@@ -1,1 +1,1 @@
-Tu vas apprendre à monitorer tes instances EC2 et créer ton infrastructure directement depuis le code de ton langage préféré.
+Tu vas apprendre à monitorer les instances EC2 et créer ton infrastructure directement depuis le code de ton langage préféré.
