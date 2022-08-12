@@ -33,29 +33,65 @@ Tu fronces les sourcils en signe d'incompréhension, et il te répond en rigolan
 
 ### 2.2. Feuille de route
 #### 2.2.1. Migrer un monolithe ROR sur Elastic Beanstalk via EB CLI
+Dans cette partie tu vas déployer un monolithe ROR sur Elastic Beanstalk à l'aide l'interface `EB CLI` ou `AWS CLI` (qui est plus compliqué).
+Dans notre cas quand je parle de monolithe, j'entends une application ROR basique.
+Tu peux, par d'exemple, utiliser l'application que toi et ta team avaient créé 
+et présenté en guise de projet final du parcours Développeur. 
 
-Créer :
-- environnement 
-- application 
-- ALB + ASG
-+ mettre en place stratégie de déploiement via EB CLI.
+Voici les différentes étapes à suivre : 
+
+1. Crées une application et à l'intérieur lance un environnement qui comprend ces ressources :
+   - un équilibreur de charge de type `ALB`,
+   - un service ASG, qui possède une instance minimum et 2 maximum, je te laisse décider pour le reste des options (health check, `Cooldown`, Availability zones, etc.),
+   - et la meilleure stratégie de déploiement pour un environnement de développement
+
+2. Rédige un petit paragraphe (10 lignes minimum) pour expliquer ce qui t'a motivé à choisir la stratégie de déploiement que tu as mise en place.
+3. Rédige dans une autre paragraphe ((10 lignes minimum)) sur quelle stratégie de déploiement, tu choisirais pour un environnement de `preprod`
 
 
 #### 2.2.2. Migrer un monolithe ROR sur Elastic Beanstalk via les script de configuration
+Cette partie sera exactement la même que celle du dessus
+à la différence que la configuration des ressources de l'environnement se feront 
+via des scripts de configuration, qui se trouveront à la racine de ton application ROR 
+et plus spécifiquement dans le dossier `.ebextensions`.
 
-Créer :
-- environnement
-- application
-- ALB + ASG
-+ mettre en place stratégie de déploiement via EB CLI.
+Voici les différentes étapes à suivre :
+1. Crées une application et à l'intérieur lance un environnement qui comprend ces ressources :
+  - un équilibreur de charge de type `ALB`,
+  - un service ASG, qui possède une instance minimum et 5 maximum, je te laisse décider pour le reste des options (health check, `Cooldown`, Availability zones, etc.),
+  - et la meilleure stratégie de déploiement pour un environnement de production
+
+2. Une fois que tu as vérifié que ton application fonctionne correctement, crées une instance EC2,
+   dans laquelle tu vas mettre lancer une BDD (mongo ou mysql).
+
+3. Connecter l'application ROR qui se trouve dans Elastic Beanstalk à la BDD en passant par l'IP privée de l'instance EC2.
+
+4. Rédige un petit paragraphe (10 lignes minimum) pour expliquer ce qui t'a motivé à choisir la stratégie de déploiement que tu as mise en place.
 
 
+---
 ##### 🚀 ALERTE BONNE ASTUCE
+Pour les environnements de dev, preprod et/ou prod,
+il peut être avisé de modifier les options ton ASG, par exemple :
+- utiliser des instances éphémères.
+- changer la `CoolDown period`.
+- gérer les `hooks` lorsqu'une instance se lance où se supprime.
+- etc.
 
+---
 
-#### 2.2.3. Elastic Beanstalk communiquer avec une BBD externe
+#### 2.2.3. Challenge : Gérer les versions de ton application
+Au fur à mesure que tu vas déployer des versions de ton application, 
+tu vas te retrouver avec des versions trop anciennes.
+Qui ne nécessite pas d'être gardé, 
+d'autant plus que le code est versionné sur Github/GitLAb/bitBucket et peut être utilisé si besoin.
 
-Attacher l'application qui est dans Elastic Beanstalk à une DBB qui se trouve sur instance EC2.
+De ce fait, je t'invite à trouver une solution automatique, pour éviter de se retrouver comme sur cette image ci-dessous 
+à être obligé de régulièrement supprimer les versions à la main 😉.
+
+![Elastic Beanstalk App to delete](https://i.imgur.com/C8M9Jlq.png)
+
 
 ## 3. Rendu attendu
-Un repo github ....
+A vous d'organiser votre repo Github de manière à ce tous les éléments demandés s'y trouver (scripts, README.md, etc.)
+PS. N'oublie pour chaque partie, on doit être capable de créer l'infrastructure et déployer l'application ROR en quelques commandes du Makefile.
