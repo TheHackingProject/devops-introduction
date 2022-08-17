@@ -68,19 +68,28 @@ ___
 
 
 #### 2.2.2. Créer des alarmes
-À partir des métriques de base ou personnalisés, tu peux créer des alarmes avec le service `CloudWatch Alarms`
+À partir des métriques de base ou personnalisés, tu peux créer des alarmes avec le service `CloudWatch Alarms`.
+Voici un [tutoriel](https://www.youtube.com/watch?v=lHWrAAzoxJA) assez complet sur la manière de procéder
 
 #### 2.2.3. Déclencher des évènements
+Une fois l'alarme créée, on peut à partir de celle-ci déclencher un événement par exemple :
+- Déclencher une lambda
+- Démarrer/Arrêter une instance
+- Envoyer un mail
+- Lancer des commandes spécifique sur instance AWS ou sur un serveur `on-premise`
+- etc.
 
+Une fois encore, voici un [tutoriel](https://www.youtube.com/watch?v=lSqd6DVWZ9o) qui te montrer comment déclencher une Lambda à partir d'une alarme
 
 ## 3. Points importants à retenir
+Voici les éléments à garder en tête :
+- le CloudWatch est un service central d'AWS qui permet :
+  - de monitorer les services AWS et les instances 
+  - suivre les logs des services AWS et des instances
+  - déclencher des alarmes en fonction de métriques de base ou personnalisés
+  - et déclencher des événements (en fonction des alarmes) qui vont à leurs tours déclencher d'autres services AWS.
 
+- **en termes coûts plus les métriques sont récupérées sur des intervals courts plus le service est couteux**.
 
 ## 4. Pour aller plus loin
 Pas besoin pour l'instant
-
-
-
-Sujets :
-- AWS CloudWatch
-

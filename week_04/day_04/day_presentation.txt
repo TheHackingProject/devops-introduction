@@ -1,1 +1,1 @@
-Tu vas apprendre à monitorer les instances EC2 et créer ton infrastructure directement depuis le code de ton langage préféré.
+Découvrir le service AWS CloudWatch.

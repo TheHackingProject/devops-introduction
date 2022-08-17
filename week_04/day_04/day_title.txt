@@ -1,1 +1,1 @@
-Monitorer tes instances EC2 + AWS SDK
+Monitorer les services AWS et les instances EC2.
