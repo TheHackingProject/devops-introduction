@@ -93,5 +93,11 @@ De ce fait, je t'invite à trouver une solution automatique, pour éviter de se 
 
 
 ## 3. Rendu attendu
-A vous d'organiser votre repo Github de manière à ce tous les éléments demandés s'y trouver (scripts, README.md, etc.)
-PS. N'oublie pour chaque partie, on doit être capable de créer l'infrastructure et déployer l'application ROR en quelques commandes du Makefile.
+Libre à toi d'organiser le repo comme tu le souhaites 🙂,
+néanmoins ce repo doit contenir pour chaque partie :
+- les scripts, ont permis de créer ton infrastructure à l'aide d'AWS CLI et du script shell.
+- des fichiers markdown qui contiennent les paragraphes sur tes choix stratégiques.
+- un README qui contient :
+   - le schéma de ton infrastructure
+   - comment cette infrastructure fonctionne
+   - et comment lancer cette infrastructure depuis une commande Makefile
