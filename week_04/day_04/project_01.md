@@ -36,41 +36,50 @@ Dans cette partie tu vas devoir créer l'infrastructure composée de d'une insta
 La première instance devra abriter une application ROR (par exemple celle que tu as créée lors de ton projet final du parcours Développeur).
 Bien sûr, cette instance devra être créée à l'aide d'AWS CLI et de la fonctionnalité `user-data` du service EC2.
 
-Et la VM qui abrite  ta BDD (mysql ou mongoDB) devra être créée à l'aide de Vagrant et du classique Vagrantfile 😉.
+Et la VM qui abrite ta BDD (mysql ou mongoDB) devra être créée à l'aide de Vagrant et du classique Vagrantfile 😉.
 
 
 #### 2.2.2. Monitorer ton application ROR
 Dans cette partie : 
-1. Tu vas depuis la console AWS, dans le service AWS CloudWatch créer un tableau de bord avec les métriques suivant :
+1. Tu vas depuis la console AWS, dans le service AWS CloudWatch créer 
+   un tableau de bord qui regroupe les métriques de ton instance EC2.  
+   Dans ce tableau de bord, les métriques suivantes doivent apparaitre :
+   - CPU
+   - RAM
+   - NetworkIn
+   - NetworkOut
+
+Libra à toi d'ajouter dans ce tableau de bord d'autres métriques qui te semblent pertinentes. 😉
+
+#### 2.2.3. Monitorer ton serveur on-premise
+Tous comme dans la partie ci-dessus crée un tableau de bord spécifique pour ce serveur.
+Dans ce tableau de bord, les métriques suivantes doivent apparaitre :
 - CPU
 - RAM
-- ..
-- ..
+- DiskReadBytes
+- DiskWriteBytes
 
-2. Monitorer [les erreurs http de type 4XX et 5XX](https://umbraco.com/knowledge-base/http-status-codes/) remontées dans les logs de ton application ROR.
-
-- métriques (RAM; CPU, disque space, logs)
-- alarms
-- events
-
-#### 2.2.2. Monitorer ta BDD
-
+Encore une fois, tu es libre d'ajouter d'autres métriques,
+si elles te semblent pertinentes pour monitorer un serveur qui abrite une BDD.
 
 ---
-##### 🚀 ALERTE BONNE ASTUCE
-
+#### 🚀 ALERTE BONNE ASTUCE
+N'oublie pas ! 
+Pour récupérer la RAM de ton instance ou serveur `on-premise`, 
+tu dois d'abord installer et configurer l'agent CloudWatch. 
 ---
-
-#### 2.2.3. Monitorer serveur on-premise
-
-- métrique à surveiller sur un serveur qui abritent une DBB, logs de la BDD
-- alarms
-- events
 
 
 ## 3. Rendu attendu
-Un repo github ....
+Libre à toi d'organiser le repo comme tu le souhaites 🙂, 
+néanmoins ce repo doit contenir pour chaque partie :
+- les scripts, ont permis de créer ton infrastructure
+- un screen de ton tableau de bord CloudWatch.
+- un Vagrantfile si nécessaire.
+- un README qui contient : 
+  - le schéma de ton infrastructure 
+  - comment cette infrastructure fonctionne
+  - et comment lancer cette infrastructure depuis une commande Makefile
 
-Project :
-- créer une partie de l'infrastructure avec le code
-- Pre-signed URL AWS S3.
+
+
