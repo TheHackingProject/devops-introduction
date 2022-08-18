@@ -7,15 +7,15 @@ Dans le cours du jour, tu vas découvrir Elastic Beanstalk le PaaS AWS concurren
 ### 2.1. Elastic Beanstalk, l'abstraction par excellence.
 
 À quoi sert le service Elastic Beanstalk ?  
-Eh bien, tout est dit dans le titre. Tu ne comprends toujours pas ?
+Eh bien, tout est dit dans le titre. Tu ne comprends toujours pas ?  
 Hum, laisse-moi m'expliquer dans ce cas, ce service permet de lancer pratiquement tous les services AWS que l'on a vu jusqu'à maintenant 
-via la console AWS ou depuis des fichiers (script) de configuration. 
+via la console AWS ou depuis des fichiers (des scripts yaml) de configuration. 
 L'objectif est de faciliter au maximum l'utilisateur qui souhaite lancer une application web ou 
-des workers scalable avec ce service.  
+des workers (des crons) scalable avec ce service.  
 **Autrement dit ce service est en soi, une abstraction destinée à faciliter la vie des utilisateurs.**
 
 Concrètement avec Elastic Beanstalk tu peux déployer :
-- ton code écrit Nodejs, Ruby, Go, PHP, Java, ... et même des application conteneurisée avec Docker
+- ton code écrit Nodejs, Ruby, Go, PHP, Java, ... et même des applications conteneurisées via Docker
 - mettre en place une stratégie de scalabilité avec le service `ASG`
 - mettre en place un `Load Balancer`
 - lancer une DBB AWS
@@ -27,7 +27,7 @@ tu peux accéder aux services lancés par Elastic Beanstalk et les manager direc
 Par exemple, tu peux accéder et même rentrer dans les instances EC2 créer par ce service en cas besoin.
 
 Au-delà de créer ces services pour toi, Elastic Beanstalk offre également des fonctionnalités supplémentaires comme :
-- versionné tes déploiements et pouvoir switcher d'un déploiement à l'autre,
+- versionner tes déploiements et pouvoir switcher d'un déploiement à l'autre,
 - te permettre de mettre en place des stratégies de déploiements,
 - te permettre d'automatiser le déploiement et la création des sous-services à l'aide de fichiers de configurations,
 - et te permettre de déployer ton application et tes fichiers de configuration via un CLI dédié.
@@ -47,15 +47,15 @@ Elastic Beanstalk, ne coûte rien 😄. Oui, oui tu as bien entendu.
 
 **Mais attention**, c'est un piège, Elastic Beanstalk ne coûte rien, en revanche, 
 ce sont les services qui vont être démarrés par ce service, qui eux, ont prix.
-Par exemple, dans le cas où tu utilises Elastic Beanstalk pour déployer une application et équilibreur de charge.
-Derrière, il va utiliser le service EC2 et ALB, qui te seront facturés, comme si tu les utilises individuellement.
+Par exemple, si tu utilises Elastic Beanstalk pour déployer une application et équilibreur de charge.
+Derrière, il va utiliser le service EC2 et `ALB`, qui te seront facturés, comme si tu les utilises individuellement.
 
 **Rappelle-toi, Elastic Beanstalk est avant tout, une abstraction, destiné aux utilisateurs qui souhaitent utiliser la solution "la plus clés en main possible".**
 
 De ce fait, Elastic Beanstalk peut être utilisé par :
 - les startups qui ne veulent pas ou n'ont pas la possibilité d'engager un Devops à temps plein,
 - les grandes enterprises pour tester rapidement un produit avant de créer une architecture plus robuste autour de ce produit,
-- et/ou les PME, qui n'ont pas forcément de personne dédiée à la création de l'infrastructure, mais qui ont quand même besoin au cas, d'accéder aux sous services lancés par Elastic Beanstalk pour debugger.
+- et/ou les PME, qui n'ont pas forcément de personne dédiée à la création de l'infrastructure, mais qui ont quand même besoin, au cas où, d'accéder aux sous services lancés par Elastic Beanstalk pour debugger.
 - 
 ___
 
@@ -75,7 +75,7 @@ Raison pour laquelle, Elastic Beanstalk te permet de choisir la stratégie de ch
 ### 2.3. Les stratégies de déploiement
 Ici, on va détailler les différentes stratégies de déploiement sur Elastic Beanstalk, 
 il est très important d'avoir une comprehension précise de ces modes de déploiement, 
-car tu seras amené dans ton enterprise, selon le contexte à argumenter, présenter et choisir une de ces stratégies.
+car tu seras amené dans ton enterprise, selon le contexte à argumenter, présenter et choisir, une de ces stratégies.
 
 #### 2.3.1. All at Once
 ![All-at-once](https://i.imgur.com/sJRVg3U.png)
@@ -87,7 +87,7 @@ Les avantages et inconvénients de cette stratégie sont :
 
 - déploiement rapide
 - interruption de service (l'application a un temps d'arrêt et ne peut donc pas servir le client).
-- peu être utilisée dans les environnements de développement, pour itérer rapidement.
+- cette stratégie peut être utilisée dans les environnements de développement, pour itérer rapidement.
 - **pas de coût additionnel**, car toutes les instances sont supprimées et recréées
 
 
@@ -95,7 +95,7 @@ Les avantages et inconvénients de cette stratégie sont :
 ![Rolling](https://i.imgur.com/AYBZazj.png)
 
 Cette stratégie implique que tu aies mis en place une `ASG` avec au moins deux instances EC2 minimum.
-Ainsi lors du déploiement de la nouvelle application une instance ou un lot d'instances (à configurer) sera remplacé, un lot à la fois.
+Ainsi, lors du déploiement de la nouvelle application une instance ou un lot d'instance (à configurer) sera remplacé, un lot à la fois.
 Le passage d'un lot à un autre se fait à condition le `health check` passe. 
 Si ce n'est pas le cas le déploiement est annulé.
 
@@ -119,46 +119,48 @@ Les avantages et inconvénients de cette stratégie sont :
 - l'application continue à fonctionner au maximum de ces capacités, car un lot d'instance qui abrite la nouvelle version est créée.
 - **ce lot d'instance supplémentaire, engendre un cout supplémentaire.**
 - à cause du lot d'instance supplémentaire, deux versions de l'application seront servies en mêmes temps.
-- temps de déploiement long.
-- cette stratégie, peut être appliquée pour l'environnement de production.
+- temps de déploiement long,
+- cette stratégie peut être appliquée pour l'environnement de production.
 
 
 #### 2.3.4. Immutable
 ![Immutable](https://i.imgur.com/PFmEF9d.png)
 
-Cette stratégie permet de carrément de déployer la nouvelle version dans un deuxième service `ASG` (cette `ASG` aura exactement la même configuration que la première en termes de nombre d'instances, health checks, ...),
-attendre la fin de la création de cette `ASG`. Et ensuite `merger` les instances de cette ASG dans l'ancienne `ASG` tout en supprimant les anciennes instances.
-Cette opération d'ajout/suppression prends à peine quelques millisecondes ce qui garanti un temps d'interruption égale à zéro.
+Cette stratégie permet de carrément de déployer la nouvelle version dans un deuxième service `ASG`, (cette `ASG` aura exactement la même configuration que la première en termes de nombre d'instances, health checks, etc.)
+une fois sa création finis, les deux `ASG` (l'anciennce et la nouvelle) sont "merger".
+
+Mais qu'est ce que ce bins bon sang de bon soir ! 
+
+😅😅😅😅😅, oui, oui je sais ! Laisse-moi réexplique ce "bins" correctement.
+
+Alors quand je dis "merger", je veux dire que les instances de la nouvelle `ASG` vont être merger dans l'ancienne `ASG` et presque au même moment les instances qui se trouvent dans l'ancienne ASG sont supprimer. Cette opération d'ajout/suppression prends à peine quelques millisecondes ce qui garanti un temps d'interruption égale à zéro.
 
 Les avantages et inconvénients de cette stratégie sont :
 - pas d'interruption de service.
-- coût déploiement élevé, car avec le nouveau ASG le nombre d'instances est doublées.
+- coût déploiement élevé, car avec le nouveau `ASG` le nombre d'instances est doublées.
 - l'avantage de doubler le nombre d'instances est que seul une version de l'application sera servie durant le déploiement. 
 - parce que le nombre d'instances est doublée :
   - le temps déploiement est plus long
-  - mais le `rollback`, en cas d'erreur (health check, échec du script dans `user data`, etc.) est rapide, car l'`ASG` temporaire sera juste supprimer.
+  - mais le `rollback`, en cas d'erreur (health check, échec du script lancé depuis la fonctionnalité `user data`, etc.) est rapide, car la nouvelle `ASG`  est avant l'opération de "merge".
 - excellent choix pour l'environnement de production.
 
 #### 2.3.5. Traffic Splitting
 ![Traffic-splitting](https://i.imgur.com/knPEoGL.png)
 
-Comme la stratégie `Immutable`, un `ASG` temporaire est créé, 
-ensuite un pourcentage du traffic client (que tu définis) est redirigé vers cette `ASG` pendant un certain temps (que tu définis).
-Une fois le temps écoulé, les instances de l`ASG` temporaire seront merger l`ASG` de base tout en supprimant les anciennes instances.
+Comme la stratégie `Immutable`, un nouvelle `ASG` est créé, 
+ensuite un pourcentage du traffic client (que tu définis) est redirigé vers le nouveau `ASG` pendant un certain temps (que tu définis).
+Une fois le temps écoulé, les instances de la nouvelle `ASG` sont merger dans l'ancienne `ASG`, tout en supprimant les anciennes instances.
 
 Les avantages et inconvénients de cette stratégie sont :
 - excellent pour des tests de type [`canary` ou `A/B`](https://www.testenvironmentmanagement.com/deployment-styles-bluegreen-canary-and-ab/)
 
 
-- coût déploiement élevé, car avec le nouveau ASG le nombre d'instances est doublées.
-
-
-- l'avantage de doubler le nombre d'instances est que seul une version de l'application sera servie durant le déploiement.
+- coût déploiement élevé, car avec le nouveau ASG, le nombre d'instances est doublées.
 
 
 - parce que le nombre d'instances est doublée :
   - le temps déploiement est plus long
-  - mais le `rollback` est en cas d'erreur (health check, échec du script dans `user data`, etc.) est rapide, car l'`ASG` temporaire sera juste supprimer
+  - mais le `rollback` est en cas d'erreur (health check, échec du script dans `user data`, etc.) est rapide, car le nouveau `ASG` est juste supprimer
 
 #### 2.3.6. Blue / Green
 
@@ -176,7 +178,7 @@ Voici ce que tu dois retenir :
 - Elastic Beanstalk est gratuit, seuls les sous-services qu'il lance sont payants.
 
 
-- Avec Elastic Beanstalk, il est possible de déployer différentes versions de votre application 
+- Avec Elastic Beanstalk, il est possible de déployer différentes versions de ton application 
   en suivant des stratégies de déploiement qui sont :
   - Rolling
   - Rolling with additional batches
