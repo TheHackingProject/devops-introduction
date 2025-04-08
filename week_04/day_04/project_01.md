@@ -49,8 +49,6 @@ Dans cette partie :
    - NetworkIn
    - NetworkOut
 
-Libra à toi d'ajouter dans ce tableau de bord d'autres métriques qui te semblent pertinentes. 😉
-
 #### 2.2.3. Monitorer ton serveur on-premise
 Tous comme dans la partie ci-dessus crée un tableau de bord spécifique pour ce serveur.
 Dans ce tableau de bord, les métriques suivantes doivent apparaitre :
