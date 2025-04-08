@@ -5,27 +5,27 @@ Avant de mettre les mains dans le cambouis, commençons d'abord par répondre à
 Linux, qu'est-ce que c'est ? Quelle est son origine ? Et pourquoi l'utilise-t-on de nos jours ?.
 
 ## 2. La ressource
-### 2.1. Historique et contexte
-### 2.2. Linux les origines
+### 2.1. Linux les origines
 Pour cela rien de mieux qu'une [doc](https://stux6.net/unix/linux/les-origines-de-linux) qui va droit au but.
 
-### 2.3. Unix vs Linux
+### 2.2. Unix vs Linux
 Maintenant que tu as une vue d'ensemble de Linux. Les questions que tu te poses sont sûrement celles-ci :
 1. Quelle est la différence entre Unix et Linux ? 
    
 2. Les distributions de Linux, c'est quoi et pourquoi y en a-t-il autant ?
 
-Pour la première question je dirais ceci :
-- Linux est open source (le code source est accessible par tout le monde) et principalement gratuit (la plupart des distributions Linux sont gratuites).
+Voici un début de réponse à la première question dans cet [article](https://www.ionos.fr/digitalguide/serveur/know-how/unix-vs-linux/).
 
-- Unix est principalement utilisé par ces entreprises : [Sun Microsystems](https://fr.wikipedia.org/wiki/Solaris_(syst%C3%A8me_d%27exploitation)), [HP-UX](https://fr.wikipedia.org/wiki/HP-UX), [AIX](https://fr.wikipedia.org/wiki/AIX)  et sa communauté est très limitée.
+Pour résumer et t'apporter des informations supplémentaires : 
+- Linux est `open source` (ce qui veut dire que le code source est accessible par tout le monde) et principalement gratuit (la plupart des distributions Linux sont gratuites). Il est utilisé par beaucoup de devs et entreprises (RedHat, CentOS, Debian, etc.). De ce fait, sa communauté Linux est gigantesque.
 
-- Linux est utilisé par beaucoup de developers et entreprises (RedHat, CentOS, Debian, etc.).
+- Alors que `Unix` est principalement utilisé par un nombre limité d'entreprises : [Sun Microsystems](https://fr.wikipedia.org/wiki/Solaris_(syst%C3%A8me_d%27exploitation)), [HP-UX](https://fr.wikipedia.org/wiki/HP-UX), [AIX](https://fr.wikipedia.org/wiki/AIX) et sa communauté est très limitée.
+
 
 - Au contraire de `Unix`, Linux peut être installé sur plusieurs supports différents (smartphones, console de jeux, IoT, serveurs, etc.).
 
 
-## 2.4. Qu'est-ce qu'un OS ?
+## 2.3. Qu'est-ce qu'un OS ?
 Pour répondre à la deuxième question, nous devons d'abord répondre à une autre question, qu'est-ce qu'un `OS` (Operating system) ?
 
 Un PC est d'abord constitué de plusieurs éléments (Disk, RAM, Moniteur, Carte graphique, etc.) qui ensemble constituent le `hardware`.
@@ -43,10 +43,12 @@ Pour bien comprendre prenons le cas de Firefox. Firefox est codé de manière à
 Ces `librairies/drivers` à leur tour interagissent avec le `kernel` qui à son tour va communiquer avec le `hardware`.
 
 
-*TODO: schéma recap*
+Voici un schéma récapitulatif 😄 
+
+![OS Linux Architecture](https://i.imgur.com/HOtGcAk.png)
 
 
-## 2.5. Les distributions Linux
+## 2.4. Les distributions Linux
 Bien, maintenant que tu en sais un peu plus sur l'OS. Cette [doc](https://www.computernetworkingnotes.com/linux-tutorials/difference-between-linux-distributions.html) va t'en apprendre davantage sur la différence entre les plus importantes distributions de Linux. 
 
 

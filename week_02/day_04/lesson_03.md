@@ -60,12 +60,12 @@ Maintenant que tu as cette vue d'ensemble, attardons-nous un peu sur les différ
 Hier on a dit que Docker de manière générale avait une architecture modulaire, ce qui permet à l'utilisateur de supprimer ou ajouter des composants selon le besoin.
 
 Justement, il se trouve que le composant `Network` de Docker est un example parfait de cette architecture. Dans le sens où tu as la possibilité avec Docker de choisir le type de composant `Network` que tu souhaites. Chaque composant `Network` est implémenté par le `Network Driver` correspodant.
-Nous n'allons pas explorer tous les `Network Driver`, parce qu'il y en a beaucoup, notamment ceux crées et maintenu par la communauté Docker.
+Nous n'allons pas explorer tous les `Network Driver`, parce qu'il y en a beaucoup, notamment ceux créés et maintenu par la communauté Docker.
 
 Nous allons ici nous concentrer sur les cinq `Network Driver` qui viennent à avec Docker : 
 
 - Host
-- BRidge
+- Bridge
 - Overlay
 - MACVLAN
 - None
@@ -98,6 +98,6 @@ Voici les points importants à retenir :
   et le `Overlay Network` qui sert à lancé Docker sur plusieurs machines en même temps.
 
 ## 4. Pour aller plus loin
-Tu l'as compris le réseau Docker est très vaste, très complexe et très challengeantes, je ne sais pas toi, mais le trio "vaste, complexe et challenges" me fait sauter de joie. 😃
+Tu l'as compris le réseau Docker est vaste, complexe et challengeant, je ne sais pas toi, mais le trio "vaste, complexe et challengeant" me fait sauter de joie. 😃
   
-Enfin bref, pour aller plus loin, le meilleur point de départ est la [documentation officielle de Docker sur le réseau](https://docs.docker.com/network/)
+Enfin bref, pour aller plus loin, le meilleur point de départ est la [documentation officielle de Docker sur le réseau](https://docs.docker.com/network/).

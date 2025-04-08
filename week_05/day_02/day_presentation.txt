@@ -1,1 +1,1 @@
-Description de la deuxième journée au format texte et en un paragraphe.
+Aujourd'hui, on va parler des variables et des notions avancées lié à ce sujet dans Github Action.

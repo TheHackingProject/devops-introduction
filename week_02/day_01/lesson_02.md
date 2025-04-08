@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 L'environnement `chroot` est le système à l'origine des conteneurs, sans `chroot` pas de conteneurs.
-Alors en quoi ce système est si important ?
+Alors en quoi ce système est-il si important ?
 
 Voyons cela en détails.
 
@@ -25,12 +25,12 @@ ce qui implique :
 - et que du point de vue de l'environnement `chroot`, le dossier racine est le dossier `chroot`
 
 **Ainsi l'environnement `chroot` permet de créer un espace conteneurisé ou une vue limitée d'un système.**
-Avec ce système on peut donc créer une "prison" pour un utilisateur. 
-Par exemple un espace dev, où cette personne aura juste la possibilité d'entrer dans cet espace, d'effectuer une opération (configurer un serveur Apache, déposer/retirer un fichier, etc.) et de ressortir. 
+Avec ce système, on peut donc créer une "prison" pour un utilisateur. 
+Par exemple un espace dev, où cette personne aura juste la possibilité d'entrer, effectuer une opération (configurer un serveur Apache, déposer/retirer un fichier, etc.) et ressortir. 
 
 ### 2.2. Créer un environnement chroot.
 L'objectif n'est pas de maîtriser l'environnement `chroot` mais savoir comment il marche et les éléments nécessaires à sa création.
-Cette [video](https://www.youtube.com/watch?v=2wSJREC7RV8) t'expliques comment créer un environnement `chroot` .
+Cette [video](https://www.youtube.com/watch?v=2wSJREC7RV8) t'explique comment créer un environnement `chroot` .
 
 Tu peux reproduire l'exercice de la video très facilement dans une VM au lieu d'utiliser ta machine. 😉
 

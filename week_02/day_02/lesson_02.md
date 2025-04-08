@@ -35,7 +35,7 @@ docker commit -m "<commit message>" -a "<author name>" <container_id> <repositor
 - Le `repository/new_image_name` à ton compte Docker Hub, de ce fait je t'invite dès maintenant [à créer ton compte DockerHub](https://hub.docker.com/signup).
   `repository`, fait référence au [docker_id](https://docs.docker.com/docker-id/) et `new_image_name` au nom que tu souhaites donner à ta nouvelle image.
 
-Par exemple, pour l’utilisateur `themindset`, avec l’ID de conteneur ce34fceb7d27, l'instruction serait :
+Par exemple, pour l’utilisateur `themindset`, avec l’ID de conteneur `ce34fceb7d27`, l'instruction serait :
 
 ```shell
 docker commit -m "added Node.js" -a "themindset" ce34fceb7d27 themindset/ubuntu-nodejs
@@ -71,7 +71,7 @@ Login Succeeded
 ```
 
 :warning: Si votre nom d’utilisateur sur DockerHub est différent 
-du nom d’utilisateur local que tu as utilisé pour créer l’image, 
+du nom d’utilisateur local que tu as utilisé pour créer l’image. 
 Tu vas devoir tagger ton image avec votre nom d’utilisateur de ton compte DockerHub, example :
 
 ```shell

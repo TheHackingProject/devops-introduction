@@ -12,7 +12,7 @@ Le `Shell`, est un programme qui permet d'interagir avec l' `OS` via un terminal
 
 - Non interactif : Le shell lit tes commandes depuis un fichier, a.k.a, le `shell script`.
 
- Il existe plus d'une trentaine de `Shells` différents, chacune avec des particularités plus ou moins importantes. Cette [doc](https://www.journaldev.com/39194/different-types-of-shells-in-linux), te fait un résumé des Shells les plus populaires.
+ Il existe plus d'une trentaine de `Shells` différents, chacune avec des particularités plus ou moins importantes. Cette [doc](https://www.journaldev.com/39194/different-types-of-shells-in-linux), te fais un résumé des Shells les plus populaires.
 
 Aujourd'hui nous allons nous concentrer sur le mode `interactif`, le shell que tu as sur ta machine n'a pas d'importance (bash, zsh), car les commandes que tu vas découvrir aujourd'hui, sont interprétées par tous les types de `Shell`.
 
@@ -38,11 +38,10 @@ rm -r directory/
 #### 2.2.2. Se déplacer dans le terminal
 Pour te déplacer sereinement dans le terminal, tu dois d'abord en apprendre plus sur le `Filesystem` de Linux et rien de mieux que [Linux pour t'en apprendre d'avantages](https://www.linux.com/training-tutorials/linux-filesystem-explained/).
 
-Maintenant que tu sais ce qu'est le `Filesystem`, cette [doc](https://www.redhat.com/sysadmin/navigating-linux-filesystem) va t'expliquer comment naviguer dans le `Filesystem` ainsi que la différence entre deux termes très importants, **le chemin relatif et absolue dans le Filesystem**. 
+Maintenant que tu sais ce qu'est le `Filesystem`, cette [documentation de RedHat](https://www.redhat.com/sysadmin/navigating-linux-filesystem) va t'expliquer comment naviguer dans le `Filesystem` ainsi que la différence entre deux termes très importants, **le chemin relatif et absolu dans le filesystem**. 
 
 #### 2.2.3. Les permissions et l'appartenance des fichiers
-Cette [doc](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-groupes-permissions) est parfaite pour avoir une idée claire sur le sujet.
-La dernière partie de cette doc sur `Sauvegarder et restaurer les permissions`, ne nous intéresse pas pour l'instant.
+Cette [documentation](https://www.linuxtricks.fr/wiki/droits-sous-linux-utilisateurs-groupes-permissions) est parfaite pour avoir une idée claire sur le sujet. La dernière partie sur `Sauvegarder et restaurer les permissions`, ne nous intéresse pas pour l'instant.
 
 
 ## 3. Points importants à retenir
@@ -71,4 +70,4 @@ Certaines commandes, quand tu les utilises sans option(s) ni argument(s) fournis
 Les commandes shell se comptent par centaines. Mais l'important est d'abord de comprendre l'environnement Linux pour que d'un coup d'œil sur ton terminal, tu saches où tu en es.
 
 PS. Tu n'as pas d'exemples concrets dans ce cours, c'est fait exprès. 
-L'idée est, qu'une fois avoir parcouru le cours, tu découvres par toi-même via le projet les commandes en lien avec ce cours. Courage :).
+L'idée est, qu'une fois avoir parcouru le cours, tu découvres par toi-même via le project du jour, les commandes en lien avec ce cours. Courage 😄.

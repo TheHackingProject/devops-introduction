@@ -8,12 +8,12 @@ Dans ce projet, tu vas améliorer le programme Shell de création de compte, que
 Dans ta super Startup, ton programme de création de compte a grandement soulagé le process d'intégration des nouvelles personnes.
 
 Cependant, les managers qui exécutent le programme, sont fatigués de chercher à chaque fois des mots de passes différents pour chaque compte.
-Ce qui à terme va poser quelques problèmes de sécurité et de traçabilité dans les différents services, si les mots de passe de chaque collaborateur sont identiques.
+Ce qui à terme va poser quelques problèmes de sécurité et de traçabilité dans les différents services, si les mots de passes de chaque collaborateur sont identiques.
 
 De ce fait ton lead dev, te demande d'améliorer cette partie, en générant des mots de passe aléatoires.
 
 ### 2.2. Instructions
-Comme d'habitude ton lead dev a écrit quelques instructions à suivre, histoire de te guider :
+Comme d'habitude ton lead dev a écrit quelques instructions à suivre, afin de te guider 😉 :
 
 #### 2.2.1. Re-factorer et améliorer ton script
 1. Remplacer la commande `read` par un argument pour le `username`.
