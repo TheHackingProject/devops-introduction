@@ -1,1 +1,1 @@
-Découverte de Github Actions.
+Découvrir de Github Actions.
