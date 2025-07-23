@@ -1,0 +1,1 @@
+Exploite les fonctionnalités avancées de ton outil CI pour optimiser les pipelines.

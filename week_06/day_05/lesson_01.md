@@ -1,23 +1,33 @@
-# Titre de la deuxième ressource
-Description de la ressource au format texte et en 1 paragraphe max (pas plus)
+# Déploiement sur Kubernetes
 
 ## 1. Introduction
-Une introduction sur la ressource.
+Pour terminer la semaine, nous allons voir comment mettre en production une application conteneurisée sur Kubernetes.
 
-## 2.Historique et contexte
-Cette partie peut être plus ou moins longue. Elle explique l'histoire ou le contexte sur la notion que l'on veut enseigner.
+## 2. Historique et contexte
+Avec la croissance du cloud, orchestrer plusieurs services est devenu essentiel. Kubernetes fournit diverses stratégies de déploiement pour répondre à ces enjeux.
 
 ## 3. La ressource
-Cette partie est le nerf de la ressource, elle expliquera les notions de cette ressource.
+### 2.1. Manifeste complet
+Combine les objets `deployment`, `service` et `ingress` pour exposer une application web. L'ingress nécessite un contrôleur, par exemple Nginx Ingress sur Minikube.
 
-### 3.1. Première sous partie
-blabla
+### 2.2. Rolling update
+Grâce au champ `strategy` d'un deployment, Kubernetes peut mettre à jour tes pods sans interruption de service. Teste une mise à jour d'image et observe le remplacement progressif des anciens pods.
 
-### 3.2. Deuxième sous partie
-blabla
+### 2.3. Helm
+Pour faciliter la réutilisation des manifestes, Helm permet de les templater et de versionner des "charts". Une piste à explorer pour tes futurs projets.
+
+### 2.4. Auto-scaling
+En combinant `HorizontalPodAutoscaler` et `Metrics Server`, ton application peut automatiquement démarrer de nouveaux pods selon la charge CPU ou mémoire.
+
+### 2.5. Observabilité
+Installe Prometheus et Grafana via Helm pour obtenir des tableaux de bord sur l'état de ton cluster et détecter rapidement les anomalies.
 
 ## 4. Points importants à retenir
-La ressource en quelques points importants.
+- Un ingress donne accès à ton application via un nom de domaine ou une URL conviviale.
+- Les stratégies de déploiement évitent la coupure lors des mises à jour.
+- Helm simplifie la maintenance de configurations complexes.
 
 ## 5. Pour aller plus loin
-Quelques éléments en ligne pour aller plus loin
+Essaie de déployer l'exemple [guestbook](https://kubernetes.io/docs/tutorials/stateless-application/guestbook/) proposé par la documentation officielle pour voir un cas concret plus complet.
+Pour les passionnés, la série "Production Kubernetes" de Learnk8s approfondit la mise en place de clusters robustes et sécurisés.
+

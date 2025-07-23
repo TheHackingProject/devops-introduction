@@ -1,1 +1,1 @@
-Description de la première journée au format texte et en un paragraphe.
+Premiers pas avec l'outil Docker et ses concepts.

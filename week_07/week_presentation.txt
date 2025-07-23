@@ -1,0 +1,3 @@
+Cette semaine, tu vas apprendre à décrire ton infrastructure avec Terraform.
+Jour après jour tu manipuleras les commandes de base, les variables et les modules
+pour obtenir des déploiements reproductibles et faciles à maintenir.

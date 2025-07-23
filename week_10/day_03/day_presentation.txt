@@ -1,0 +1,1 @@
+Apprends à mettre à jour une application sans interruption grâce aux déploiements Kubernetes.

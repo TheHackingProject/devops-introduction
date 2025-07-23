@@ -11,7 +11,7 @@ Avec ta prise d'initiative d'hier sur la mise en place d'un script de création 
 Le CTO a de nouveau regardé ton CV afin d'estimer ton vrai potentiel. 
 En parcourant ton CV, cette fois-ci attentivement, il remarque tu as des connaissances en virtualisation.
 
-Ça tombe bien s'exclame-t-il ! J'avais justement besoin de faire quelques testes sur une application avant sa mise en production.
+Ça tombe bien s'exclame-t-il ! J'avais justement besoin de faire quelques tests sur une application avant sa mise en production.
 Tout joyeux, il se met à rédiger des instructions concernant le test qu'il veut que tu réalises.
 
 

@@ -1,17 +1,18 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Projet : créer une image personnalisée
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+Nous allons construire une image Docker capable de lancer un script Python simple.
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
-
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
-
-etc..
+- Écris un `Dockerfile` basé sur `python:3.12`.
+- Copie un petit script `app.py` qui affiche "Hello Docker".
+- Construis l'image puis exécute le conteneur pour vérifier le résultat.
+- Ajoute ensuite une étape de test dans un `docker-compose.yml` pour pouvoir lancer ton script et une base de données en même temps.
+- Publie enfin l'image sur Docker Hub pour la partager avec tes camarades.
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Le Dockerfile et le script doivent être versionnés et la commande utilisée pour lancer l'image doit être indiquée dans un README.
+
+### Pour aller plus loin
+Regarde comment configurer un workflow GitHub Actions pour builder automatiquement ton image à chaque push.
+

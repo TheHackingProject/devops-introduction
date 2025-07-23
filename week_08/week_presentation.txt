@@ -1,0 +1,2 @@
+Cette semaine tu mettras en place un système complet de supervision.
+Métriques, logs et alertes n'auront plus de secrets pour toi.

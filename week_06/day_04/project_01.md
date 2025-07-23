@@ -1,17 +1,18 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Projet : déployer un service simple
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+Ce projet consiste à déployer une image nginx sur ton cluster Minikube et à l'exposer via un service.
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
-
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
-
-etc..
+- Rédige un fichier `deployment.yaml` pour lancer un pod nginx avec deux replicas.
+- Crée également un `service.yaml` de type NodePort pour accéder au pod depuis ton navigateur.
+- Vérifie que la page d'accueil de nginx est accessible une fois le service exposé.
+- Ajoute ensuite un `ConfigMap` contenant une page d'accueil personnalisée et monte-le dans le pod.
+- Teste le redéploiement pour observer la prise en compte de cette configuration.
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Les fichiers YAML et un court texte expliquant la procédure pour accéder au service sur Minikube.
+
+### Pour aller plus loin
+Regarde comment activer l'addon `ingress` de Minikube pour exposer ton service via un nom de domaine local.
+

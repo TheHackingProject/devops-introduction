@@ -8,7 +8,7 @@ Depuis longtemps les devs ont voulu maitriser ce processus et quand je dis longt
 Depuis le début des années 90, pour être précis.
 
 Mais avant de rentrer dans les détails, il nous faut d'abord comprendre précisément 
-la signification du terme `Contiuous Integration` en abrégé ,`CI`, et `Continuous Delivery`, `Continuous Deployement` qui en abrégé se prononcent/s'écrivent, `CD`. 
+la signification du terme `Continuous Integration` en abrégé ,`CI`, et `Continuous Delivery`, `Continuous Deployment` qui en abrégé se prononcent/s'écrivent, `CD`. 
 Je sais, c'est peut-être un peu flou pour toi, mais ces trois termes ne veulent pas dire la même.
 
 Mais je vais t'expliquer chaque terme un par un 😃.
@@ -202,7 +202,7 @@ D'autres champs existent, mais je vais te laisser les découvrir toi-même leurs
 D'un point de vue globale chaque `job`, représente la machine virtuelle sur laquelle le workflow va se lancer.
 Tu peux définir l'OS de ces VMs (ubuntu, windows, debian, etc.) avec le champ `runs-on`, 
 il est également possible de lancer des VMs des customs avec plus de RAM, CPU, Os avec license, etc.
-Les VMs de base de Github viennent tous avec des logiciels (git, npm, yarn, pip, ...) et langages (ruby, pyton, Go, Nodejs..) préinstallés afin de nous faciliter la vie, mais libre à toi d'en rajouter d'autres. :smiley:
+Les VMs de base de Github viennent tous avec des logiciels (git, npm, yarn, pip, ...) et langages (ruby, python, Go, Nodejs..) préinstallés afin de nous faciliter la vie, mais libre à toi d'en rajouter d'autres. :smiley:
 
 Voici la [liste](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#preinstalled-software) des logiciels préinstallés.
 
