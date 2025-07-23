@@ -1,1 +1,1 @@
-Jouer avec les conteneurs dans Github Actions.
+Jouer avec les conteneurs dans GitHub Actions

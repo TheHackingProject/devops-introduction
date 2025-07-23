@@ -1,0 +1,2 @@
+Découvre les notions de métriques, de logs et de traces pour mieux comprendre ce
+qui se passe dans tes applications.

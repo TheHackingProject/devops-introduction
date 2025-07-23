@@ -1,0 +1,2 @@
+Cette semaine est dédiée à la sécurité dans un contexte DevOps.
+Nous verrons comment intégrer les bonnes pratiques à chaque étape de ton pipeline.

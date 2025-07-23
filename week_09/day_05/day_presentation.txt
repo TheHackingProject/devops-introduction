@@ -1,0 +1,1 @@
+Intègre des outils de scan dans ta CI pour contrôler en continu la sécurité de ton code.

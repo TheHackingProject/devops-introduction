@@ -1,0 +1,1 @@
+Écris des scripts Bash et Python plus poussés pour automatiser tes tâches quotidiennes.

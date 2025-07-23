@@ -1,0 +1,1 @@
+Prépare l'infrastructure et la CI nécessaires au projet.

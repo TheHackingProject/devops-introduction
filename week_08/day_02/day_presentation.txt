@@ -1,0 +1,1 @@
+Mets en place Prometheus pour collecter automatiquement les métriques de tes services.

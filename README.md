@@ -269,11 +269,15 @@ Voici l'arborescence de notre dossier :
 
 Chaque semaine sera un dossier à la racine :
 
-- `week_01/` pour la semaine 1
-- `week_02/` pour la semaine 2
-- `week_06/` pour la semaine 6
-- `week_10/` pour la semaine 10
-- and so on
+ - `week_01/` pour la semaine 1
+ - `week_02/` pour la semaine 2
+ - `week_06/` découverte Docker et Kubernetes
+ - `week_07/` Infrastructure as Code avec Terraform
+ - `week_08/` Observabilité et monitoring
+ - `week_09/` Sécurité DevOps
+ - `week_10/` containerisation avancée
+ - `week_11/` automatisation avancée
+ - `week_12/` projet final
 
 Chaque semaine aura :
 

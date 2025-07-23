@@ -1,0 +1,1 @@
+Réalise un mini-projet mêlant modules, variables et automatisation.

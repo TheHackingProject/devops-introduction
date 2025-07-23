@@ -1,0 +1,1 @@
+Automatise la construction et le déploiement de tes images avec un pipeline.

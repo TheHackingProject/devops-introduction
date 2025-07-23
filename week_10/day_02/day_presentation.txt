@@ -1,0 +1,1 @@
+Découvre l'architecture de Kubernetes et déploie ton premier pod.

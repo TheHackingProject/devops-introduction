@@ -1,0 +1,1 @@
+Nous approfondirons la containerisation avec Docker puis nous aborderons Kubernetes pour orchestrer tes services à l'échelle.

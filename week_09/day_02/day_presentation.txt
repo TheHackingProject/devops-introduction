@@ -1,0 +1,2 @@
+Apprends à stocker et distribuer les secrets de façon sécurisée dans tes
+applications et ton infrastructure.

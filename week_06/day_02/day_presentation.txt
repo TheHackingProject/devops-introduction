@@ -1,1 +1,1 @@
-Description de la deuxième journée au format texte et en un paragraphe.
+Apprendre à écrire un Dockerfile et construire des images.

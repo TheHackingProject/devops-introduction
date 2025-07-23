@@ -1,17 +1,18 @@
-# Titre du projet
-Description du projet au format texte et en 1 paragraphe max (pas plus)
+# Projet : mise en production
 
 ## 1. Introduction
-Introduction qui leur explique dans les grandes lignes le projet.
+Pour clôturer cette semaine, tu vas déployer l'application Node.js créée au jour 1 sur ton cluster Kubernetes en utilisant un ingress.
 
 ## 2. Le projet
-### 2.1. Première étape du projet
-Ici expliquer la première étape du projet.
-
-### 2.2. Seconde étape du projet
-Ici expliquer la seconde étape du projet.
-
-etc..
+- Package ton application dans une image Docker et pousse-la sur Docker Hub.
+- Écris les manifestes Kubernetes nécessaires (deployment, service, ingress).
+- Assure-toi que l'URL fournie par Minikube affiche bien la page de ton application.
+- Active l'auto-scaling avec un `HorizontalPodAutoscaler` réglé sur 50% d'utilisation CPU.
+- Ajoute un dashboard Grafana pour vérifier l'état du cluster après déploiement.
 
 ## 3. Rendu attendu
-Un récapitulatif de ce que nous attendons du projet.
+Le dépôt doit contenir tous les manifestes ainsi qu'un script ou un README détaillant les commandes à exécuter pour le déploiement.
+
+### Pour aller plus loin
+Configure un pipeline GitHub Actions afin de builder et déployer automatiquement ton application sur ton cluster de test.
+
